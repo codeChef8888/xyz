@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +7,7 @@ const Home: NextPage = () => {
         <div id="sc-banner" className="sc-banner banner-bg position-relative">
             <div className="container">
                 <div className="banner-content text-center">
-                    <Image className="banner-icon wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms" src="assets/images/icons/icon1.png" alt="icon-image"/>
+                    <img className="banner-icon wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms" src="assets/images/icons/icon1.png" alt="icon-image"/>
                     <h1 className="banner-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms">
                         Metaverse Web 3.0 Gaming Launcepad & IGO
                     </h1>

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 
 const Header: NextPage = () => {
   return (
@@ -13,7 +12,7 @@ const Header: NextPage = () => {
             <div className="gamfi-logo-area d-flex justify-content-between align-items-center">
               <div className="logo">
                 <a href="index.html">
-                  <Image src="home_logo.png" width="50px" alt="logo" />
+                  <img src="home_logo.png" width="50px" alt="logo" />
                 </a>
               </div>
               <div className="header-menu">
@@ -55,7 +54,7 @@ const Header: NextPage = () => {
                   <ul>
                     <li>
                       <a href="#">
-                        <Image
+                        <img
                           src="assets/images/icons/pancake.png"
                           alt="pancake"
                         />{" "}
@@ -64,7 +63,7 @@ const Header: NextPage = () => {
                     </li>
                     <li>
                       <a href="#">
-                        <Image
+                        <img
                           src="assets/images/icons/uniswap.png"
                           alt="uniswap"
                         />{" "}
@@ -73,7 +72,7 @@ const Header: NextPage = () => {
                     </li>
                     <li>
                       <a href="#">
-                        <Image
+                        <img
                           src="assets/images/icons/market.png"
                           alt="market"
                         />{" "}
@@ -82,7 +81,7 @@ const Header: NextPage = () => {
                     </li>
                     <li>
                       <a href="#">
-                        <Image src="assets/images/icons/gate.png" alt="gate" />{" "}
+                        <img src="assets/images/icons/gate.png" alt="gate" />{" "}
                         Gate.io
                       </a>
                     </li>
@@ -95,7 +94,7 @@ const Header: NextPage = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
-                    <Image src="assets/images/icons/connect.png" alt="Icon" />
+                    <img src="assets/images/icons/connect.png" alt="Icon" />
                     <span className="btn-text">Connect </span>
                     <span className="hover-shape1"></span>
                     <span className="hover-shape2"></span>
@@ -121,7 +120,7 @@ const Header: NextPage = () => {
         </div>
         <div className="sidebar-logo mb-30">
           <a href="index.html">
-            <Image src="home_logo.png" width="50px" alt="" />
+            <img src="home_logo.png" width="50px" alt="" />
           </a>
         </div>
         <ul className="nav-menu">
@@ -161,7 +160,7 @@ const Header: NextPage = () => {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              <Image src="assets/images/icons/connect_white.png" alt="Icon" />
+              <img src="assets/images/icons/connect_white.png" alt="Icon" />
               <span className="btn-text">Connect </span>
               <span className="hover-shape1"></span>
               <span className="hover-shape2"></span>
