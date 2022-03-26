@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const Footer: NextPage = () => {
   return (
@@ -37,13 +38,13 @@ const Footer: NextPage = () => {
         <div className="container">
           <div className="sec-heading text-center">
             <div className="sub-inner mb-52 mb-mb-30">
-              <img
+              <Image
                 className="heading-right-image"
                 src="assets/images/icons/steps2.png"
                 alt="Steps-Image"
               />
               <span className="sub-title white-color">Find us on Social</span>
-              <img
+              <Image
                 className="heading-left-image"
                 src="assets/images/icons/steps.png"
                 alt="Steps-Image"
@@ -90,7 +91,7 @@ const Footer: NextPage = () => {
             </ul>
           </div>
           <div className="footer-logo text-center mb-45">
-            <img src="home_logo.png" width="80px" alt="Footer-logo" />
+            <Image src="home_logo.png" width="80px" alt="Footer-logo" />
           </div>
           <div className="footer-mainmenu text-center mb-20">
             <ul>
