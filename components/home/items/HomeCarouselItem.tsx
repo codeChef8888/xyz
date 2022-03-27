@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const HomeCarouselItem: NextPage = () => {
   return (
@@ -7,13 +8,20 @@ const HomeCarouselItem: NextPage = () => {
         <div className="total-price">
           <div className="price-inner d-flex mb-45  md-mb-20">
             <div className="image-icon">
-              <a href="project-details.html">
-                <img src="assets/images/project/ninga-4.png" alt="icon-image" />
-              </a>
+              <Link href="/project-details">
+                <a>
+                  <img
+                    src="assets/images/project/ninga-4.png"
+                    alt="icon-image"
+                  />
+                </a>
+              </Link>
             </div>
             <div className="price-details">
               <h3 className="mb-15">
-                <a href="project-details.html">Thetan Arena</a>
+                <Link href="/project-details">
+                  <a>Thetan Arena</a>
+                </Link>
               </h3>
               <div className="dsc">PRICE (DDO) = 1.30 BUSD</div>
             </div>

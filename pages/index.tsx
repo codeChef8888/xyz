@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import ApplyForIGOSection from "../components/ApplyForIGOSection";
 import AboutSection from "../components/home/AboutSection";
 import CompleteProjectsSection from "../components/home/CompleteProjectsSection";
 import NextProjectsSection from "../components/home/NextProjectsSection";
@@ -56,6 +57,8 @@ const Home: NextPage = () => {
       <TokenomicsSection />
       <TeamSection />
       <PartnersSection />
+
+      <ApplyForIGOSection />
     </div>
   );
 };

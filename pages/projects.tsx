@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import ApplyForIGOSection from "../components/ApplyForIGOSection";
 import ProjectListItem from "../components/projects/ProjectListItem";
 
 const Projects: NextPage = () => {
@@ -37,7 +38,7 @@ const Projects: NextPage = () => {
                   <input type="submit" />
                 </span>
               </form>
-              <div className="btn-area">
+              {/* <div className="btn-area">
                 <a className="readon black-shape" href="calendar.html">
                   <i className="icon-calendar"></i>
                   <span className="btn-text">Calendar</span>
@@ -45,7 +46,7 @@ const Projects: NextPage = () => {
                   <span className="hover-shape2"></span>
                   <span className="hover-shape3"></span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -326,6 +327,8 @@ const Projects: NextPage = () => {
           </div>
         </div>
       </div>
+
+      <ApplyForIGOSection />
     </div>
   );
 };

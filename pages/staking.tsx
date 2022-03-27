@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
+import ApplyForIGOSection from "../components/ApplyForIGOSection";
 
 const Staking: NextPage = () => {
   const [currentValue, setCurrentValue] = useState("sevenDays");
@@ -34,12 +35,14 @@ const Staking: NextPage = () => {
             </div>
             <div className="col-lg-7 breadcrumbs-form md-mt-30">
               <div className="btn-area">
-                <a className="readon black-shape" href="leaderboard.html">
-                  <span className="btn-text">Leaderboard</span>
-                  <span className="hover-shape1"></span>
-                  <span className="hover-shape2"></span>
-                  <span className="hover-shape3"></span>
-                </a>
+                <Link href="/leaderboard">
+                  <a className="readon black-shape">
+                    <span className="btn-text">Leaderboard</span>
+                    <span className="hover-shape1"></span>
+                    <span className="hover-shape2"></span>
+                    <span className="hover-shape3"></span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -281,6 +284,8 @@ const Staking: NextPage = () => {
           </div>
         </div>
       </div>
+
+      <ApplyForIGOSection />
     </div>
   );
 };

@@ -63,7 +63,7 @@ const AboutSection: NextPage = () => {
           </OwlCarousel>
         </div>
 
-        <HowToParticipateSection />
+        {/* <HowToParticipateSection /> */}
       </div>
     </div>
   );

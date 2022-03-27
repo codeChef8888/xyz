@@ -17,7 +17,7 @@ const NextProjectsSection: NextPage = () => {
             </div>
             <h2 className="title">Upcoming IGO</h2>
           </div>
-          <div className="gamfi-btn-area">
+          {/* <div className="gamfi-btn-area">
             <ul>
               <li>
                 <a className="readon black-shape" href="calendar.html">
@@ -29,7 +29,7 @@ const NextProjectsSection: NextPage = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="row align-items-center">
           <UpcomingIGOItem />

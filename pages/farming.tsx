@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import ApplyForIGOSection from "../components/ApplyForIGOSection";
 import FarmListItem from "../components/farming/FarmListItem";
 
 const Farming: NextPage = () => {
@@ -38,14 +39,14 @@ const Farming: NextPage = () => {
                   <input type="submit" />
                 </span>
               </form>
-              <div className="btn-area">
+              {/* <div className="btn-area">
                 <a className="readon black-shape" href="leaderboard.html">
                   <span className="btn-text">Leaderboard</span>
                   <span className="hover-shape1"></span>
                   <span className="hover-shape2"></span>
                   <span className="hover-shape3"></span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -133,6 +134,8 @@ const Farming: NextPage = () => {
           </div>
         </div>
       </div>
+
+      <ApplyForIGOSection />
     </div>
   );
 };

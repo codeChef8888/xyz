@@ -1,19 +1,24 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const UpcomingIGOItem: NextPage = () => {
   return (
     <div className="col-lg-4 col-md-6">
       <div className="project-item hover-shape-border">
         <div className="project-info d-flex">
-          <a href="project-details.html">
-            <img
-              src="assets/images/project/project-image.png"
-              alt="Project-Image"
-            />
-          </a>
+          <Link href="/project-details">
+            <a>
+              <img
+                src="assets/images/project/project-image.png"
+                alt="Project-Image"
+              />
+            </a>
+          </Link>
           <div className="project-auother">
             <h4 className="mb-10">
-              <a href="project-details.html">Galaxy War</a>
+              <Link href="/project-details">
+                <a>Galaxy War</a>
+              </Link>
             </h4>
             <div className="dsc">PRICE (GAC) = 0.59 BUSD</div>
           </div>
