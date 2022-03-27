@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const TeamMemberItem: NextPage = () => {
   return (
@@ -6,7 +7,7 @@ const TeamMemberItem: NextPage = () => {
     <div className="team-item text-center active-shape">
       <img src="assets/images/team/team-image2.png" alt="Team-image" />
       <h4 className="team-title mb-8">
-        <a href="teamdetails.html">Genaro Nadel</a>
+        <span>Genaro Nadel</span>
       </h4>
       <div className="dsc">VP of Engineering</div>
       <ul className="team-icon-list">

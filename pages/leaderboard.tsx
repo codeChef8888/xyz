@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import ApplyForIGOSection from "../components/ApplyForIGOSection";
+import FarmListItem from "../components/farming/FarmListItem";
+import LeaderboardItem from "../components/leaderboard/LeaderboardItem";
 
 const Leaderboard: NextPage = () => {
   return (
@@ -53,50 +55,15 @@ const Leaderboard: NextPage = () => {
                 <th>locked</th>
                 <th>Balance</th>
               </tr>
-              <tr>
-                <td>01</td>
-                <td>RolexDeo</td>
-                <td>0x95e441....ddd97400</td>
-                <td>365 Days</td>
-                <td>$305,626.99</td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>Doris S. Bohr</td>
-                <td>0x842db9....c03d141f</td>
-                <td>185 Days</td>
-                <td>$50,899.00</td>
-              </tr>
-              <tr>
-                <td>03</td>
-                <td>Melissa Freeman</td>
-                <td>0x8de8be....48be4556</td>
-                <td>90 Days</td>
-                <td>$258,69.28</td>
-              </tr>
-              <tr>
-                <td>04</td>
-                <td>HazelFeltman</td>
-                <td>0xb83166....a9a8dc0d</td>
-                <td>60 Days</td>
-                <td>$33,855.90</td>
-              </tr>
-              <tr>
-                <td>05</td>
-                <td>Sally A. Martinez</td>
-                <td>0x8637ab....a1b8674a</td>
-                <td>365 Days</td>
-                <td>$305,626.99</td>
-              </tr>
-              <tr>
-                <td>06</td>
-                <td>Hilda Dekker</td>
-                <td>0x95e441....ddd97400</td>
-                <td>365 Days</td>
-                <td>$305,626.99</td>
-              </tr>
             </tbody>
           </table>
+          <div>
+            <LeaderboardItem />
+            <LeaderboardItem />
+            <LeaderboardItem />
+            <LeaderboardItem />
+            <LeaderboardItem />
+          </div>
           <div className="gamfi-navigation text-center mt-40">
             <ul>
               <li>

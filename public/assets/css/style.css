@@ -438,7 +438,7 @@ body .modal-backdrop {
     width: 240px;
 }
 
-.gamfi-header-section .heaader-inner-area ul li ul li + li {
+.gamfi-header-section .heaader-inner-area ul li ul li+li {
     border-top: 1px solid #343441;
     margin-bottom: -1px;
 }
@@ -494,7 +494,7 @@ body .modal-backdrop {
     font-size: 7px;
 }
 
-.gamfi-header-section .header-menu ul li + li {
+.gamfi-header-section .header-menu ul li+li {
     margin-left: 40px;
 }
 
@@ -603,7 +603,7 @@ body .modal-backdrop {
     width: 30px;
 }
 
-.gamfi-header-section .gamfi-btn-area > ul {
+.gamfi-header-section .gamfi-btn-area>ul {
     display: flex;
 }
 
@@ -750,7 +750,7 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section .mobile-navbar-menu ul ul li,
-.gamfi-header-section .mobile-navbar-menu li:hover > ul > li {
+.gamfi-header-section .mobile-navbar-menu li:hover>ul>li {
     height: auto;
 }
 
@@ -1085,7 +1085,7 @@ body .modal-backdrop {
     position: relative;
 }
 
-.gamfi-navigation ul li + li {
+.gamfi-navigation ul li+li {
     margin-left: 4px;
 }
 
@@ -1147,7 +1147,7 @@ body .modal-backdrop {
     display: block;
 }
 
-.canvas-menu ul li + li {
+.canvas-menu ul li+li {
     padding-top: 15px;
 }
 
@@ -1764,12 +1764,12 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-item .date-listing li .active,
-.project-details-conent .project-item .date-listing li input:checked + label {
+.project-details-conent .project-item .date-listing li input:checked+label {
     background: #303244;
     color: #a3ff12;
 }
 
-.project-details-conent .project-item .date-listing li + li {
+.project-details-conent .project-item .date-listing li+li {
     margin-left: 5px;
 }
 
@@ -2167,12 +2167,12 @@ body .modal-backdrop {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.project-menu-area .al-access-menu > li {
+.project-menu-area .al-access-menu>li {
     padding-right: 50px;
 }
 
-.project-menu-area .al-access-menu > li:after,
-.project-menu-area .al-access-menu > li:before {
+.project-menu-area .al-access-menu>li:after,
+.project-menu-area .al-access-menu>li:before {
     content: "\e901";
     position: absolute;
     top: 26px;
@@ -2183,18 +2183,18 @@ body .modal-backdrop {
     transition: 0.4s;
 }
 
-.project-menu-area .al-access-menu > li:after {
+.project-menu-area .al-access-menu>li:after {
     content: "\e903";
     opacity: 0;
     visibility: hidden;
 }
 
-.project-menu-area .al-access-menu > li:hover:before {
+.project-menu-area .al-access-menu>li:hover:before {
     opacity: 0;
     visibility: hidden;
 }
 
-.project-menu-area .al-access-menu > li:hover:after {
+.project-menu-area .al-access-menu>li:hover:after {
     opacity: 1;
     visibility: visible;
 }
@@ -2410,11 +2410,11 @@ body .modal-backdrop {
     transition: .4s;
 }
 
-.gamfi-previous-section .form-switch input:checked + .slider {
+.gamfi-previous-section .form-switch input:checked+.slider {
     background-color: #6D4AFE;
 }
 
-.gamfi-previous-section .form-switch input:checked + .slider:before {
+.gamfi-previous-section .form-switch input:checked+.slider:before {
     left: 0;
 }
 
@@ -2422,11 +2422,11 @@ body .modal-backdrop {
     margin-left: 6px;
 }
 
-.gamfi-previous-section .form-switch input:focus + .slider {
+.gamfi-previous-section .form-switch input:focus+.slider {
     box-shadow: 0 0 1px #6D4AFE;
 }
 
-.gamfi-previous-section .form-switch input:checked + .slider:before {
+.gamfi-previous-section .form-switch input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -2949,7 +2949,7 @@ body .modal-backdrop {
     display: inline-block;
 }
 
-.gamfi-calendar-list .calender-date ul li + li {
+.gamfi-calendar-list .calender-date ul li+li {
     margin-left: 5px;
 }
 
@@ -2961,7 +2961,7 @@ body .modal-backdrop {
     margin-left: 0;
 }
 
-.gamfi-calendar-list .calender-date > ul > li {
+.gamfi-calendar-list .calender-date>ul>li {
     max-width: 34px;
 }
 
@@ -2981,7 +2981,9 @@ body .modal-backdrop {
 }
 
 .leaderboard-table-list tr th,
-.leaderboard-table-list tr td {
+.leaderboard-table-list tr td,
+.leaderboard-table-list .leaderboard-item span
+ {
     width: 20%;
     padding: 15px 25px;
     margin-bottom: 10px;
@@ -2989,19 +2991,23 @@ body .modal-backdrop {
 }
 
 .leaderboard-table-list tr th:last-child,
-.leaderboard-table-list tr td:last-child {
+.leaderboard-table-list tr td:last-child,
+.leaderboard-table-list .leaderboard-item span:last-child{
     text-align: right;
 }
 
 .leaderboard-table-list tr th:nth-child(3),
-.leaderboard-table-list tr td:nth-child(3) {
+.leaderboard-table-list tr td:nth-child(3),
+.leaderboard-table-list .leaderboard-item span:nth-child(3) {
     width: 30%;
 }
 
 .leaderboard-table-list tr th:nth-child(1),
 .leaderboard-table-list tr td:nth-child(1),
+.leaderboard-table-list .leaderboard-item span:nth-child(1),
 .leaderboard-table-list tr th:nth-child(4),
-.leaderboard-table-list tr td:nth-child(4) {
+.leaderboard-table-list tr td:nth-child(4),
+.leaderboard-table-list .leaderboard-item span:nth-child(4) {
     width: 15%;
 }
 
@@ -3014,7 +3020,7 @@ body .modal-backdrop {
     padding-bottom: 5px;
 }
 
-.leaderboard-table-list tr td {
+.leaderboard-table-list tr td, .leaderboard-table-list .leaderboard-item span {
     background: #1a1b30;
     color: #fff;
 }
@@ -3392,16 +3398,16 @@ body .modal-backdrop {
     -webkit-transition: background 0.25s linear;
 }
 
-.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ .check {
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked~.check {
     border: 2px solid #568416;
 }
 
-.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ .check::before {
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked~.check::before {
     background: #a3ff12;
 }
 
-.gamfi-form-content .address-form .input-list input[type="radio"]:checked + h5,
-.gamfi-form-content .address-form .input-list input[type="radio"]:checked ~ label {
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked+h5,
+.gamfi-form-content .address-form .input-list input[type="radio"]:checked~label {
     color: #fff;
 }
 
@@ -3427,8 +3433,8 @@ body .modal-backdrop {
     text-transform: uppercase;
 }
 
-.gamfi-form-content .address-form .input-button input:focus ~ label,
-.gamfi-form-content .address-form .input-button input:valid ~ label {
+.gamfi-form-content .address-form .input-button input:focus~label,
+.gamfi-form-content .address-form .input-button input:valid~label {
     color: #fff;
 }
 
@@ -3911,6 +3917,7 @@ section.loader_first {
     justify-content: flex-end;
     height: 100%;
 }
+
 .Gamfi_Header_contentright h2 {
     font-family: Russo One;
     font-style: normal;
@@ -3921,11 +3928,13 @@ section.loader_first {
     margin-bottom: 0px;
     color: #FFFFFF;
 }
+
 .Gamfi_Header_ProgressBar .progress-bar-striped {
     background-image: linear-gradient(72deg, rgba(0, 0, 0, .20) 50%, transparent 56%, transparent 84%, rgba(0, 0, 0, .20) 2%, rgba(0, 0, 0, .20) 90%, transparent 121%, transparent);
     background-size: 1rem 1rem;
     width: 33.33333%;
 }
+
 .Gamfi_Header_ProgressBar .progress {
     background: rgba(255, 255, 255, 0.15);
     height: 12px;
@@ -3934,9 +3943,11 @@ section.loader_first {
     margin-left: 19px;
     overflow: hidden;
 }
+
 .Gamfi_Header_ProgressBar .progress-bar {
     background-color: #A3FF12;
 }
+
 .kycFormSect {
     padding-top: 56px;
     background: #090A1A;
@@ -3945,6 +3956,7 @@ section.loader_first {
 }
 
 .kycForm {}
+
 .kycForm h3 {
     font-family: Russo One;
     font-style: normal;
@@ -3955,6 +3967,7 @@ section.loader_first {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .kycForm p {
     font-family: Inter;
     font-style: normal;
@@ -3964,6 +3977,7 @@ section.loader_first {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 18px;
 }
+
 .kycCountryDropbox {
     display: flex;
     align-items: center;
@@ -3979,6 +3993,7 @@ section.loader_first {
     cursor: pointer;
     margin-top: 17px;
 }
+
 .kycCountryDropbox::after {
     content: "\e901";
     position: absolute;
@@ -3988,7 +4003,9 @@ section.loader_first {
     font-family: "icomoon";
     font-size: 7px;
 }
+
 .kycCountryDropbox span {}
+
 .kycCountryDropbox h4 {
     font-family: Inter;
     font-style: normal;
@@ -3999,15 +4016,18 @@ section.loader_first {
     margin-bottom: 0px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .Gamfi_Container {
     max-width: 1210px;
     padding: 0px 20px;
     width: 100%;
     margin: 0px auto;
 }
-.KycRadioSect{
+
+.KycRadioSect {
     padding-bottom: 10px;
 }
+
 .KycRadioBtn {
     display: flex;
     align-items: center;
@@ -4019,13 +4039,16 @@ section.loader_first {
     padding: 8px 20px;
     margin-bottom: 25px;
 }
+
 .KycRadioBtn .Kycicon {
     opacity: 0.3;
 }
+
 .KycRadioBtn.active .Kycicon,
 .KycRadioBtn:hover .Kycicon {
     opacity: 1;
 }
+
 .KycRadioBtn .container {
     display: block;
     position: relative;
@@ -4045,6 +4068,7 @@ section.loader_first {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .KycRadioBtn.active .container,
 .KycRadioBtn:hover .container {
     color: #ffffff;
@@ -4055,6 +4079,7 @@ section.loader_first {
     opacity: 0;
     cursor: pointer;
 }
+
 .KycRadioBtn .checkmark {
     position: absolute;
     top: 13px;
@@ -4066,22 +4091,27 @@ section.loader_first {
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
 }
-.KycRadioBtn .container:hover input ~ .checkmark {
+
+.KycRadioBtn .container:hover input~.checkmark {
     opacity: 0.8;
 }
-.KycRadioBtn .container input:checked ~ .checkmark {
+
+.KycRadioBtn .container input:checked~.checkmark {
     background-color: #6D4AFE;
     ;
     border: none;
 }
+
 .KycRadioBtn .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-.KycRadioBtn .container input:checked ~ .checkmark:after {
+
+.KycRadioBtn .container input:checked~.checkmark:after {
     display: block;
 }
+
 .KycRadioBtn .container .checkmark:after {
     left: 7px;
     top: 3px;
@@ -4113,15 +4143,18 @@ section.loader_first {
     border: none;
     outline: none;
 }
+
 .kycQrcodeSect {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
 }
+
 .kycQrcode_content {
     max-width: 300px;
     width: 100%;
 }
+
 .kycQrcode_content h2 {
     font-family: Russo One;
     font-style: normal;
@@ -4132,6 +4165,7 @@ section.loader_first {
     color: #FFFFFF;
     margin-bottom: 18px;
 }
+
 .kycQrcodeImg {
     height: 300px;
     width: 300px;
@@ -4142,9 +4176,11 @@ section.loader_first {
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
 }
+
 .kycCountryDropdownSect {
     position: relative;
 }
+
 .kycCountryDropList {
     position: absolute;
     width: 100%;
@@ -4153,12 +4189,14 @@ section.loader_first {
     z-index: 1;
     display: none;
 }
+
 .kycCountryDropList ul {
     background: rgba(30, 31, 53, 1);
     max-width: 570px;
     width: 100%;
     box-shadow: 4px;
 }
+
 .kycCountryDropList ul li {
     font-family: Inter;
     font-style: normal;
@@ -4173,6 +4211,7 @@ section.loader_first {
     justify-content: flex-start;
     cursor: pointer;
 }
+
 .kycCountryDropList ul li:hover {
     color: #ffffff;
 }
@@ -4292,17 +4331,21 @@ section.loader_first {
 Kyc Upload Docs
 ----------------------*/
 .kycForm .UploadDocSect {}
-.kycForm .UploadDocSect ul{
+
+.kycForm .UploadDocSect ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;width: 100%;
+    margin-bottom: 24px;
+    width: 100%;
     max-width: 570px;
 }
-.kycForm .UploadDocSect ul li{
+
+.kycForm .UploadDocSect ul li {
     text-align: center;
     width: 32%;
 }
+
 .kycForm .UploadDocSect ul li h4 {
     font-family: Inter;
     font-style: normal;
@@ -4317,6 +4360,7 @@ Kyc Upload Docs
     width: 100%;
     margin-left: 0px;
 }
+
 .kycForm .UploadDocSect h3 {
     font-family: Russo One;
     font-style: normal;
@@ -4327,7 +4371,8 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.kycForm .UploadBtnBg{
+
+.kycForm .UploadBtnBg {
     height: 175px;
     width: 100%;
     display: flex;
@@ -4335,11 +4380,13 @@ Kyc Upload Docs
     justify-content: center;
     background: rgba(30, 31, 53, 0.8);
 }
+
 .kycForm .UploadDocSect .upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
+
 .kycForm .UploadDocSect .upload-btn-wrapper span {
     background: transparent;
     border: 2px dashed rgba(255, 255, 255, 0.15);
@@ -4350,12 +4397,13 @@ Kyc Upload Docs
     height: 75px;
     width: 75px;
 }
+
 .kycForm .UploadDocSect .upload-btn-wrapper input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .UploadDocCheckList {
@@ -4366,7 +4414,9 @@ Kyc Upload Docs
     padding: 16px 30px;
     margin-bottom: 35px;
 }
-.UploadDocCheckList ul{}
+
+.UploadDocCheckList ul {}
+
 .UploadDocCheckList ul li {
     font-family: Inter;
     font-style: normal;
@@ -4379,23 +4429,28 @@ Kyc Upload Docs
     align-items: flex-start;
     justify-content: flex-start;
 }
-.UploadDocCheckList ul li span{
+
+.UploadDocCheckList ul li span {
     filter: grayscale(100%);
     opacity: 0.7;
     margin-right: 14px;
     min-width: 14px;
 }
-.UploadDocCheckList ul li.active{
+
+.UploadDocCheckList ul li.active {
     color: #ffffff;
 }
-.UploadDocCheckList ul li.active span{
+
+.UploadDocCheckList ul li.active span {
     filter: grayscale(0%);
     opacity: 1;
 }
-.NidNumberSect{
+
+.NidNumberSect {
     margin-bottom: 40px;
 }
-.NidNumberSect h3{
+
+.NidNumberSect h3 {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -4405,7 +4460,9 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.NidNumberSect form{}
+
+.NidNumberSect form {}
+
 .NidNumberSect form input {
     width: 100%;
     max-width: 570px;
@@ -4423,24 +4480,29 @@ Kyc Upload Docs
     outline: none;
 }
 
-.kycPersonalinfoForm{}
-.kycPersonalinfoForm form{
+.kycPersonalinfoForm {}
+
+.kycPersonalinfoForm form {
     width: 100%;
     max-width: 571px;
     margin-top: 20px;
 }
-.kycPersonalinfoForm form .InputNameSect{
+
+.kycPersonalinfoForm form .InputNameSect {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.kycPersonalinfoForm form .InputNameSect .FirstNameFild{
+
+.kycPersonalinfoForm form .InputNameSect .FirstNameFild {
     width: 48%;
 }
-.kycPersonalinfoForm form .InputNameSect .LastNameFild{
+
+.kycPersonalinfoForm form .InputNameSect .LastNameFild {
     width: 48%;
 }
+
 .kycPersonalinfoForm form lable {
     font-family: Russo One;
     font-style: normal;
@@ -4450,6 +4512,7 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .kycPersonalinfoForm form input {
     height: 60px;
     width: 100%;
@@ -4466,37 +4529,43 @@ Kyc Upload Docs
     margin-bottom: 23px;
 }
 
-.kycPersonalinfoForm form .InputAddressSect{
+.kycPersonalinfoForm form .InputAddressSect {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.kycPersonalinfoForm form .InputAddressSect .Address1Fild{
+
+.kycPersonalinfoForm form .InputAddressSect .Address1Fild {
     width: 48%;
 }
-.kycPersonalinfoForm form .InputAddressSect .Address2Fild{
+
+.kycPersonalinfoForm form .InputAddressSect .Address2Fild {
     width: 48%;
 }
-.kycPersonalinfoForm form .InputCitySect{
+
+.kycPersonalinfoForm form .InputCitySect {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.kycPersonalinfoForm form .InputCitySect .CityFild{
+
+.kycPersonalinfoForm form .InputCitySect .CityFild {
     width: 48%;
 }
-.kycPersonalinfoForm form .InputCitySect .PostCodeFild{
+
+.kycPersonalinfoForm form .InputCitySect .PostCodeFild {
     width: 48%;
 }
 
 
-.KYC_TramsAndCondetionSect{
+.KYC_TramsAndCondetionSect {
     position: relative;
     margin-bottom: 28px;
     margin-top: 7px;
 }
+
 .KYC_TramsAndCondetionSect label {
     font-family: Inter;
     font-style: normal;
@@ -4506,6 +4575,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-left: 14px;
 }
+
 .KYC_TramsAndCondetionSect label a {
     font-family: Inter;
     font-style: normal;
@@ -4514,12 +4584,14 @@ Kyc Upload Docs
     line-height: 158%;
     color: #6D4AFE;
 }
+
 .KYC_TramsAndCondetionSect .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     display: none;
 }
+
 .KYC_TramsAndCondetionSect .checkmark {
     position: absolute;
     top: 4px;
@@ -4531,22 +4603,27 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
 }
-.KYC_TramsAndCondetionSect .container:hover input ~ .checkmark {
+
+.KYC_TramsAndCondetionSect .container:hover input~.checkmark {
     opacity: 0.8;
 }
-.KYC_TramsAndCondetionSect .container input:checked ~ .checkmark {
+
+.KYC_TramsAndCondetionSect .container input:checked~.checkmark {
     background-color: #6D4AFE;
     ;
     border: none;
 }
+
 .KYC_TramsAndCondetionSect .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-.KYC_TramsAndCondetionSect .container input:checked ~ .checkmark:after {
+
+.KYC_TramsAndCondetionSect .container input:checked~.checkmark:after {
     display: block;
 }
+
 .KYC_TramsAndCondetionSect .container .checkmark:after {
     left: 7px;
     top: 3px;
@@ -4559,13 +4636,14 @@ Kyc Upload Docs
     transform: rotate(45deg);
 }
 
-.KycYourDocumentsSect{
+.KycYourDocumentsSect {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     flex-direction: column;
 }
-.KycYourDocumentsContent{
+
+.KycYourDocumentsContent {
     text-align: left;
     max-width: 300px;
     width: 100%;
@@ -4580,15 +4658,18 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.KycYourDocumentsContent ul{
+
+.KycYourDocumentsContent ul {
     background: rgba(30, 31, 53, 0.8);
     padding: 16px 30px;
 }
-.KycYourDocumentsContent ul li{
+
+.KycYourDocumentsContent ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .KycYourDocumentsContent ul li p {
     font-family: Inter;
     font-style: normal;
@@ -4598,12 +4679,14 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0px;
 }
-.KycYourDocumentsContent ul li p span{
+
+.KycYourDocumentsContent ul li p span {
     margin-right: 14px;
 }
-.KycYourDocumentsContent ul li span.Downloadicon{}
 
-.HelpCenterBtn a{
+.KycYourDocumentsContent ul li span.Downloadicon {}
+
+.HelpCenterBtn a {
     width: 170px;
     height: 50px;
     background: rgba(255, 255, 255, 0.1);
@@ -4619,24 +4702,30 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
-.GetinTouchForm{}
-.GetinTouchForm form{
+
+.GetinTouchForm {}
+
+.GetinTouchForm form {
     width: 100%;
     max-width: 571px;
     margin-top: 20px;
 }
-.GetinTouchForm form .InputNameSect{
+
+.GetinTouchForm form .InputNameSect {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.GetinTouchForm form .InputNameSect .FirstNameFild{
+
+.GetinTouchForm form .InputNameSect .FirstNameFild {
     width: 48%;
 }
-.GetinTouchForm form .InputNameSect .LastNameFild{
+
+.GetinTouchForm form .InputNameSect .LastNameFild {
     width: 48%;
 }
+
 .GetinTouchForm form lable {
     font-family: Russo One;
     font-style: normal;
@@ -4646,6 +4735,7 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .GetinTouchForm form input {
     height: 60px;
     width: 100%;
@@ -4661,6 +4751,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 23px;
 }
+
 .GetinTouchForm form textarea {
     height: 130px;
     width: 100%;
@@ -4678,15 +4769,17 @@ Kyc Upload Docs
     resize: none;
 }
 
-.black-shape-bigCustom{
+.black-shape-bigCustom {
     position: relative;
     overflow: hidden;
 }
+
 .black-shape-bigCustom img,
-.black-shape-bigCustom .btn-text{
+.black-shape-bigCustom .btn-text {
     position: relative;
     z-index: 9;
 }
+
 .black-shape-bigCustom .hover-shape1,
 .black-shape-bigCustom .hover-shape2,
 .black-shape-bigCustom .hover-shape3 {
@@ -4699,20 +4792,24 @@ Kyc Upload Docs
     transform: rotate(22deg);
     transition: 0.8s;
 }
-.black-shape-bigCustom .hover-shape3{
+
+.black-shape-bigCustom .hover-shape3 {
     width: 11px;
 }
-.black-shape-bigCustom:hover .hover-shape1{
+
+.black-shape-bigCustom:hover .hover-shape1 {
     left: 44.8%;
 }
+
 .black-shape-bigCustom:hover .hover-shape2 {
     left: 46.8%;
 }
-.black-shape-bigCustom:hover .hover-shape3{
+
+.black-shape-bigCustom:hover .hover-shape3 {
     left: 48.8%;
 }
 
-.GetInTouch_Contuct_Sect{
+.GetInTouch_Contuct_Sect {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -4721,9 +4818,11 @@ Kyc Upload Docs
     margin-left: auto;
     padding-left: 30px;
 }
-.GetInTouch_Contuct_Content{
+
+.GetInTouch_Contuct_Content {
     text-align: left;
 }
+
 .GetInTouch_Contuct_Content h2 {
     font-family: Russo One;
     font-style: normal;
@@ -4733,18 +4832,22 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.cotactInfoContent{
+
+.cotactInfoContent {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 15px;
 }
-.cotactInfoContent .cotactInfoSymbol{
+
+.cotactInfoContent .cotactInfoSymbol {
     margin-top: 9px;
 }
-.cotactInfoContent .cotactInfoText{
+
+.cotactInfoContent .cotactInfoText {
     margin-left: 22px;
 }
+
 .cotactInfoContent .cotactInfoText h5 {
     font-family: Russo One;
     font-style: normal;
@@ -4755,6 +4858,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .cotactInfoContent .cotactInfoText h6 {
     font-family: Inter;
     font-style: normal;
@@ -4764,6 +4868,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0px;
 }
+
 .cotactInfoContent .cotactInfoText a {
     font-family: Inter;
     font-style: normal;
@@ -4776,11 +4881,12 @@ Kyc Upload Docs
 /*------------------------
     SignUp-SignIn
 ------------------------*/
-.SignUp_SignIn_Form_Sect{
+.SignUp_SignIn_Form_Sect {
     background: #090A1A;
     position: relative;
     padding: 96px 0px 0px 0px;
 }
+
 .SignUp_SignIn_Form_SectBG {
     background: url(../images/kycimg/signUpBgimage.svg);
     background-position: center center;
@@ -4792,7 +4898,8 @@ Kyc Upload Docs
     z-index: 0;
     top: 0px;
 }
-.SignUp_SignIn_Form_Content{
+
+.SignUp_SignIn_Form_Content {
     position: relative;
     z-index: 2;
     width: 100%;
@@ -4800,7 +4907,8 @@ Kyc Upload Docs
     max-width: 690px;
     margin: auto;
 }
-.SignUp_SignIn_Form{
+
+.SignUp_SignIn_Form {
     background: rgba(30, 31, 53, 0.8);
     max-width: 690px;
     width: 100%;
@@ -4809,7 +4917,8 @@ Kyc Upload Docs
     position: relative;
     z-index: 2;
 }
-.singUpformShadow{
+
+.singUpformShadow {
     background: url(../images/kycimg/BlurShadow.svg);
     background-position: center center;
     background-size: cover;
@@ -4821,6 +4930,7 @@ Kyc Upload Docs
     bottom: 5px;
     z-index: 1;
 }
+
 .SignUp_SignIn_Form h2 {
     font-family: Russo One;
     font-style: normal;
@@ -4832,6 +4942,7 @@ Kyc Upload Docs
     margin-bottom: 23px;
     color: #FFFFFF;
 }
+
 .SignUp_SignIn_Form h3 {
     font-family: Inter;
     font-style: normal;
@@ -4845,6 +4956,7 @@ Kyc Upload Docs
     margin: auto;
     margin-bottom: 29px;
 }
+
 .SignUp_SignIn_Form.signInForm h3 {
     font-family: Inter;
     font-style: normal;
@@ -4858,6 +4970,7 @@ Kyc Upload Docs
     margin: auto;
     margin-bottom: 29px;
 }
+
 .SignUp_SignIn_Form.ForgotPassForm h3 {
     font-family: Inter;
     font-style: normal;
@@ -4871,8 +4984,11 @@ Kyc Upload Docs
     margin: auto;
     margin-bottom: 29px;
 }
-.SignUp_SignIn_Form{}
-.SignUp_SignIn_Form form{}
+
+.SignUp_SignIn_Form {}
+
+.SignUp_SignIn_Form form {}
+
 .SignUp_SignIn_Form form lable {
     font-family: Russo One;
     font-style: normal;
@@ -4883,7 +4999,8 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 5px;
 }
-.SignUp_SignIn_Form form input{
+
+.SignUp_SignIn_Form form input {
     width: 100%;
     margin-bottom: 23px;
     background: transparent;
@@ -4899,6 +5016,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.5);
     padding: 8px 21px;
 }
+
 .SignUp_SignIn_Form form button {
     width: 100%;
     height: 60px;
@@ -4926,6 +5044,7 @@ Kyc Upload Docs
     margin-top: 31px;
     margin-bottom: 0px;
 }
+
 .SignUp_SignIn_Form h4 a {
     font-family: Inter;
     font-style: normal;
@@ -4936,13 +5055,14 @@ Kyc Upload Docs
     color: #6D4AFE;
 }
 
-.forgetPassBtnSect{
+.forgetPassBtnSect {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 28px;
     margin-top: 10px;
 }
+
 .forgetPassBtnSect .ForgetPass a {
     font-family: Inter;
     font-style: normal;
@@ -4953,14 +5073,15 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
 }
 
-.SignUp_SignIn_Form.ForgotPassForm .EmailFild{
+.SignUp_SignIn_Form.ForgotPassForm .EmailFild {
     margin-bottom: 17px;
 }
 
 /*------------------------
     RoadMap
 ------------------------*/
-.RoadMapDuration{}
+.RoadMapDuration {}
+
 .RoadMapDuration h6 {
     font-family: Russo One;
     font-style: normal;
@@ -4970,13 +5091,15 @@ Kyc Upload Docs
     text-align: right;
     color: rgba(255, 255, 255, 0.7);
 }
-.gamfiRoadMap   {
+
+.gamfiRoadMap {
     padding-bottom: 120px;
     padding-top: 40px;
     background: #090A1A;
     position: relative;
 }
-.RoadMapSect{
+
+.RoadMapSect {
     background: #090A1A;
     position: relative;
     display: flex;
@@ -4989,41 +5112,47 @@ Kyc Upload Docs
     background-position: center center;
     height: 1584px;
 }
-.RoadMapContainer{
+
+.RoadMapContainer {
     position: relative;
     z-index: 1
 }
-.roadMapDivider{
+
+.roadMapDivider {
     position: absolute;
     top: 0px;
     z-index: 0;
     background: transparent;
 }
-.RoadMapSect .roadMapDivider img{
+
+.RoadMapSect .roadMapDivider img {
     height: 100%;
 }
-.RodmapLeftConetent{
+
+.RodmapLeftConetent {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     padding-right: 30px;
 }
-.RodmapRightConetent{
+
+.RodmapRightConetent {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     flex-direction: column;
     padding-left: 30px;
 }
-.RodmapConetentbox{
+
+.RodmapConetentbox {
     max-width: 470px;
     width: 100%;
     height: 100%;
     padding: 35px 39px 26px 39px;
 }
 
-.RodmapConetentbox1{
+.RodmapConetentbox1 {
     background: url(../images/kycimg/roadMapcpntentBg1.svg);
     min-height: 253px;
     margin-top: 60px;
@@ -5031,7 +5160,8 @@ Kyc Upload Docs
     background-size: cover;
     background-position: center center;
 }
-.RodmapConetentbox2{
+
+.RodmapConetentbox2 {
     background: url(../images/kycimg/roadMapcpntentBg5.svg);
     min-height: 216px;
     margin-top: 190px;
@@ -5039,21 +5169,24 @@ Kyc Upload Docs
     background-size: cover;
     background-position: center center;
 }
-.RodmapConetentbox3{
+
+.RodmapConetentbox3 {
     background: url(../images/kycimg/roadMapcpntentBg2.svg);
     min-height: 216px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.RodmapConetentbox4{
+
+.RodmapConetentbox4 {
     background: url(../images/kycimg/roadMapcpntentBg6.svg);
     min-height: 253px;
     margin-top: 100px;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.RodmapConetentbox5{
+
+.RodmapConetentbox5 {
     background: url(../images/kycimg/roadMapcpntentBg3.svg);
     min-height: 290px;
     margin-top: 123px;
@@ -5065,7 +5198,8 @@ Kyc Upload Docs
     justify-content: flex-start;
     flex-direction: column;
 }
-.RodmapConetentbox6{
+
+.RodmapConetentbox6 {
     background: url(../images/kycimg/roadMapcpntentBg7.svg);
     min-height: 290px;
     margin-top: 253px;
@@ -5077,7 +5211,8 @@ Kyc Upload Docs
     justify-content: flex-start;
     flex-direction: column;
 }
-.RodmapConetentbox7{
+
+.RodmapConetentbox7 {
     background: url(../images/kycimg/roadMapcpntentBg4.svg);
     min-height: 216px;
     background-repeat: no-repeat;
@@ -5088,6 +5223,7 @@ Kyc Upload Docs
     justify-content: flex-start;
     flex-direction: column;
 }
+
 .RodmapConetentbox h3 {
     font-family: Russo One;
     font-style: normal;
@@ -5097,12 +5233,13 @@ Kyc Upload Docs
     color: #A3FF12;
     margin-bottom: 10px;
 }
-.RodmapConetentbox.disable  h3{
+
+.RodmapConetentbox.disable h3 {
     color: rgba(255, 255, 255, 0.7);
 }
-.RodmapConetentbox ul{
-    
-}
+
+.RodmapConetentbox ul {}
+
 .RodmapConetentbox ul li {
     font-family: Inter;
     font-style: normal;
@@ -5115,11 +5252,12 @@ Kyc Upload Docs
     align-items: flex-start;
     justify-content: flex-start;
 }
-.RodmapConetentbox ul li span{
+
+.RodmapConetentbox ul li span {
     margin-right: 15px;
 }
 
-.connectWalletBtnforMobile{
+.connectWalletBtnforMobile {
     width: 100%;
     background: #6D4AFE;
     height: 40px;
@@ -5127,20 +5265,21 @@ Kyc Upload Docs
     display: none;
 }
 
-.connectWalletBtnforMobile .btn-text{
+.connectWalletBtnforMobile .btn-text {
     color: #ffffff;
     padding-left: 10px;
 }
 
 
-.Roadmap2021, .Roadmap2022{
+.Roadmap2021, .Roadmap2022 {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.roadmap2021Divider{
+
+.roadmap2021Divider {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5153,6 +5292,7 @@ Kyc Upload Docs
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .roadmap2021Divider span {
     transform: rotate(270deg);
     font-family: Russo One;
@@ -5163,6 +5303,7 @@ Kyc Upload Docs
     text-align: center;
     color: rgba(255, 255, 255, 0.2);
 }
+
 .roadmap2022Divider {
     display: flex;
     align-items: center;
@@ -5176,6 +5317,7 @@ Kyc Upload Docs
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .roadmap2022Divider span {
     transform: rotate(270deg);
     font-family: Russo One;
@@ -5191,40 +5333,47 @@ Kyc Upload Docs
 
 
 
-.gamfi_header_V2{
+.gamfi_header_V2 {
     min-height: 800px;
     background: url(../images/bg/bgV2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
-.v2_MenuLogoArea{
+
+.v2_MenuLogoArea {
     max-width: 980px;
     width: 100%;
     padding-right: 28px;
 }
-.v2_white_btn{
+
+.v2_white_btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li .sub-menu{
+
+.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li .sub-menu {
     left: -100%;
 }
-.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li.menu-item-has-children:before{
+
+.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li.menu-item-has-children:before {
     transform: rotate(90deg);
 }
-.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li.menu-item-has-children:hover:before{
+
+.gamfi-header-section .header-menu.header-menuV2 ul li ul.sub-menu li.menu-item-has-children:hover:before {
     transform: rotate(180deg);
 }
 
-.gamfiV2_HeroSect{
+.gamfiV2_HeroSect {
     padding-top: 80px;
 }
-.gamfi_V2_hero_Left{
+
+.gamfi_V2_hero_Left {
     margin-top: 136px;
 }
+
 .gamfi_V2_hero_Left h2 {
     font-family: Russo One;
     font-style: normal;
@@ -5235,9 +5384,11 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .gamfi_V2_hero_Left h2 span {
     color: #F82552;
 }
+
 .gamfi_V2_hero_Left p {
     font-family: Inter;
     font-style: normal;
@@ -5248,14 +5399,15 @@ Kyc Upload Docs
     margin-top: 22px;
 }
 
-.gamfi_V2_hero_Btns{
+.gamfi_V2_hero_Btns {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 106px;
 }
-.gamfi_V2_hero_Btns .VIEW_Projects_Btn{
+
+.gamfi_V2_hero_Btns .VIEW_Projects_Btn {
     width: 200px;
     height: 60px;
     background: #A3FF12;
@@ -5265,6 +5417,7 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
+
 .gamfi_V2_hero_Btns .VIEW_Projects_Btn .btn-text {
     font-family: Russo One;
     font-style: normal;
@@ -5275,7 +5428,8 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #090A1A;
 }
-.gamfi_V2_hero_Btns .Apply_Project_Btn{
+
+.gamfi_V2_hero_Btns .Apply_Project_Btn {
     width: 200px;
     height: 60px;
     margin-left: 15px;
@@ -5286,6 +5440,7 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
+
 .gamfi_V2_hero_Btns .Apply_Project_Btn .btn-text {
     font-family: Russo One;
     font-style: normal;
@@ -5296,7 +5451,9 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.buyTokenlogos{}
+
+.buyTokenlogos {}
+
 .buyTokenlogos h6 {
     font-family: Russo One;
     font-style: normal;
@@ -5307,17 +5464,19 @@ Kyc Upload Docs
     margin-bottom: 26px;
     color: #FFFFFF;
 }
-.buyTokenlogos ul{
+
+.buyTokenlogos ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.buyTokenlogos ul li{
+
+.buyTokenlogos ul li {
     margin-right: 32px;
 }
 
 
-.gamfi_V2_hero_right{
+.gamfi_V2_hero_right {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -5327,12 +5486,14 @@ Kyc Upload Docs
     height: 100%;
     width: 100%;
 }
-.gamfi_V2_heroRocket{
+
+.gamfi_V2_heroRocket {
     position: relative;
     margin-top: 70px;
-    
+
 }
-.gamfi_V2_heroRocket .RedRocketImg{
+
+.gamfi_V2_heroRocket .RedRocketImg {
     position: relative;
     animation-name: RocketLaunch;
     animation: RocketLaunch 5s infinite;
@@ -5350,88 +5511,134 @@ Kyc Upload Docs
         bottom: 30px;
     }
 }
+
 .gamfi_V2_heroRocket .rocketshadow1 {
-    position: absolute; 
+    position: absolute;
     top: 15%;
     left: 40%;
     z-index: 2;
 }
+
 .gamfi_V2_heroRocket .rocketshadow2 {
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 25%;
     z-index: 2;
 }
+
 .gamfi_V2_heroRocket .rocketshadow3 {
-    position: absolute; 
+    position: absolute;
     top: 62%;
     right: 29%;
     z-index: 2;
 }
+
 .gamfi_V2_heroRocket .rocketshadow4 {
-    position: absolute; 
+    position: absolute;
     top: 60%;
     left: 35%;
     z-index: 0;
 }
+
 .gamfi_V2_heroRocket .rocketshadow5 {
-    position: absolute; 
+    position: absolute;
     top: 40%;
     right: 33.5%;
     z-index: 0;
 }
-.gamfi_V2_heroRocket .rocketshadow1 img{
+
+.gamfi_V2_heroRocket .rocketshadow1 img {
     position: relative;
     animation-name: rocketshadow1;
     animation: rocketshadow1 0.95s infinite;
 }
+
 @keyframes rocketshadow1 {
-  from {top: -30px; opacity: 1}
-  to {top: 80px; opacity: 0}
+    from {
+        top: -30px;
+        opacity: 1
+    }
+
+    to {
+        top: 80px;
+        opacity: 0
+    }
 }
 
-.gamfi_V2_heroRocket .rocketshadow2 img{
+.gamfi_V2_heroRocket .rocketshadow2 img {
     position: relative;
     animation-name: rocketshadow2;
     animation: rocketshadow2 0.95s infinite;
 }
+
 @keyframes rocketshadow2 {
-  from {top: -30px; opacity: 1}
-  to {top: 80px; opacity: 0}
+    from {
+        top: -30px;
+        opacity: 1
+    }
+
+    to {
+        top: 80px;
+        opacity: 0
+    }
 }
 
-.gamfi_V2_heroRocket .rocketshadow3 img{
+.gamfi_V2_heroRocket .rocketshadow3 img {
     position: relative;
     animation-name: rocketshadow3;
     animation: rocketshadow3 1s infinite;
 }
+
 @keyframes rocketshadow3 {
-  from {top: -40px; opacity: 1}
-  to {top: 50px; opacity: 0}
+    from {
+        top: -40px;
+        opacity: 1
+    }
+
+    to {
+        top: 50px;
+        opacity: 0
+    }
 }
 
-.gamfi_V2_heroRocket .rocketshadow4 img{
+.gamfi_V2_heroRocket .rocketshadow4 img {
     position: relative;
     animation-name: rocketshadow4;
     animation: rocketshadow4 1.05s infinite;
 }
+
 @keyframes rocketshadow4 {
-  from {top: -30px; opacity: 1}
-  to {top: 80px; opacity: 0}
+    from {
+        top: -30px;
+        opacity: 1
+    }
+
+    to {
+        top: 80px;
+        opacity: 0
+    }
 }
 
-.gamfi_V2_heroRocket .rocketshadow5 img{
+.gamfi_V2_heroRocket .rocketshadow5 img {
     position: relative;
     animation-name: rocketshadow5;
     animation: rocketshadow5 1.05s infinite;
 }
+
 @keyframes rocketshadow5 {
-  from {top: -40px; opacity: 1}
-  to {top: 50px; opacity: 0}
+    from {
+        top: -40px;
+        opacity: 1
+    }
+
+    to {
+        top: 50px;
+        opacity: 0
+    }
 }
 
 
-.Market_CapSect{
+.Market_CapSect {
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
     min-height: 158px;
@@ -5441,7 +5648,8 @@ Kyc Upload Docs
     justify-content: center;
     flex-direction: column;
 }
-.Market_CapSect .redBordergradient{
+
+.Market_CapSect .redBordergradient {
     position: absolute;
     top: -248px;
     left: 248px;
@@ -5450,7 +5658,8 @@ Kyc Upload Docs
     height: 500px;
     transform: rotate(-90deg);
 }
-.Market_CapSect .greenBordergradient{
+
+.Market_CapSect .greenBordergradient {
     position: absolute;
     bottom: -248px;
     right: 248px;
@@ -5459,20 +5668,22 @@ Kyc Upload Docs
     height: 500px;
     transform: rotate(90deg);
 }
-.Market_CapAllContent{
+
+.Market_CapAllContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.Market_CapContent{
+.Market_CapContent {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     width: 25%;
 }
+
 .Market_CapContent h2 {
     font-family: Russo One;
     font-style: normal;
@@ -5482,6 +5693,7 @@ Kyc Upload Docs
     margin-bottom: 0px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .Market_CapContent h3 {
     font-family: Russo One;
     font-style: normal;
@@ -5494,11 +5706,12 @@ Kyc Upload Docs
 }
 
 
-.gamfi-project-section .project-item.project_itemV2{
+.gamfi-project-section .project-item.project_itemV2 {
     position: relative;
     padding-bottom: 89px;
 }
-.social_icons_Sect{
+
+.social_icons_Sect {
     position: absolute;
     background: rgba(255, 255, 255, 0.05);
     height: 50px;
@@ -5507,31 +5720,40 @@ Kyc Upload Docs
     bottom: 0px;
     padding: 15px 30px;
 }
-.social_icons_Sect .social_icon_list{
+
+.social_icons_Sect .social_icon_list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.social_icons_Sect .social_icon_list li{
+
+.social_icons_Sect .social_icon_list li {
     margin-right: 25px;
 }
-.social_icons_Sect .social_icon_list li a{}
-.social_icons_Sect .social_icon_list li a i{
+
+.social_icons_Sect .social_icon_list li a {}
+
+.social_icons_Sect .social_icon_list li a i {
     font-size: 17px;
 }
-.social_icons_Sect .social_icon_list li.medium a i{
+
+.social_icons_Sect .social_icon_list li.medium a i {
     font-size: 15px;
 }
-.gamfi-project-section .project-item .heading-title .price-counter{
+
+.gamfi-project-section .project-item .heading-title .price-counter {
     position: relative;
     margin-bottom: 0px;
 }
-.ProjectPools_Sect .project-item .heading-title .price-counter{
+
+.ProjectPools_Sect .project-item .heading-title .price-counter {
     margin-bottom: 50px;
 }
-.gamfi-project-section .project-item .heading-title .price-counter .timer{
+
+.gamfi-project-section .project-item .heading-title .price-counter .timer {
     margin-bottom: 0px;
 }
+
 .gamfi-project-section .project-item .heading-title .price-counter .timer ul li {
     font-family: Russo One;
     font-style: normal;
@@ -5542,6 +5764,7 @@ Kyc Upload Docs
     margin-right: 10px;
     text-transform: lowercase;
 }
+
 .gamfi-project-section .project-item .heading-title.heading-titleV2 .price-counter:before {
     width: 241px;
     height: 35px;
@@ -5552,15 +5775,18 @@ Kyc Upload Docs
     top: -7px;
 }
 
-.ProjectV2_TabBtns{}
-.ProjectV2_TabBtns ul{
+.ProjectV2_TabBtns {}
+
+.ProjectV2_TabBtns ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.ProjectV2_TabBtns ul li{
+
+.ProjectV2_TabBtns ul li {
     margin-left: 20px;
 }
+
 .ProjectV2_TabBtns ul li button {
     width: 170px;
     height: 50px;
@@ -5568,27 +5794,31 @@ Kyc Upload Docs
     background: transparent;
     outline: none;
 }
-.ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button{
+
+.ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button {
     background: rgba(255, 255, 255, 0.15);
     border: none;
 }
-.ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button{
-    
-}
-.ProjectV2_tabcontent .heading-title{
+
+.ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button {}
+
+.ProjectV2_tabcontent .heading-title {
     margin-bottom: 0px !important;
 }
+
 .ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button.black-shape .hover-shape1, .ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button.hover-shape .hover-shape1 {
     left: 42%;
 }
+
 .ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button.black-shape .hover-shape2, .ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button.hover-shape .hover-shape2 {
     left: 50%;
 }
+
 .ProjectV2_TabBtns ul li.ProjectV2_tablinks.active button.black-shape .hover-shape3 {
     left: 58%;
 }
 
-.ProjectV2_TabBtns ul li button .btn-text{
+.ProjectV2_TabBtns ul li button .btn-text {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -5613,12 +5843,13 @@ Kyc Upload Docs
     padding-top: 115px;
     padding-bottom: 105px;
 }
-.gamfi-project-section.ProjectPools_Sect .container{
+
+.gamfi-project-section.ProjectPools_Sect .container {
     position: relative;
     z-index: 2;
 }
 
-.Key_Points_section .keyPointBg{
+.Key_Points_section .keyPointBg {
     position: absolute;
     background: url(../images/bg/project-bg.png);
     background-repeat: no-repeat;
@@ -5632,32 +5863,36 @@ Kyc Upload Docs
     flex-direction: column;
     z-index: 0;
     top: -650px;
-    
+
 }
-.Key_Points_section .container{
+
+.Key_Points_section .container {
     position: relative;
     z-index: 2;
 }
-.Key_Points_section .keyPointBg .bgStone{
+
+.Key_Points_section .keyPointBg .bgStone {
     position: relative;
     height: 100%;
     width: 100%;
 }
-.Key_Points_section .keyPointBg span.stone1{
+
+.Key_Points_section .keyPointBg span.stone1 {
     position: absolute;
     top: 31%;
     left: 14%;
     animation-name: stoneFly1;
     animation: stoneFly1 7s infinite;
 }
+
 @keyframes stoneFly1 {
 
     0%,
     100% {
         left: 5%;
     }
-    
-    25%{
+
+    25% {
         top: 32%;
     }
 
@@ -5667,7 +5902,7 @@ Kyc Upload Docs
 }
 
 
-.Key_Points_section .keyPointBg span.stone2{
+.Key_Points_section .keyPointBg span.stone2 {
     position: absolute;
     bottom: 15%;
     left: 5%;
@@ -5681,18 +5916,20 @@ Kyc Upload Docs
     100% {
         bottom: 15%;
     }
-    
+
     50% {
         bottom: 20%;
     }
 }
-.Key_Points_section .keyPointBg span.stone3{
+
+.Key_Points_section .keyPointBg span.stone3 {
     position: absolute;
     bottom: 45%;
     right: 5%;
     animation-name: stoneFly3;
     animation: stoneFly3 4s infinite;
 }
+
 @keyframes stoneFly3 {
 
     0%,
@@ -5705,22 +5942,26 @@ Kyc Upload Docs
     }
 }
 
-.Key_Points_section{
+.Key_Points_section {
     background: #090A1A;
     padding-top: 115px;
     padding-bottom: 105px;
     position: relative;
 }
-.Key_Points_Item_img{
+
+.Key_Points_Item_img {
     min-height: 50px;
 }
-.Key_Points_Item_img img{
+
+.Key_Points_Item_img img {
     min-height: 50px;
 }
-.Key_Points_Item_Text{
+
+.Key_Points_Item_Text {
     width: 100%;
     padding-top: 26px;
 }
+
 .Key_Points_Item_Text h3 {
     font-family: Russo One;
     font-style: normal;
@@ -5731,6 +5972,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     text-transform: capitalize
 }
+
 .Key_Points_Item_Text p {
     max-width: 249px;
     width: 100%;
@@ -5743,22 +5985,24 @@ Kyc Upload Docs
 }
 
 
-.Tier_System_section{
+.Tier_System_section {
     background: #090A1A;
     padding-top: 0px;
     padding-bottom: 105px;
 }
 
-.Tier_System_Headings{
+.Tier_System_Headings {
     margin-bottom: 4px;
 }
+
 .Tier_System_Headings ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0px 26px;
 }
-.Tier_System_Headings ul li{
+
+.Tier_System_Headings ul li {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -5768,31 +6012,36 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
 }
 
-.Tier_System_Headings ul li.tiersHeadings{
+.Tier_System_Headings ul li.tiersHeadings {
     width: 140px;
     margin-right: 81px;
 }
-.Tier_System_Headings ul li.StakingHeadings{
+
+.Tier_System_Headings ul li.StakingHeadings {
     width: 158px;
     margin-right: 46px;
 }
-.Tier_System_Headings ul li.allocationHeadings{
+
+.Tier_System_Headings ul li.allocationHeadings {
     width: 175px;
     margin-right: 84px;
 }
-.Tier_System_Headings ul li.RequirementsHeadings{
+
+.Tier_System_Headings ul li.RequirementsHeadings {
     width: 158px;
     margin-right: 79px;
 }
-.Tier_System_Headings ul li.KYCHeadings{
+
+.Tier_System_Headings ul li.KYCHeadings {
     width: 41px;
     margin-right: 73px;
 }
-.Tier_System_Headings ul li.WeightHeadings{
+
+.Tier_System_Headings ul li.WeightHeadings {
     width: 99px;
 }
 
-.Tier_System_Items{
+.Tier_System_Items {
     min-height: 92px;
     width: 100%;
     background: rgba(30, 31, 53, 0.8);
@@ -5803,19 +6052,22 @@ Kyc Upload Docs
     align-items: center;
     justify-content: flex-start;
 }
+
 .Tier_System_Items:hover {
     background: radial-gradient(circle, rgba(96, 79, 169, 0.58) -7%, #1e1f35 30%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.Tier_System_Items ul{
+
+.Tier_System_Items ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 26px;
 }
-.Tier_System_Items ul li{
+
+.Tier_System_Items ul li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -5830,6 +6082,7 @@ Kyc Upload Docs
     text-transform: none;
     color: #FFFFFF;
 }
+
 .Tier_System_Items ul li strong {
     font-family: Russo One;
     font-style: normal;
@@ -5839,34 +6092,41 @@ Kyc Upload Docs
     color: #FFFFFF;
 }
 
-.Tier_System_Items ul li.tiersItem{
+.Tier_System_Items ul li.tiersItem {
     width: 140px;
     margin-right: 84px;
 }
-.Tier_System_Items ul li.StakingItem{
+
+.Tier_System_Items ul li.StakingItem {
     width: 158px;
     margin-right: 46px;
 }
-.Tier_System_Items ul li.allocationItem{
+
+.Tier_System_Items ul li.allocationItem {
     width: 175px;
     margin-right: 84px;
 }
-.Tier_System_Items ul li.RequirementsItem{
+
+.Tier_System_Items ul li.RequirementsItem {
     width: 158px;
     margin-right: 79px;
 }
-.Tier_System_Items ul li.KYCItem{
+
+.Tier_System_Items ul li.KYCItem {
     width: 41px;
     margin-right: 73px;
 }
-.Tier_System_Items ul li.WeightItem{
+
+.Tier_System_Items ul li.WeightItem {
     width: 99px;
 }
-.Tier_System_Items ul li span{
+
+.Tier_System_Items ul li span {
     min-width: 40px;
     margin-right: 11px;
 }
-.Tier_System_Items ul li h6{}
+
+.Tier_System_Items ul li h6 {}
 
 
 .Tier_System_Items span.bordarShadowRed1 {
@@ -5880,17 +6140,19 @@ Kyc Upload Docs
     transform: rotate(-90deg);
     display: none;
 }
-.Tier_System_Items span.bordarShadowRed2{
+
+.Tier_System_Items span.bordarShadowRed2 {
     background: linear-gradient(180deg, rgba(248, 37, 82, 0.5) 0%, rgba(21, 22, 37, 0) 100%);
     height: 87px;
     width: 5px;
     position: absolute;
     z-index: 4;
-    top:  5px;
+    top: 5px;
     left: 0px;
     display: none;
 }
-.Tier_System_Items span.bordarShadowGreen1{
+
+.Tier_System_Items span.bordarShadowGreen1 {
     background: linear-gradient(180deg, rgba(163, 255, 18, 0.5) 0%, rgba(21, 22, 37, 0) 100%);
     height: 200px;
     width: 5px;
@@ -5901,55 +6163,61 @@ Kyc Upload Docs
     transform: rotate(90deg);
     display: none;
 }
-.Tier_System_Items span.bordarShadowGreen2{
+
+.Tier_System_Items span.bordarShadowGreen2 {
     background: linear-gradient(180deg, rgba(163, 255, 18, 0.5) 0%, rgba(21, 22, 37, 0) 100%);
     height: 85px;
     width: 5px;
     position: absolute;
     z-index: 4;
-    bottom:  5px;
+    bottom: 5px;
     right: 0px;
     transform: rotate(180deg);
     display: none;
 }
 
-.Tier_System_Items .bgShape{
+.Tier_System_Items .bgShape {
     position: absolute;
     height: 100%;
     display: none;
     left: 45%;
 }
-.Tier_System_Items .bgShape img{
+
+.Tier_System_Items .bgShape img {
     height: 100%;
 }
 
 .Tier_System_Items:hover span.bordarShadowRed1,
-.Tier_System_Items:hover span.bordarShadowRed2{
+.Tier_System_Items:hover span.bordarShadowRed2 {
     display: block;
 }
 
 .Tier_System_Items:hover span.bordarShadowGreen1,
-.Tier_System_Items:hover span.bordarShadowGreen2{
-    display: block;
-}
-.Tier_System_Items:hover .bgShape{
+.Tier_System_Items:hover span.bordarShadowGreen2 {
     display: block;
 }
 
-.TokenomicsContents{
+.Tier_System_Items:hover .bgShape {
+    display: block;
+}
+
+.TokenomicsContents {
     margin-top: 48px;
 }
-.Tokenomics_section{
+
+.Tokenomics_section {
     background: #090A1A;
     padding-top: 0px;
     padding-bottom: 105px;
 }
-.TokenomicsContentsLeft{
+
+.TokenomicsContentsLeft {
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
     flex-direction: column;
 }
+
 .TokenomicsContentsLeft h3 {
     font-family: Russo One;
     font-style: normal;
@@ -5959,28 +6227,32 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
-.TokenomicsListSect{
+
+.TokenomicsListSect {
     margin-top: 28px;
 }
 
-.TokenomicsListSect{
+.TokenomicsListSect {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.TokenomicsListSect ul{
+
+.TokenomicsListSect ul {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     margin-right: 127px;
 }
-.TokenomicsListSect ul li{
+
+.TokenomicsListSect ul li {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 43px;
 }
+
 .TokenomicsList_text h4 {
     font-family: Inter;
     font-style: normal;
@@ -5990,6 +6262,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0px;
 }
+
 .TokenomicsList_text h5 {
     font-family: Russo One;
     font-style: normal;
@@ -6000,48 +6273,58 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
-.TokenomicsList_text h5 span.counter{
-        height: 12px;
-        width: 12px;
-        min-width: 12px;
-        margin-right: 0px;
-        margin-top: 0px;
+
+.TokenomicsList_text h5 span.counter {
+    height: 12px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 0px;
+    margin-top: 0px;
 }
 
-.TokenomicsListSect ul li span{
+.TokenomicsListSect ul li span {
     height: 12px;
     width: 12px;
     min-width: 12px;
     margin-right: 19px;
     margin-top: 8px;
 }
-.TokenomicsListSect ul li span.Farming_Pool{
+
+.TokenomicsListSect ul li span.Farming_Pool {
     background: #A3FF12;
 }
-.TokenomicsListSect ul li span.Staking{
+
+.TokenomicsListSect ul li span.Staking {
     background: #841183;
 }
-.TokenomicsListSect ul li span.Ecosystem{
+
+.TokenomicsListSect ul li span.Ecosystem {
     background: #0B58FE;
 }
-.TokenomicsListSect ul li span.Advisors{
+
+.TokenomicsListSect ul li span.Advisors {
     background: #01CC9B;
 }
-.TokenomicsListSect ul li span.Private_Sale{
+
+.TokenomicsListSect ul li span.Private_Sale {
     background: #6D4AFE;
 }
-.TokenomicsListSect ul li span.Liquidity{
+
+.TokenomicsListSect ul li span.Liquidity {
     background: #14A0C0;
 }
-.TokenomicsListSect ul li span.Marketing{
+
+.TokenomicsListSect ul li span.Marketing {
     background: #3BCBFF;
 }
-.TokenomicsListSect ul li span.Advisors{
+
+.TokenomicsListSect ul li span.Advisors {
     background: #F82552;
 }
 
-.TokenomicsContentsright{}
-.TokenomicsContentsright .TokenomicsContentsrightImg{
+.TokenomicsContentsright {}
+
+.TokenomicsContentsright .TokenomicsContentsrightImg {
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
     max-width: 570px;
@@ -6054,14 +6337,16 @@ Kyc Upload Docs
 }
 
 
-.Multi_Chain_Support_Sect{
+.Multi_Chain_Support_Sect {
     background: #090A1A;
     padding-top: 0px;
     padding-bottom: 105px;
 }
-.Multi_Chain_Support_right_Content{
+
+.Multi_Chain_Support_right_Content {
     margin-top: 32px;
 }
+
 .Multi_Chain_Support_right_Content p {
     font-family: Inter;
     font-style: normal;
@@ -6070,18 +6355,22 @@ Kyc Upload Docs
     line-height: 28px;
     color: rgba(255, 255, 255, 0.7);
 }
-.Multi_Chain_Support_right_list{
+
+.Multi_Chain_Support_right_list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.Multi_Chain_Support_right_list ul{
+
+.Multi_Chain_Support_right_list ul {
     margin-right: 86px;
 }
-.Multi_Chain_Support_right_list ul li span{
+
+.Multi_Chain_Support_right_list ul li span {
     margin-right: 15px;
 }
-.Multi_Chain_Support_right_list ul li{
+
+.Multi_Chain_Support_right_list ul li {
     position: relative;
     margin-bottom: 9px;
     display: flex;
@@ -6098,39 +6387,44 @@ Kyc Upload Docs
 
 
 
-.RoadMapV2_section{
+.RoadMapV2_section {
     padding-top: 116px;
     padding-bottom: 123px;
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
     position: relative;
 }
-.RoadMapV2_section span.Frame1{
+
+.RoadMapV2_section span.Frame1 {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.RoadMapV2_section span.Frame2{
+
+.RoadMapV2_section span.Frame2 {
     position: absolute;
     bottom: 0px;
     right: 0px;
 }
 
-.gamfi_Our_mentor_section{
+.gamfi_Our_mentor_section {
     background: #090A1A;
     padding-top: 0px;
     padding-bottom: 105px;
 }
 
-.RoadmapTabBtns{}
-.RoadmapTabBtns ul{
+.RoadmapTabBtns {}
+
+.RoadmapTabBtns ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.RoadmapTabBtns ul li{
+
+.RoadmapTabBtns ul li {
     margin-left: 20px;
 }
+
 .RoadmapTabBtns ul li button {
     width: 140px;
     height: 50px;
@@ -6138,25 +6432,27 @@ Kyc Upload Docs
     background: transparent;
     outline: none;
 }
-.RoadmapTabBtns ul li.tablinks.active button{
+
+.RoadmapTabBtns ul li.tablinks.active button {
     background: rgba(255, 255, 255, 0.15);
     border: none;
 }
-.RoadmapTabBtns ul li.tablinks.active button{
-    
-}
+
+.RoadmapTabBtns ul li.tablinks.active button {}
 
 .RoadmapTabBtns ul li.tablinks.active button.black-shape .hover-shape1, .RoadmapTabBtns ul li.tablinks.active button.hover-shape .hover-shape1 {
     left: 42%;
 }
+
 .RoadmapTabBtns ul li.tablinks.active button.black-shape .hover-shape2, .RoadmapTabBtns ul li.tablinks.active button.hover-shape .hover-shape2 {
     left: 50%;
 }
+
 .RoadmapTabBtns ul li.tablinks.active button.black-shape .hover-shape3 {
     left: 58%;
 }
 
-.RoadmapTabBtns ul li button .btn-text{
+.RoadmapTabBtns ul li button .btn-text {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -6170,15 +6466,17 @@ Kyc Upload Docs
 
 
 
-.Our_PARTNERSContnetSect{}
-.Our_PARTNERSContnetSect .OurPartnatList{
+.Our_PARTNERSContnetSect {}
+
+.Our_PARTNERSContnetSect .OurPartnatList {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
 }
-.Our_PARTNERSContnetSect .OurPartnatList .overlay{
+
+.Our_PARTNERSContnetSect .OurPartnatList .overlay {
     background: linear-gradient(180deg, rgba(9, 10, 26, 0) 0%, #090A1A 100%);
     height: 158px;
     width: 100%;
@@ -6186,15 +6484,18 @@ Kyc Upload Docs
     position: absolute;
     bottom: 45px;
 }
-.Our_PARTNERSContnetSect .OurPartnatList li{
+
+.Our_PARTNERSContnetSect .OurPartnatList li {
     width: 18%;
     text-align: center;
     margin-bottom: 65px;
 }
-.Our_PARTNERSContnetSect .OurPartnatList li.hidden{
+
+.Our_PARTNERSContnetSect .OurPartnatList li.hidden {
     display: none;
 }
-.ShowMoreBtnSect{
+
+.ShowMoreBtnSect {
     width: 100%;
     height: 60px;
     display: flex;
@@ -6202,7 +6503,7 @@ Kyc Upload Docs
     justify-content: center;
 }
 
-.ShowMoreBtnSect button{
+.ShowMoreBtnSect button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -6215,6 +6516,7 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
 }
+
 .ShowMoreBtnSect button::before {
     content: "\e902";
     position: absolute;
@@ -6225,6 +6527,7 @@ Kyc Upload Docs
     font-size: 12px;
     transform: rotate(90deg);
 }
+
 .ShowMoreBtnSect button.active::before {
     content: "\e902";
     position: absolute;
@@ -6248,23 +6551,26 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .ShowMoreBtnSect button .btn-text2 {
     display: none;
 }
-.ShowMoreBtnSect button.active .btn-text-1{
+
+.ShowMoreBtnSect button.active .btn-text-1 {
     display: none;
 }
-.ShowMoreBtnSect button.active .btn-text2{
+
+.ShowMoreBtnSect button.active .btn-text2 {
     display: block;
 }
 
 
 
-.RoadMapV2_TabContentSect{
+.RoadMapV2_TabContentSect {
     position: relative;
 }
 
-.RoadMapShape{
+.RoadMapShape {
     position: absolute;
     top: 35px;
 }
@@ -6276,23 +6582,26 @@ Kyc Upload Docs
 
 
 
-.FAQContnetSect{
+.FAQContnetSect {
     max-width: 770px;
     width: 100%;
     margin: auto;
     margin-top: 60px;
     position: relative;
 }
-.FAQquestions{
+
+.FAQquestions {
     position: relative;
     z-index: 2;
 }
-.FAQGalaxyImg{
+
+.FAQGalaxyImg {
     position: absolute;
     top: 160px;
     left: -190px;
     z-index: 0;
 }
+
 /* Style the Headings that are used to open and close the accordion panel */
 .FAQquestions .accordion {
     cursor: pointer;
@@ -6330,17 +6639,21 @@ Kyc Upload Docs
     background: rgba(255, 255, 255, 0.05);
     color: #ffffff;
 }
-.FAQquestions .accordion span{
+
+.FAQquestions .accordion span {
     min-width: 18px;
     margin-left: 20px;
 }
-.FAQquestions .IconMunise{
+
+.FAQquestions .IconMunise {
     display: none;
 }
-.FAQquestions .active .IconMunise{
+
+.FAQquestions .active .IconMunise {
     display: block;
 }
-.FAQquestions .active .IconPlus{
+
+.FAQquestions .active .IconPlus {
     display: none;
 }
 
@@ -6352,8 +6665,9 @@ Kyc Upload Docs
     transition: max-height 0.2s ease-out;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    
+
 }
+
 .FAQquestions .accordion-panel p {
     padding: 0px 48px 24px 29px;
     font-family: Inter;
@@ -6364,7 +6678,8 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0px;
 }
-.FAQContnetSect h6{
+
+.FAQContnetSect h6 {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -6376,6 +6691,7 @@ Kyc Upload Docs
     position: relative;
     z-index: 2;
 }
+
 .FAQContnetSect h6 a {
     font-family: Russo One;
     font-style: normal;
@@ -6386,17 +6702,18 @@ Kyc Upload Docs
 
     color: #A3FF12;
 }
-.no-border{
+
+.no-border {
     border: none !important;
 }
 
 
-.footer_titleV2{
+.footer_titleV2 {
     max-width: 452px;
     margin: auto;
 }
 
-.gamfisubscriveSect{
+.gamfisubscriveSect {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6404,6 +6721,7 @@ Kyc Upload Docs
     width: 100%;
     margin: auto;
 }
+
 .gamfisubscriveSect input {
     max-width: 350px;
     width: 100%;
@@ -6430,15 +6748,17 @@ Kyc Upload Docs
     color: #6D4AFE;
     margin-bottom: 75px;
 }
-.RoadMapContents.disable h3{
+
+.RoadMapContents.disable h3 {
     color: rgba(255, 255, 255, 0.7);
 }
-.RoadmapListSect{
+
+.RoadmapListSect {
     position: relative;
     padding-left: 10px;
 }
 
-.RoadmapListSect .CheckIconBg{
+.RoadmapListSect .CheckIconBg {
     height: 21px;
     width: 21px;
     background: #A3FF12;
@@ -6450,10 +6770,12 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
-.RoadMapContents.disable .RoadmapListSect .CheckIconBg{
+
+.RoadMapContents.disable .RoadmapListSect .CheckIconBg {
     background: rgba(255, 255, 255, 0.7);
 }
-.RoadmapListSect ul{
+
+.RoadmapListSect ul {
     border-left: 1px dashed rgba(255, 255, 255, 0.25);
     padding-left: 21px;
 }
@@ -6474,6 +6796,7 @@ Kyc Upload Docs
     margin-right: 15px;
     min-width: 15px;
 }
+
 .RoadmapV2TabContent_2022 .RoadmapListSect ul li span {
     margin-right: 15px;
     margin-top: 12px;
@@ -6483,7 +6806,7 @@ Kyc Upload Docs
 
 
 
-.Gamfi_footerBtnSect{
+.Gamfi_footerBtnSect {
     height: 200px;
     background: #6D4AFE;
     position: fixed;
@@ -6493,7 +6816,8 @@ Kyc Upload Docs
     bottom: 0;
     z-index: 1;
 }
-.Gamfi_footerBtnContent{
+
+.Gamfi_footerBtnContent {
     height: 200px;
     width: 100%;
     position: relative;
@@ -6502,29 +6826,32 @@ Kyc Upload Docs
     justify-content: center;
 }
 
-.Gamfi_footerBtnContent span.frameLeft{
+.Gamfi_footerBtnContent span.frameLeft {
     position: absolute;
     left: 0px;
     bottom: 0px;
     z-index: 1;
 }
-.Gamfi_footerBtnContent span.frameright{
+
+.Gamfi_footerBtnContent span.frameright {
     position: absolute;
     right: 0px;
     bottom: 0px;
     z-index: 1;
 }
-.Gamfi_footerBtnContent span img{
+
+.Gamfi_footerBtnContent span img {
     height: 200px;
     filter: contrast(100);
 }
 
-.GamfiBody{
+.GamfiBody {
     position: relative;
     z-index: 2;
     margin-bottom: 200px;
     background: #090A1A;
 }
+
 .Gamfi_footerBtnContent a {
     position: absolute;
     font-family: Russo One;
@@ -6556,30 +6883,35 @@ Kyc Upload Docs
     background-repeat: no-repeat;
     background-position: center;
 }
-.V3_BanerContent{
+
+.V3_BanerContent {
     padding-top: 60px;
 }
-.Ufo_Img{
+
+.Ufo_Img {
     position: absolute;
     top: 8%;
     left: 10%;
     z-index: 100;
 }
 
-.Animetion_Avater{
+.Animetion_Avater {
     position: relative;
     min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Animetion_Avater img{
+
+.Animetion_Avater img {
     position: absolute;
     z-index: 100;
     animation-name: Jump_Avater;
     animation: Jump_Avater 4s infinite;
 }
+
 @keyframes Jump_Avater {
+
     0%,
     100% {
         bottom: 0;
@@ -6614,23 +6946,27 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 60px;
 }
-.Animetion_Avater{
+
+.Animetion_Avater {
     text-align: center;
     position: relative;
 }
 
 
-.sc_banner_V3_right{}
-.sc_banner_V3_right ul{
+.sc_banner_V3_right {}
+
+.sc_banner_V3_right ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.sc_banner_V3_right ul li{
+
+.sc_banner_V3_right ul li {
     margin-right: 35px;
     max-width: 163px;
     width: 100%;
 }
+
 .sc_banner_V3_right ul li h3 {
     font-family: Russo One;
     font-style: normal;
@@ -6640,6 +6976,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .sc_banner_V3_right ul li h4 {
     font-family: Russo One;
     font-style: normal;
@@ -6651,7 +6988,7 @@ Kyc Upload Docs
     margin-bottom: 0px;
 }
 
-.Multi_Block_Chains_Sect{
+.Multi_Block_Chains_Sect {
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
     min-height: 158px;
@@ -6665,7 +7002,8 @@ Kyc Upload Docs
     width: 100%;
     z-index: 2;
 }
-.Multi_Block_Chains_Sect .redBordergradient{
+
+.Multi_Block_Chains_Sect .redBordergradient {
     position: absolute;
     top: -248px;
     left: 248px;
@@ -6674,7 +7012,8 @@ Kyc Upload Docs
     height: 500px;
     transform: rotate(-90deg);
 }
-.Multi_Block_Chains_Sect .greenBordergradient{
+
+.Multi_Block_Chains_Sect .greenBordergradient {
     position: absolute;
     bottom: -248px;
     right: 248px;
@@ -6683,14 +7022,15 @@ Kyc Upload Docs
     height: 500px;
     transform: rotate(90deg);
 }
-.Multi_Block_Chains_Content{
+
+.Multi_Block_Chains_Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.Multi_Block_Chains_Left{
+.Multi_Block_Chains_Left {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -6708,33 +7048,37 @@ Kyc Upload Docs
     margin-bottom: 0px;
     color: #FFFFFF;
 }
-.Multi_Block_Chains_Left h3 span{
+
+.Multi_Block_Chains_Left h3 span {
     margin-left: 10px;
 }
-.Multi_Block_Chains_Left h3 span img{
+
+.Multi_Block_Chains_Left h3 span img {
     margin-top: -2px;
 }
 
 
-.ProjectPools_V3{
-    padding-top: 136px;   
+.ProjectPools_V3 {
+    padding-top: 136px;
 }
 
-.Key_PointsV2_section{
+.Key_PointsV2_section {
     background: rgba(30, 31, 53, 0.7);
     backdrop-filter: blur(10px);
     position: relative;
     z-index: 2;
-} 
+}
 
-.GamfiV3_ProjectPoolsBtn{
+.GamfiV3_ProjectPoolsBtn {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.GamfiV3_ProjectPoolsBtn li{
+
+.GamfiV3_ProjectPoolsBtn li {
     margin-left: 20px;
 }
+
 .GamfiV3_ProjectPoolsBtn li button {
     display: flex;
     align-items: center;
@@ -6761,26 +7105,30 @@ Kyc Upload Docs
 .GamfiV3_ProjectPoolsBtn li.active button.black-shape .hover-shape1 {
     left: 42%;
 }
+
 .GamfiV3_ProjectPoolsBtn li.active button.black-shape .hover-shape2, .GamfiV3_ProjectPoolsBtn li.active button.hover-shape .hover-shape2 {
     left: 50%;
 }
+
 .GamfiV3_ProjectPoolsBtn li.active button.black-shape .hover-shape3 {
     left: 58%;
 }
 
 
 
-.OurPartnarV3_Sect{
+.OurPartnarV3_Sect {
     padding-top: 136px;
     position: relative;
 }
-.OurPartnat_EathImg{
+
+.OurPartnat_EathImg {
     position: absolute;
     top: -60px;
     right: 225px;
     z-index: 0;
 }
-.RocketImgBW{
+
+.RocketImgBW {
     position: absolute;
     top: 232px;
     left: 0px;
@@ -6803,7 +7151,7 @@ Kyc Upload Docs
 }
 
 
-.How_to_Participate_Sect{
+.How_to_Participate_Sect {
     background: #090A1A;
     position: relative;
     display: flex;
@@ -6811,22 +7159,26 @@ Kyc Upload Docs
     justify-content: center;
     padding-bottom: 140px;
 }
-.How_to_Participate_Sect .moon_imgBg{
+
+.How_to_Participate_Sect .moon_imgBg {
     position: absolute;
     top: 20px;
 }
-.How_to_Participate_Sect .container{
+
+.How_to_Participate_Sect .container {
     position: relative;
     z-index: 2;
 }
-.How_to_Participate_Sect .lockerImg{
+
+.How_to_Participate_Sect .lockerImg {
     position: absolute;
     bottom: -220px;
     left: 0px;
     z-index: 0;
 }
 
-.How_to_Participate_Left_Contnet{}
+.How_to_Participate_Left_Contnet {}
+
 .How_to_Participate_Left_Contnet p {
     font-family: Inter;
     font-style: normal;
@@ -6840,11 +7192,12 @@ Kyc Upload Docs
     padding-right: 12px;
 }
 
-.How_to_Participate_Left_Btn{
+.How_to_Participate_Left_Btn {
     max-width: 170px;
     height: 50px;
 }
-.How_to_Participate_Left_Btn a{
+
+.How_to_Participate_Left_Btn a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6854,7 +7207,7 @@ Kyc Upload Docs
 }
 
 
-.How_to_Participate_right_Card{
+.How_to_Participate_right_Card {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -6864,14 +7217,17 @@ Kyc Upload Docs
     backdrop-filter: blur(10px);
     margin-bottom: 20px;
 }
-.How_to_Participate_right_Card_number{
+
+.How_to_Participate_right_Card_number {
     min-width: 80px;
     margin-right: 35px;
 }
-.How_to_Participate_right_CardText{
+
+.How_to_Participate_right_CardText {
     max-width: 334px;
     width: 100%;
 }
+
 .How_to_Participate_right_CardText h4 {
     font-family: Russo One;
     font-style: normal;
@@ -6881,6 +7237,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 10px;
 }
+
 .How_to_Participate_right_CardText p {
     font-family: Inter;
     font-style: normal;
@@ -6892,19 +7249,22 @@ Kyc Upload Docs
 }
 
 
-.Multi_Block_Chains_RightSect{
+.Multi_Block_Chains_RightSect {
     padding: 54px 0px;
 }
-.Multi_Block_Chains_Right{
+
+.Multi_Block_Chains_Right {
     background: transparent;
 }
-.Multi_Block_Chains_RightSect .Multi_Block_Chains_Right .Multi_Block_Chains_RightContent .partner-image a{
+
+.Multi_Block_Chains_RightSect .Multi_Block_Chains_Right .Multi_Block_Chains_RightContent .partner-image a {
     margin: 0px 27px;
 }
 
-.Multi_Block_Chains_Right .Multi_Block_Chains_RightContent:after, .Multi_Block_Chains_Right .Multi_Block_Chains_RightContent:before{
+.Multi_Block_Chains_Right .Multi_Block_Chains_RightContent:after, .Multi_Block_Chains_Right .Multi_Block_Chains_RightContent:before {
     background: linear-gradient(269.8deg, rgba(26, 27, 48, 0) 0.18%, #1A1B30 99.84%);
 }
+
 .Multi_Block_Chains_Right .Multi_Block_Chains_RightContent:after {
     right: 0px;
     transform: rotateZ(180deg);
@@ -6914,35 +7274,40 @@ Kyc Upload Docs
 /*-----------------
     Tier
 ------------------*/
-.gamfi_TierSect{
+.gamfi_TierSect {
     background: #090A1A;
     padding-top: 70px;
     padding-bottom: 110px;
     position: relative;
 }
-.gamfi_TierSect .container{
+
+.gamfi_TierSect .container {
     position: relative;
     z-index: 1;
 }
-.gamfi_TierSect .tier_earthImg{
+
+.gamfi_TierSect .tier_earthImg {
     position: absolute;
     left: 30%;
     top: 246px;
     z-index: 0;
 }
-.gamfi_TierSect .TierGalaxyImg1{
+
+.gamfi_TierSect .TierGalaxyImg1 {
     position: absolute;
     left: 10%;
     bottom: 241px;
     z-index: 0;
 }
-.gamfi_TierSect .TierGalaxyImg2{
+
+.gamfi_TierSect .TierGalaxyImg2 {
     position: absolute;
     right: 12%;
     top: 259px;
     z-index: 0;
 }
-.gamfi_Tier_card{
+
+.gamfi_Tier_card {
     max-width: 370px;
     width: 100%;
     background: rgba(30, 31, 53, 0.7);
@@ -6968,6 +7333,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .gamfi_Tier_card h3 {
     font-family: Russo One;
     font-style: normal;
@@ -6978,10 +7344,12 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
-.gamfi_Tier_card span{
+
+.gamfi_Tier_card span {
     margin-bottom: 4px;
     margin-top: 24px;
 }
+
 .gamfi_Tier_card p {
     font-family: Inter;
     font-style: normal;
@@ -6993,6 +7361,7 @@ Kyc Upload Docs
     margin-top: 21px;
     margin-bottom: 0px;
 }
+
 .gamfi_Tier_card h4 {
     font-family: Russo One;
     font-style: normal;
@@ -7008,7 +7377,7 @@ Kyc Upload Docs
 /*--------------
     TierV2
 --------------*/
-.TierV2_Col{
+.TierV2_Col {
     min-height: 734px;
     display: flex;
     align-items: flex-start;
@@ -7016,7 +7385,8 @@ Kyc Upload Docs
     flex-direction: column;
 }
 
-.tierV2ColHeadings span{}
+.tierV2ColHeadings span {}
+
 .tierV2ColHeadings h2 {
     margin-top: 30px;
     font-family: 'Russo One';
@@ -7027,6 +7397,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .tierV2ColHeadings h3 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7037,13 +7408,14 @@ Kyc Upload Docs
     margin-bottom: 0px;
 }
 
-.TiedV2CollBody{
+.TiedV2CollBody {
     width: 100%;
     padding: 0px 19px;
     padding-right: 0px;
     position: relative;
 }
-.TiedV2CollBody1:after{
+
+.TiedV2CollBody1:after {
     content: "";
     position: absolute;
     display: block;
@@ -7058,7 +7430,8 @@ Kyc Upload Docs
     border-bottom: 0;
     transform: rotate(90deg);
 }
-.TiedV2CollBody2:after{
+
+.TiedV2CollBody2:after {
     content: "";
     position: absolute;
     display: block;
@@ -7074,7 +7447,7 @@ Kyc Upload Docs
     transform: rotate(90deg);
 }
 
-.TiedV2CollBody3:after{
+.TiedV2CollBody3:after {
     content: "";
     position: absolute;
     display: block;
@@ -7105,10 +7478,13 @@ Kyc Upload Docs
     border-bottom: 0;
     transform: rotate(90deg);
 }
-.TiedV2CollBody ul{}
-.TiedV2CollBody ul li{
+
+.TiedV2CollBody ul {}
+
+.TiedV2CollBody ul li {
     margin-bottom: 21px;
 }
+
 .TiedV2CollBody ul li h4 {
     font-family: 'Inter';
     font-style: normal;
@@ -7118,6 +7494,7 @@ Kyc Upload Docs
     margin-bottom: 0px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .TiedV2CollBody ul li h5 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7127,6 +7504,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .TiedV2CollBody .bottomShape {
     height: 50px;
     width: 100%;
@@ -7138,15 +7516,17 @@ Kyc Upload Docs
 /*-----------------
     Tier V3
 ------------------*/
-.gamfi_TierV3_Sect{
+.gamfi_TierV3_Sect {
     background: #090A1A;
     padding-top: 70px;
     padding-bottom: 140px;
 }
-.TvlHeadings{
+
+.TvlHeadings {
     position: relative;
 }
-.TvlHeadings span{
+
+.TvlHeadings span {
     position: absolute;
     position: absolute;
     top: -45px;
@@ -7162,6 +7542,7 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
+
 .TvlHeadings h3 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7172,8 +7553,11 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.TvlList{}
-.TvlList ul{}
+
+.TvlList {}
+
+.TvlList ul {}
+
 .TvlList ul li {
     font-family: 'Russo One';
     font-style: normal;
@@ -7183,25 +7567,30 @@ Kyc Upload Docs
     margin-bottom: 50px;
     color: #FFFFFF;
 }
-.TvlRightSect{
+
+.TvlRightSect {
     position: relative;
 }
-.TvlRightSect .row{
+
+.TvlRightSect .row {
     z-index: 2;
     position: relative;
 }
-.TvlRightSect .TierV3GalaxyImg{
+
+.TvlRightSect .TierV3GalaxyImg {
     position: absolute;
     left: -135px;
     bottom: 62px;
     z-index: 0;
 }
-.TvlRightCard{
+
+.TvlRightCard {
     max-width: 200px;
     width: 100%;
     background: transparent;
 }
-.TvlRightCardHeadings{
+
+.TvlRightCardHeadings {
     height: 184px;
     width: 100%;
     display: flex;
@@ -7209,6 +7598,7 @@ Kyc Upload Docs
     justify-content: center;
     flex-direction: column;
 }
+
 .TvlRightCardHeadings h3 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7220,41 +7610,45 @@ Kyc Upload Docs
     margin-top: 19px;
     color: #FFFFFF;
 }
-.TvlRightCardHeadings1{
+
+.TvlRightCardHeadings1 {
     background: url(../images/bg/TvlBg1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
 }
 
-.TvlRightCardHeadings2{
+.TvlRightCardHeadings2 {
     background: url(../images/bg/TvlBg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
 }
 
-.TvlRightCardHeadings3{
+.TvlRightCardHeadings3 {
     background: url(../images/bg/TvlBg3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
 }
 
-.TvlRightCardHeadings4{
+.TvlRightCardHeadings4 {
     background: url(../images/bg/TvlBg4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
 }
-.TvlRightCardContent{}
-.TvlRightCardContent ul{
+
+.TvlRightCardContent {}
+
+.TvlRightCardContent ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
 }
-.TvlRightCardContent ul li{
+
+.TvlRightCardContent ul li {
     height: 80px;
     display: flex;
     align-items: center;
@@ -7280,15 +7674,16 @@ Kyc Upload Docs
     Tokenomics Page
 -------------------*/
 
-.Gamfi_Header_contentright_Custom h2{
+.Gamfi_Header_contentright_Custom h2 {
     font-size: 28px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.Tokenomics_sectionCustom{
+.Tokenomics_sectionCustom {
     padding-top: 59px;
 }
-.TokenomicsContentsLeftCustom{
+
+.TokenomicsContentsLeftCustom {
     margin-left: 130px;
 }
 
@@ -7296,6 +7691,7 @@ Kyc Upload Docs
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
 }
+
 .leaderboard-table-list tr.dark td {
     background: rgba(30, 31, 53, 0.5);
     backdrop-filter: blur(5px);
@@ -7304,6 +7700,7 @@ Kyc Upload Docs
 .TokenomicsTable .leaderboard-table-list tr th:nth-child(1), .TokenomicsTable .leaderboard-table-list tr td:nth-child(1), .TokenomicsTable .leaderboard-table-list tr th:nth-child(4), .TokenomicsTable .leaderboard-table-list tr td:nth-child(4) {
     width: 18%;
 }
+
 .TokenomicsTable .leaderboard-table-list tr th:nth-child(3), .TokenomicsTable .leaderboard-table-list tr td:nth-child(3) {
     width: 24%;
 }
@@ -7315,13 +7712,14 @@ Kyc Upload Docs
     Connect Wallet
 ------------------------*/
 
-.ConnectWallet_Section{
+.ConnectWallet_Section {
     background: #090A1A;
     padding-top: 96px;
     padding-bottom: 140px;
     backdrop-filter: blur(10px);
 }
-.ConnectWallet_Card{
+
+.ConnectWallet_Card {
     max-width: 690px;
     width: 100%;
     margin: auto;
@@ -7329,11 +7727,12 @@ Kyc Upload Docs
     padding: 63px 60px 50px 60px;
 }
 
-.ConnectWallet_Card_Headings{
+.ConnectWallet_Card_Headings {
     text-align: center;
     max-width: 356px;
     margin: auto;
 }
+
 .ConnectWallet_Card_Headings h2 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7345,6 +7744,7 @@ Kyc Upload Docs
     margin-bottom: 23px;
     color: #FFFFFF;
 }
+
 .ConnectWallet_Card_Headings p {
     font-family: 'Inter';
     font-style: normal;
@@ -7356,7 +7756,8 @@ Kyc Upload Docs
     margin-bottom: 29px;
 }
 
-.ChooseNetwork_Sect{}
+.ChooseNetwork_Sect {}
+
 .ChooseNetwork_Sect h2 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7367,13 +7768,15 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0px;
 }
-.ChooseNetwork_Sect ul{
+
+.ChooseNetwork_Sect ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 0px;
 }
+
 .ChooseNetwork_Sect ul li {
     height: 60px;
     width: auto;
@@ -7381,7 +7784,8 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
-.ChooseNetwork_Sect ul li button{
+
+.ChooseNetwork_Sect ul li button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7400,18 +7804,21 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
-.ChooseNetwork_Sect ul li.active button{
+
+.ChooseNetwork_Sect ul li.active button {
     border: 2px solid rgba(163, 255, 18, 0.5);
     color: #ffffff;
-    
+
 }
-.ChooseNetwork_Sect ul li button span{
+
+.ChooseNetwork_Sect ul li button span {
     margin-right: 11px;
 }
 
-.ConnectWallet_Content{
+.ConnectWallet_Content {
     margin-top: 29px;
 }
+
 .ConnectWallet_Content h2 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7422,6 +7829,7 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .ConnectWallet_Content p {
     font-family: 'Inter';
     font-style: normal;
@@ -7432,7 +7840,9 @@ Kyc Upload Docs
     max-width: 470px;
     width: 100%;
 }
-.ConnectWallet_Content p a{}
+
+.ConnectWallet_Content p a {}
+
 .ConnectWallet_Btn {
     background: rgba(255, 255, 255, 0.05);
     height: 60px;
@@ -7449,7 +7859,8 @@ Kyc Upload Docs
     color: #FFFFFF;
     position: relative;
 }
-.ConnectWallet_Btn span{
+
+.ConnectWallet_Btn span {
     margin-right: 24px;
 }
 
@@ -7469,7 +7880,7 @@ Kyc Upload Docs
     Latest_Articles_Sect
 --------------------------*/
 
-.Latest_Articles_Sect{
+.Latest_Articles_Sect {
     padding: 71px 0px 100px 0px;
     background: #090A1A;
 }
@@ -7481,18 +7892,22 @@ Kyc Upload Docs
     height: 100%;
     min-height: 544px;
 }
-.Article_Img{
+
+.Article_Img {
     width: 100%;
     overflow: hidden;
 }
-.Article_Img img{
+
+.Article_Img img {
     width: 100%;
     overflow: hidden;
 }
-.Article_Details{
+
+.Article_Details {
     padding: 25px 30px;
 }
-.Article_Details2{
+
+.Article_Details2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -7511,9 +7926,11 @@ Kyc Upload Docs
     color: rgba(163, 255, 18, 0.7);
     cursor: pointer;
 }
-.Article_Details h2:hover{
+
+.Article_Details h2:hover {
     color: rgba(163, 255, 18, 1);
 }
+
 .Article_Details h2 span {
     font-family: 'Russo One';
     font-style: normal;
@@ -7524,7 +7941,8 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     cursor: auto;
 }
-.Article_Details h3 a{
+
+.Article_Details h3 a {
     font-family: 'Russo One';
     font-style: normal;
     font-weight: 400;
@@ -7535,6 +7953,7 @@ Kyc Upload Docs
     text-transform: none;
     max-width: 299px;
 }
+
 .Article_Details p {
     font-family: 'Inter';
     font-style: normal;
@@ -7544,6 +7963,7 @@ Kyc Upload Docs
     margin-bottom: 18px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .Article_Details a {
     font-family: 'Russo One';
     font-style: normal;
@@ -7556,16 +7976,18 @@ Kyc Upload Docs
     align-items: center;
     justify-content: flex-start;
 }
-.Article_Details a:hover{
+
+.Article_Details a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.Article_Details a span{
+.Article_Details a span {
     margin-right: 9px;
     margin-bottom: 2px;
     opacity: 70%;
 }
-.Article_Details a:hover span{
+
+.Article_Details a:hover span {
     opacity: 100%;
 }
 
@@ -7596,7 +8018,8 @@ Kyc Upload Docs
     color: #A3FF12;
     margin-right: 10px;
 }
-.Article_Details2 h5 a{
+
+.Article_Details2 h5 a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7608,15 +8031,17 @@ Kyc Upload Docs
     line-height: 28px;
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    
+
 }
-.Article_Details_BGShape{
+
+.Article_Details_BGShape {
     position: absolute;
     top: 25%;
     left: 3px;
     z-index: 0;
 }
-.Article_Details_Top , .Article_Details_bottom{
+
+.Article_Details_Top, .Article_Details_bottom {
     z-index: 1;
     position: relative;
 }
@@ -7641,12 +8066,13 @@ Kyc Upload Docs
 
 
 
-.MegaMenuContent{
+.MegaMenuContent {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.HomeMenuListHeadings{
+
+.HomeMenuListHeadings {
     position: relative;
     height: 33px;
     display: flex;
@@ -7654,9 +8080,9 @@ Kyc Upload Docs
     justify-content: flex-start;
     flex-direction: column;
 }
-.HomeMenuListHeadings span{
-    
-}
+
+.HomeMenuListHeadings span {}
+
 .HomeMenuListHeadings h2 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7669,7 +8095,7 @@ Kyc Upload Docs
     margin-bottom: 0px;
 }
 
-.megaMenuLeftSect .megaMenuLeftBgSect{
+.megaMenuLeftSect .megaMenuLeftBgSect {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -7680,24 +8106,28 @@ Kyc Upload Docs
     z-index: 0;
     min-height: 600px;
 }
-.megaMenuLeftBg{
+
+.megaMenuLeftBg {
     position: relative;
     z-index: 1;
     height: 100%;
 }
-.megaMenuLeftBgColor{
+
+.megaMenuLeftBgColor {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(4px);
     height: 100%;
     width: 32%;
     z-index: 1;
 }
-.HomeMenuList{
+
+.HomeMenuList {
     position: relative;
     z-index: 11;
     height: 600px;
 }
-.HomeMenuList ul{
+
+.HomeMenuList ul {
     margin-top: 16px;
     display: flex;
     align-items: flex-start;
@@ -7705,13 +8135,15 @@ Kyc Upload Docs
     flex-direction: column;
     top: 0% !important;
 }
-.HomeMenuList ul li{
+
+.HomeMenuList ul li {
     margin-left: 0px !important;
     width: auto !important;
     border: none !important;
     padding-bottom: 20px !important;
     height: auto !important;
 }
+
 .HomeMenuList ul li a {
     display: flex !important;
     align-items: flex-start !important;
@@ -7727,18 +8159,22 @@ Kyc Upload Docs
     padding: 0px !important;
     border: none !important;
 }
-.HomeMenuList ul li a span{
+
+.HomeMenuList ul li a span {
     margin-left: 6px;
 }
-.HomeMenuList ul li a span img{
+
+.HomeMenuList ul li a span img {
     margin-right: 0px;
 }
-.megaMenuLeftSect{
+
+.megaMenuLeftSect {
     padding-right: 30px;
     height: 600px;
     padding-top: 36px;
 }
-.megaMenuRightSect{
+
+.megaMenuRightSect {
     padding-left: 45px;
     display: flex;
     align-items: flex-start;
@@ -7750,9 +8186,10 @@ Kyc Upload Docs
     padding-top: 36px;
     height: 600px;
     background: rgba(19, 20, 44, 0.98);
-    backdrop-filter: blur(4px); 
+    backdrop-filter: blur(4px);
 }
-.menuHeadings{
+
+.menuHeadings {
     position: relative;
     height: 33px;
     display: flex;
@@ -7760,9 +8197,9 @@ Kyc Upload Docs
     justify-content: flex-start;
     flex-direction: column;
 }
-.menuHeadings span{
-    
-}
+
+.menuHeadings span {}
+
 .menuHeadings h2 {
     font-family: 'Russo One';
     font-style: normal;
@@ -7774,10 +8211,12 @@ Kyc Upload Docs
     color: #FFFFFF;
     margin-bottom: 0px;
 }
-.Menu_column ul{
+
+.Menu_column ul {
     margin-top: 8px;
     margin-bottom: 28px;
 }
+
 .Menu_column ul li a {
     font-family: 'Russo One';
     font-style: normal;
@@ -7786,7 +8225,8 @@ Kyc Upload Docs
     line-height: 36px;
     color: rgba(255, 255, 255, 0.7);
 }
-.Menu_column ul li a:hover{
+
+.Menu_column ul li a:hover {
     color: #ffffff !important;
 }
 
@@ -7807,41 +8247,44 @@ Kyc Upload Docs
     align-items: center;
     justify-content: center;
 }
-.Menu_column ul li span.new{
+
+.Menu_column ul li span.new {
     background: #6D4AFE;
     backdrop-filter: blur(5px);
 }
-.Menu_column ul li span.soon{
+
+.Menu_column ul li span.soon {
     color: color: rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
 }
-.Menu_column ul li span.hot{
+
+.Menu_column ul li span.hot {
     background: #F82552;
     backdrop-filter: blur(5px);
 }
 
-.gamfi-header-section .heaader-inner-area ul li.megaMenuHov{
+.gamfi-header-section .heaader-inner-area ul li.megaMenuHov {
     position: inherit;
 }
 
-.gamfi-header-section .heaader-inner-area ul li .Gamfi_Mega_Menu ul{
+.gamfi-header-section .heaader-inner-area ul li .Gamfi_Mega_Menu ul {
     position: inherit;
 }
 
 
-.gamfi-header-section .header-menu ul li .Menu_column ul{
+.gamfi-header-section .header-menu ul li .Menu_column ul {
     display: block !important;
 }
 
-.gamfi-header-section .heaader-inner-area ul li .Gamfi_Mega_Menu ul{
+.gamfi-header-section .heaader-inner-area ul li .Gamfi_Mega_Menu ul {
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
 }
 
 .gamfi-header-section .header-menu ul li .Menu_column ul li a {
-    
+
     display: block;
     font-family: 'Russo One';
     font-style: normal;
@@ -7852,22 +8295,23 @@ Kyc Upload Docs
     padding: 0px;
 }
 
-.gamfi-header-section .heaader-inner-area ul li .Menu_column ul li a  {
+.gamfi-header-section .heaader-inner-area ul li .Menu_column ul li a {
     display: block;
     background: none;
     padding: 0px;
     transition: 0.4s;
 }
-.gamfi-header-section .heaader-inner-area ul li .Menu_column ul li{
+
+.gamfi-header-section .heaader-inner-area ul li .Menu_column ul li {
     border: none;
     margin: 0px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
 }
 
-.Gamfi_Mega_Menu_Sect{
+.Gamfi_Mega_Menu_Sect {
     padding-top: 40px;
     position: absolute;
     height: 100%;
@@ -7877,8 +8321,8 @@ Kyc Upload Docs
     display: none;
 }
 
-.megaMenuHov:hover .Gamfi_Mega_Menu_Sect{
-  display: block;
+.megaMenuHov:hover .Gamfi_Mega_Menu_Sect {
+    display: block;
 }
 
 
@@ -7901,28 +8345,34 @@ Kyc Upload Docs
     padding-top: 410px;
     padding-bottom: 45px;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sec-heading h1{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sec-heading h1 {
     font-size: 60px;
     text-transform: none;
     margin-bottom: 45px;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li {
     display: inline-block;
     margin-right: 35px;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li a{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li a {
     font-size: 16px;
     text-transform: uppercase;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu img{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu img {
     margin-right: 10px;
 }
-.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li i{
+
+.gamfi-breadcrumbs-section.blog-breadcrumbs .sub-menu ul li i {
     margin-right: 10px;
     font-size: 15px;
 }
@@ -7931,20 +8381,23 @@ Kyc Upload Docs
 /* -----------------------------------------------
     03. Gamfi Blog detail-conent Section CSS
 -------------------------------------------------*/
-.blog-detail-conent{
-   padding-top: 60px;
-   padding-bottom: 140px;
-   background: #090A1A;
+.blog-detail-conent {
+    padding-top: 60px;
+    padding-bottom: 140px;
+    background: #090A1A;
 }
-.blog-detail-conent .blog-area .blog-description .des{
+
+.blog-detail-conent .blog-area .blog-description .des {
     font-size: 18px;
     line-height: 36px;
     font-family: Russo One;
 }
-.blog-detail-conent .blog-area .blog-description .blockquote{
+
+.blog-detail-conent .blog-area .blog-description .blockquote {
     position: relative;
 }
-.blog-detail-conent .blog-area .blog-description .blockquote:before{
+
+.blog-detail-conent .blog-area .blog-description .blockquote:before {
     position: absolute;
     content: "";
     height: 86px;
@@ -7952,7 +8405,8 @@ Kyc Upload Docs
     background: url(../images/blog/block-code.png);
     top: 15px;
 }
-.blog-detail-conent .blog-area .blog-description .blockquote .des-active{
+
+.blog-detail-conent .blog-area .blog-description .blockquote .des-active {
     font-style: italic;
     font-weight: 500;
     font-size: 22px;
@@ -7960,21 +8414,26 @@ Kyc Upload Docs
     padding-left: 65px;
     color: #fff;
 }
-.blog-detail-conent .blog-area .igo-blog h4{
+
+.blog-detail-conent .blog-area .igo-blog h4 {
     margin-bottom: 15px;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-service{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-service {
     background: #1E1F35;
     margin-right: 75px;
     padding: 45px 0 20px 65px;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-image img{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-image img {
     margin-right: 90px;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-content .project-sale{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-content .project-sale {
     position: relative;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-content .project-sale:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-service .project-content .project-sale:before {
     position: absolute;
     content: "";
     width: 10px;
@@ -7984,39 +8443,50 @@ Kyc Upload Docs
     top: 7px;
     left: -20px;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkslateblue:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkslateblue:before {
     background: #6D4AFE;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.cyan:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.cyan:before {
     background: #3BCBFF;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.dodgerBlue:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.dodgerBlue:before {
     background: #0B58FE;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.turquoise:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.turquoise:before {
     background: #01CC9B;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.springGreen:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.springGreen:before {
     background: #A3FF12;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkturquoise:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkturquoise:before {
     background: #14A0C0;
 }
-.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.turquoises:before{
+
+.blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.turquoises:before {
     background: #3BCBFF;
 }
-.blog-detail-conent .blog-area .igo-blog ul{
+
+.blog-detail-conent .blog-area .igo-blog ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.blog-detail-conent .blog-area .igo-blog ul li{
+
+.blog-detail-conent .blog-area .igo-blog ul li {
     position: relative;
 }
-.blog-detail-conent .blog-area .igo-blog ul li span{
+
+.blog-detail-conent .blog-area .igo-blog ul li span {
     line-height: 36px;
 }
-.blog-detail-conent .blog-area .igo-blog ul li:before{
+
+.blog-detail-conent .blog-area .igo-blog ul li:before {
     position: absolute;
     content: "";
     width: 8px;
@@ -8026,63 +8496,77 @@ Kyc Upload Docs
     border-radius: 8px;
     top: 15px;
 }
-.blog-detail-conent .blog-area .igo-blog ul li span{
+
+.blog-detail-conent .blog-area .igo-blog ul li span {
     padding-left: 25px;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu{
+
+.blog-detail-conent .blog-area .about-blog .about-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.about-menu .breadcrumbs-form .about-breadcrumbs a{
+
+.about-menu .breadcrumbs-form .about-breadcrumbs a {
     text-transform: uppercase;
 }
-.about-menu .breadcrumbs-form .about-breadcrumbs i{
+
+.about-menu .breadcrumbs-form .about-breadcrumbs i {
     font-size: 15px;
     margin-right: 5px;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing{
+
+.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing li{
+
+.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing li {
     display: inline-block;
     padding-right: 8px;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing li a{
+
+.blog-detail-conent .blog-area .about-blog .about-menu .about-list .about-listing li a {
     background: #222231;
     padding: 15px 15px;
     display: inline-block;
     font-style: italic;
     font-size: 14px;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu .bolg-share a{
+
+.blog-detail-conent .blog-area .about-blog .about-menu .bolg-share a {
     text-transform: uppercase;
 }
-.blog-detail-conent .blog-area .about-blog .about-menu .bolg-share i{
+
+.blog-detail-conent .blog-area .about-blog .about-menu .bolg-share i {
     font-size: 15px;
     margin-right: 10px;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item {
     display: flex;
     align-items: center;
     background: #1A1B30;
     padding: 10px 25px 10px 10px;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-text{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-text {
     position: relative;
     top: 10px;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-image{
-   margin-right: 10px;
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-image {
+    margin-right: 10px;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-text span{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .previous-item .previous-text span {
     font-size: 14px;
     text-transform: uppercase;
     color: #7ABB1B;
@@ -8090,19 +8574,22 @@ Kyc Upload Docs
     display: block;
     font-family: Russo One;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .next-item{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .next-item {
     display: flex;
     align-items: center;
     background: #1A1B30;
     padding: 10px 10px 10px 35px;
     text-align: right;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .next-item .next-text{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .next-item .next-text {
     padding-right: 10px;
     position: relative;
     top: 10px;
 }
-.blog-detail-conent .blog-area .about-blog .blog-contact .next-item .next-text span{
+
+.blog-detail-conent .blog-area .about-blog .blog-contact .next-item .next-text span {
     font-size: 14px;
     text-transform: uppercase;
     color: #7ABB1B;
@@ -8110,74 +8597,89 @@ Kyc Upload Docs
     display: block;
     font-family: Russo One;
 }
-.blog-detail-conent .blog-area .comment-item{
 
-}
-.blog-detail-conent .blog-area .comment-item .blog-comment{
+.blog-detail-conent .blog-area .comment-item {}
+
+.blog-detail-conent .blog-area .comment-item .blog-comment {
     background: #1D1E2C;
     margin-bottom: 20px;
     padding: 30px 30px;
 }
-.blog-detail-conent .blog-area .comment-item h4{
+
+.blog-detail-conent .blog-area .comment-item h4 {
     text-transform: uppercase;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay {
     display: flex;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-image img{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-image img {
     min-width: 50px;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text {
     padding-left: 15px;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text h5{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text h5 {
     margin-bottom: 0;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text span{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text span {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 15px;
     display: block;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text p{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text p {
     margin-bottom: 15px;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text img{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text img {
     margin-right: 10px;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text .replay-icon a{
+
+.blog-detail-conent .blog-area .comment-item .blog-comment .blog-replay .replay-text .replay-icon a {
     text-transform: uppercase;
     font-size: 14px;
 }
-.blog-detail-conent .blog-area .comment-item .blog-comments{
+
+.blog-detail-conent .blog-area .comment-item .blog-comments {
     padding: 30px 30px;
     margin-left: 100px;
-    
+
 }
-.blog-detail-conent .blog-area .form-item .form-heading h4{
+
+.blog-detail-conent .blog-area .form-item .form-heading h4 {
     text-transform: uppercase;
 }
-.blog-detail-conent .blog-area .form-item .input-button input{
+
+.blog-detail-conent .blog-area .form-item .input-button input {
     background: transparent;
     width: 100%;
     border: 1px solid #2E2F3C;
     padding: 15px 20px;
     color: #fff;
 }
-.blog-detail-conent .blog-area .form-item .input-button input.textarea{
+
+.blog-detail-conent .blog-area .form-item .input-button input.textarea {
     padding-bottom: 90px;
 }
 
 .gamfi-navigation ul li {
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 }
-.blog-detail-conent .blog-area .form-item .input-button{
+
+.blog-detail-conent .blog-area .form-item .input-button {
     margin-bottom: 40px;
     position: relative;
     padding-top: 40px;
 }
-.blog-detail-conent .blog-area .form-item .input-button label{
+
+.blog-detail-conent .blog-area .form-item .input-button label {
     position: absolute;
     left: 0;
     top: 0;
@@ -8185,7 +8687,8 @@ Kyc Upload Docs
     font-weight: 700;
     text-transform: uppercase;
 }
-.blog-detail-conent .blog-area .form-item .input-submit input{
+
+.blog-detail-conent .blog-area .form-item .input-submit input {
     width: 100%;
     background: #6D4AFE;
     color: #fff;
@@ -8195,31 +8698,38 @@ Kyc Upload Docs
     transition: 0.4s;
     font-weight: 700;
 }
-.blog-detail-conent .blog-area .form-item .input-submit{
+
+.blog-detail-conent .blog-area .form-item .input-submit {
     margin-bottom: 0;
 }
-.blog-detail-conent .blog-area .form-item .input-submit:hover .hover-shape1{
-   left: 47%;
+
+.blog-detail-conent .blog-area .form-item .input-submit:hover .hover-shape1 {
+    left: 47%;
 }
-.blog-detail-conent .blog-area .form-item .input-submit:hover .hover-shape3{
-  left: 51%;
+
+.blog-detail-conent .blog-area .form-item .input-submit:hover .hover-shape3 {
+    left: 51%;
 }
-.categories-area{
+
+.categories-area {
     background: #191A2F;
     padding: 30px 30px 8px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.categories-item .catergories-form{
+
+.categories-item .catergories-form {
     border: 1px solid #3E3F51;
     position: relative;
     padding: 10px 20px;
 }
-.categories-item .catergories-form input{
+
+.categories-item .catergories-form input {
     background: transparent;
     border: none;
     color: #fff;
 }
-.categories-item .catergories-form i{
+
+.categories-item .catergories-form i {
     top: 15px;
     position: absolute;
     right: 20px;
@@ -8227,14 +8737,17 @@ Kyc Upload Docs
     color: #fff;
     transition: 0.4s;
 }
-.categories-item .catergories-form i:hover{
-    color: rgba(255,255,255,0.7);
+
+.categories-item .catergories-form i:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
-.categories-item .categories-summary ul{
+
+.categories-item .categories-summary ul {
     padding: 0;
     margin: 0;
-    list-style: none; 
+    list-style: none;
 }
+
 .categories-item .categories-summary ul li a {
     color: rgba(255, 255, 255, 0.7);
     transition: 0.4s;
@@ -8246,28 +8759,35 @@ Kyc Upload Docs
     line-height: 36px;
     color: rgba(255, 255, 255, 0.7);
 }
-.categories-item .categories-summary ul li a:hover{
+
+.categories-item .categories-summary ul li a:hover {
     color: #ffffff;
 }
-.post-item .post-shade h4{
+
+.post-item .post-shade h4 {
     text-transform: uppercase;
 }
-.post-item .post-shade{
+
+.post-item .post-shade {
     margin-top: 35px;
     display: block;
 }
-.post-item .post-shade img{
+
+.post-item .post-shade img {
     padding-left: 10px;
 }
-.post-item .recent-content{
+
+.post-item .recent-content {
     display: flex;
     margin-bottom: 20px;
 }
-.post-item .recent-content .recent-text{
+
+.post-item .recent-content .recent-text {
     padding-left: 15px;
     position: relative;
     top: 7px;
 }
+
 .post-item .recent-content .recent-text span {
     margin-bottom: 10px;
     display: block;
@@ -8279,48 +8799,58 @@ Kyc Upload Docs
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
 }
-.post-item .recent-content .recent-text h5 a{
+
+.post-item .recent-content .recent-text h5 a {
     color: #ffffff;
 }
-.tag-menu ul{
+
+.tag-menu ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.tag-menu ul li{
+
+.tag-menu ul li {
     display: inline-block;
     padding-right: 5px;
     margin-bottom: 35px;
 }
-.tag-menu ul li a{
+
+.tag-menu ul li a {
     background: #232433;
     padding: 15px 15px;
     font-style: italic;
 }
 
-.latest-item.hover-shape-inner .latest-text{
+.latest-item.hover-shape-inner .latest-text {
     overflow: hidden;
 }
+
 .latest-item.hover-shape-inner .latest-text,
-.latest-item.hover-shape-inner{
+.latest-item.hover-shape-inner {
     position: relative;
 }
-div.latest-item .hover-shape-bg{
+
+div.latest-item .hover-shape-bg {
     z-index: 3;
 }
-.newsletter-item.hover-shape-inner{
+
+.newsletter-item.hover-shape-inner {
     background: radial-gradient(circle, #4a4176 -53%, #1e1f35 0%);
     position: relative;
     z-index: 9;
     padding: 30px 30px;
 }
+
 .newsletter-item.hover-shape-inner .hover_shape1 {
     left: 22%;
 }
+
 .newsletter-item.hover-shape-inner .hover_shape2 {
     left: 60.5%;
     width: 60px;
 }
+
 .newsletter-item.hover-shape-inner .hover_shape3 {
     left: 41%;
     width: 40px;
@@ -8331,7 +8861,8 @@ div.latest-item .hover-shape-bg{
     font-size: 18px;
     text-transform: uppercase;
 }
-.categories-area h4.blog-title img{
+
+.categories-area h4.blog-title img {
     margin-bottom: 3px;
     width: 80.29px;
     height: 12px;
@@ -8347,7 +8878,8 @@ div.latest-item .hover-shape-bg{
     width: 100%;
     color: #FFFFFF;
 }
-.newsletter-item .newsletter-link form input[type="email"]{
+
+.newsletter-item .newsletter-link form input[type="email"] {
     width: 100%;
     border: 2px solid #494A5C;
     background: transparent;
@@ -8355,7 +8887,8 @@ div.latest-item .hover-shape-bg{
     padding: 15px 0 15px 20px;
     margin-bottom: 30px;
 }
-.newsletter-item .newsletter-link .newsletter-btn input[type="submit"]{
+
+.newsletter-item .newsletter-link .newsletter-btn input[type="submit"] {
     padding: 17px 0;
     width: 100%;
     text-transform: uppercase;
@@ -8370,37 +8903,45 @@ div.latest-item .hover-shape-bg{
 /* ------------------------------------
     03. Gamfi Latest-details-content Section CSS
 ---------------------------------------*/
-.latest-details-content .latest-content{
+.latest-details-content .latest-content {
     padding-right: 30px;
 }
-.latest-details-content{
+
+.latest-details-content {
     padding-top: 70px;
     padding-bottom: 140px;
     background: #090A1A;
 }
-.latest-details-content .latest-item{
+
+.latest-details-content .latest-item {
     margin-bottom: 30px;
 }
-.latest-details-content .latest-item img{
+
+.latest-details-content .latest-item img {
     width: 100%;
     max-height: 450px;
 }
-.latest-details-content .latest-item .latest-text{
+
+.latest-details-content .latest-item .latest-text {
     background: #1A1B30;
     padding: 32px 30px;
 }
-.latest-details-content .latest-item .latest-text .sec-heading p{
+
+.latest-details-content .latest-item .latest-text .sec-heading p {
     padding-top: 15px;
 }
-.latest-details-content .latest-item .sub-inner{
+
+.latest-details-content .latest-item .sub-inner {
     margin-bottom: 10px;
     display: block;
 }
-.latest-details-content .latest-item .sub-inner span{
+
+.latest-details-content .latest-item .sub-inner span {
     position: relative;
     padding-right: 10px;
-    
+
 }
+
 .latest-details-content .latest-item .sub-inner a {
     font-family: 'Russo One';
     font-style: normal;
@@ -8410,7 +8951,7 @@ div.latest-item .hover-shape-bg{
     color: rgba(255, 255, 255, 0.7);
 }
 
-.latest-details-content .latest-item .latest-btn a{
+.latest-details-content .latest-item .latest-btn a {
     text-transform: uppercase;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
@@ -8418,12 +8959,15 @@ div.latest-item .hover-shape-bg{
     padding-left: 30px;
     transition: 0.4s;
 }
-.latest-details-content .latest-item h4.title{
+
+.latest-details-content .latest-item h4.title {
     font-size: 30px;
 }
-.latest-details-content .latest-item h4.title a{
+
+.latest-details-content .latest-item h4.title a {
     color: #ffffff;
 }
+
 .latest-details-content .latest-item .latest-btn a {
     font-family: 'Russo One';
     font-style: normal;
@@ -8432,11 +8976,13 @@ div.latest-item .hover-shape-bg{
     line-height: 30px;
     color: rgba(255, 255, 255, 0.7);
 }
-.latest-details-content .latest-item .latest-btn a:hover{
+
+.latest-details-content .latest-item .latest-btn a:hover {
     color: #fff;
-    
+
 }
-.latest-details-content .latest-item .latest-btn a:before{
+
+.latest-details-content .latest-item .latest-btn a:before {
     position: absolute;
     content: "";
     width: 20px;
@@ -8445,76 +8991,79 @@ div.latest-item .hover-shape-bg{
     top: 7px;
     left: 0;
 }
-.gamfi-navigation ul li + li {
-  margin-left: 4px;
+
+.gamfi-navigation ul li+li {
+    margin-left: 4px;
 }
+
 .gamfi-navigation ul li:first-child {
-  top: 2px;
+    top: 2px;
 }
+
 .gamfi-navigation ul li:first-child a {
-  padding: 11px 19px 8px;
-  position: relative;
-  top: -1px;
+    padding: 11px 19px 8px;
+    position: relative;
+    top: -1px;
 }
 
 .gamfi-navigation ul li a {
-  display: block;
-  border: 1px solid #2e2f3c;
-  color: #fff;
-  padding: 10px 20px;
-  font-family: "Russo One", sans-serif;
-  text-transform: uppercase;
-  transition: 0.4s;
+    display: block;
+    border: 1px solid #2e2f3c;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    transition: 0.4s;
 }
 
 .gamfi-navigation ul li a .icon-Vector {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .gamfi-navigation ul li a .icon-arrow_right {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .gamfi-navigation ul li a.active:not(.black-shape),
 .gamfi-navigation ul li a:hover:not(.black-shape) {
-  background: #2e2f3c;
-  color: #a3ff12;
+    background: #2e2f3c;
+    color: #a3ff12;
 }
 
 .breadcrumbs-form .gamfi-navigation {
-  position: relative;
-  top: -3px;
+    position: relative;
+    top: -3px;
 }
 
 .breadcrumbs-form .gamfi-navigation ul {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .breadcrumbs-form .gamfi-navigation ul li:first-child {
-  top: 0;
+    top: 0;
 }
 
 .breadcrumbs-form .gamfi-navigation ul li:first-child a {
-  padding-top: 11px;
-  padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 8px;
 }
 
 .canvas-menu ul li {
-  display: block;
+    display: block;
 }
 
-.canvas-menu ul li + li {
-  padding-top: 15px;
+.canvas-menu ul li+li {
+    padding-top: 15px;
 }
 
 .canvas-menu ul li a {
-  display: block;
-  color: #ffffff;
-  font-weight: 600;
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .canvas-menu ul li a:hover {
-  color: #636363;
+    color: #636363;
 }
