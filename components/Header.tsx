@@ -1,11 +1,9 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const Header: NextPage = () => {
   return (
-    <header
-      id="gamfi-header"
-      className="gamfi-header-section transparent-header"
-    >
+    <header id="gamfi-header" className="gamfi-header-section default-header">
       <div className="menu-area menu-sticky">
         <div className="container">
           <div className="heaader-inner-area d-flex justify-content-between align-items-center">
@@ -18,16 +16,24 @@ const Header: NextPage = () => {
               <div className="header-menu">
                 <ul className="nav-menu">
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="project.html">Projects</a>
+                    <Link href="/projects">
+                      <a>Projects</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="staking.html">Staking</a>
+                    <Link href="/staking">
+                      <a>Staking</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="farming.html">Farming</a>
+                    <Link href="/farming">
+                      <a>Farming</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -125,16 +131,24 @@ const Header: NextPage = () => {
         </div>
         <ul className="nav-menu">
           <li className="current-menu-item">
-            <a href="index.html">Home</a>
+            <Link href="/">
+              <a id="nav-close2">Home</a>
+            </Link>
           </li>
           <li>
-            <a href="project.html">Projects</a>
+            <Link href="/projects">
+              <a id="nav-close2">Projects</a>
+            </Link>
           </li>
           <li>
-            <a href="staking.html">Staking</a>
+            <Link href="/staking">
+              <a id="nav-close2">Staking</a>
+            </Link>
           </li>
           <li>
-            <a href="farming.html">Farming</a>
+            <Link href="/farming">
+              <a id="nav-close2">Farming</a>
+            </Link>
           </li>
           <li className="menu-item-has-children">
             <a href="#">Buy Token</a>

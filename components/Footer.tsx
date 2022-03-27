@@ -119,9 +119,9 @@ const Footer: NextPage = () => {
           </div>
           <div className="copyright-area text-center mb-0">
             <div className="dsc mb-37 md-mb-25">
-              Copyright © 2022. All Rights Reserved by
+              Copyright © 2022. All Rights Reserved by{" "}
               <a target="_blank" className="gafi" href="#">
-                GaFi
+                Lemmatron
               </a>
             </div>
           </div>

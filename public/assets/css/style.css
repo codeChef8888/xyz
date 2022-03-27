@@ -362,6 +362,10 @@ body .modal-backdrop {
     border: none !important;
 }
 
+.container {
+    width: 90%;
+}
+
 /* -----------------------
     02. Gamfi Header Section CSS
 --------------------------*/
@@ -384,7 +388,7 @@ body .modal-backdrop {
 
 .gamfi-header-section.default-header:after,
 .gamfi-header-section.default-header:before {
-    width: 252px;
+    width: 230px;
     height: 100%;
     content: "";
     background-image: url(../images/bg/header-shape1.png);
