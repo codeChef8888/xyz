@@ -46,24 +46,26 @@ const Leaderboard: NextPage = () => {
 
       <div className="leaderboard-table-list pb-140 md-pb-80 pt-55">
         <div className="container">
-          <table>
-            <tbody>
-              <tr>
-                <th># RANK</th>
-                <th>Name</th>
-                <th>Public Key</th>
-                <th>locked</th>
-                <th>Balance</th>
-              </tr>
-            </tbody>
-          </table>
-          <div>
-            <LeaderboardItem />
-            <LeaderboardItem />
-            <LeaderboardItem />
-            <LeaderboardItem />
-            <LeaderboardItem />
+          <div className="leaderboard-table-maindiv">
+            <div className="leaderboard-table">
+              <div>
+                <div className="leaderboard-header">
+                  <span># Rank</span>
+                  <span>Name</span>
+                  <span>Public Key</span>
+                  <span>locked</span>
+                  <span>Balance</span>
+                </div>
+
+                <LeaderboardItem />
+                <LeaderboardItem />
+                <LeaderboardItem />
+                <LeaderboardItem />
+                <LeaderboardItem />
+              </div>
+            </div>
           </div>
+
           <div className="gamfi-navigation text-center mt-40">
             <ul>
               <li>

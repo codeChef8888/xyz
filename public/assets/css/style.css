@@ -2976,42 +2976,47 @@ body .modal-backdrop {
     background: #090a1a;
 }
 
-.leaderboard-table-list table {
-    width: 100%;
+.leaderboard-table {
+    display: flex;
+    overflow: auto;
 }
 
-.leaderboard-table-list tr th,
-.leaderboard-table-list tr td,
-.leaderboard-table-list .leaderboard-item span
- {
-    width: 20%;
-    padding: 15px 25px;
-    margin-bottom: 10px;
+.leaderboard-table-maindiv {
+    display: flex;
+    justify-content: center;
+}
+
+.leaderboard-table-list .leaderboard-header, .leaderboard-table-list .leaderboard-item {
+    width: 100%;
+    display: flex;
+}
+
+.leaderboard-table-list .leaderboard-header span,
+.leaderboard-table-list .leaderboard-item span {
+    width: 200px;
+    padding: 10px;
     display: inline-block;
 }
 
-.leaderboard-table-list tr th:last-child,
-.leaderboard-table-list tr td:last-child,
-.leaderboard-table-list .leaderboard-item span:last-child{
+
+.leaderboard-table-list .leaderboard-header span:last-child,
+.leaderboard-table-list .leaderboard-item span:last-child {
     text-align: right;
 }
 
-.leaderboard-table-list tr th:nth-child(3),
-.leaderboard-table-list tr td:nth-child(3),
+.leaderboard-table-list .leaderboard-header span:nth-child(3),
 .leaderboard-table-list .leaderboard-item span:nth-child(3) {
-    width: 30%;
+    width: 300px;
 }
 
-.leaderboard-table-list tr th:nth-child(1),
-.leaderboard-table-list tr td:nth-child(1),
+.leaderboard-table-list .leaderboard-header span:nth-child(1),
 .leaderboard-table-list .leaderboard-item span:nth-child(1),
-.leaderboard-table-list tr th:nth-child(4),
-.leaderboard-table-list tr td:nth-child(4),
+.leaderboard-table-list .leaderboard-header span:nth-child(4),
 .leaderboard-table-list .leaderboard-item span:nth-child(4) {
-    width: 15%;
+    width: 90px;
 }
 
-.leaderboard-table-list tr th {
+.leaderboard-table-list .leaderboard-header span {
     font-family: "Russo One", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
@@ -3020,9 +3025,11 @@ body .modal-backdrop {
     padding-bottom: 5px;
 }
 
-.leaderboard-table-list tr td, .leaderboard-table-list .leaderboard-item span {
+.leaderboard-table-list .leaderboard-item {
     background: #1a1b30;
     color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .gamfi-breadcrumbs-section .breadcrumbs-form.mr-0 form {
