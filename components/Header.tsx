@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 
@@ -50,7 +51,7 @@ const Header: NextPage = () => {
                   </a>
                 </li>
                 <li className="buy-token">
-                  <a className="readon black-shape" href="#">
+                  <a className="readon black-shape" href="#" style={{borderRadius: "4px"}}>
                     <span className="btn-text">Buy Token </span>
                     <i className="icon-arrow_down"></i>
                     <span className="hover-shape1"></span>
@@ -59,7 +60,7 @@ const Header: NextPage = () => {
                   </a>
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="#" style={{borderRadius: "4px 4px 0 0"}}>
                         <img
                           src="assets/images/icons/pancake.png"
                           alt="pancake"
@@ -86,7 +87,7 @@ const Header: NextPage = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="#" style={{borderRadius: "0 0 4px 4px"}}>
                         <img src="assets/images/icons/gate.png" alt="gate" />{" "}
                         Gate.io
                       </a>
@@ -100,7 +101,7 @@ const Header: NextPage = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
-                    <img src="assets/images/icons/connect.png" alt="Icon" />
+                    <img src="assets/images/icons/connect_white.png" alt="Icon" />
                     <span className="btn-text">Connect </span>
                     <span className="hover-shape1"></span>
                     <span className="hover-shape2"></span>
@@ -174,7 +175,7 @@ const Header: NextPage = () => {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              <img src="assets/images/icons/connect_white.png" alt="Icon" />
+              <img src="assets/images/icons/connect.png" alt="Icon" />
               <span className="btn-text">Connect </span>
               <span className="hover-shape1"></span>
               <span className="hover-shape2"></span>

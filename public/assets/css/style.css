@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-@charset "utf-8";
+/* @charset "utf-8"; */
 
 /** 
 * 
@@ -166,7 +166,7 @@ h6 {
 }
 
 .sec-heading .sub-title {
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -196,7 +196,7 @@ a:active,
 a:hover {
     text-decoration: none;
     outline: 0 none;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 ul {
@@ -291,7 +291,7 @@ body .search-modal .close {
 }
 
 body .search-modal .close:hover {
-    color: #a3ff12 !important;
+    color: #0DB2FF !important;
     opacity: 1 !important;
 }
 
@@ -370,7 +370,7 @@ body .modal-backdrop {
     02. Gamfi Header Section CSS
 --------------------------*/
 .gamfi-header-section {
-    background-color: #090a1a;
+    background-color: #0F1123;
     padding: 25px 0;
 }
 
@@ -382,7 +382,7 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section.default-header {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
 }
 
@@ -391,19 +391,16 @@ body .modal-backdrop {
     width: 230px;
     height: 100%;
     content: "";
-    background-image: url(../images/bg/header-shape1.png);
     position: absolute;
     top: 0;
     background-repeat: no-repeat;
 }
 
 .gamfi-header-section.default-header:after {
-    background-image: url(../images/bg/header-shape1.png);
     left: 0;
 }
 
 .gamfi-header-section.default-header:before {
-    background-image: url(../images/bg/header-shape2.png);
     right: 0;
 }
 
@@ -546,11 +543,12 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section .white-btn {
-    background: #fff;
-    color: #090A1A;
+    background: #0DB2FF;
+    color: #ffffff;
     margin-left: 25px;
     padding: 13px 32px 11px;
     border: none;
+    border-radius: 4px;
 }
 
 .gamfi-header-section .white-btn img {
@@ -560,7 +558,7 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section .gamfi-btn-area ul li ul li a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.542);
 }
 
 .gamfi-header-section .gamfi-btn-area ul li ul li a:hover {
@@ -691,6 +689,9 @@ body .modal-backdrop {
 .gamfi-header-section .mobile-navbar-menu .nav-menu li li a {
     padding-left: 25px;
 }
+.header-menu .nav-menu li a:hover {
+    color: #0DB2FF;
+}
 
 .gamfi-header-section .mobile-navbar-menu .nav-menu li li li a {
     padding-left: 50px;
@@ -760,6 +761,7 @@ body .modal-backdrop {
 
 .progress-inner {
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
     padding: 8px;
 }
 
@@ -776,7 +778,7 @@ body .modal-backdrop {
 }
 
 .progress-inner .progress-bar {
-    background-image: linear-gradient(60deg, #a3ff12 26%, transparent 25%, transparent 50%, #a3ff12 54%, #a3ff12 82%, transparent 75%, transparent);
+    background-image: linear-gradient(60deg, #0DB2FF 26%, transparent 25%, transparent 50%, #0DB2FF 54%, #0DB2FF 82%, transparent 75%, transparent);
 }
 
 .white-shape-small,
@@ -819,7 +821,7 @@ body .modal-backdrop {
 .hover-shape .hover-shape3 {
     position: absolute;
     width: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.263);
     height: 124%;
     left: -42%;
     top: -5px;
@@ -944,7 +946,7 @@ body .modal-backdrop {
     position: relative;
     transition: all 0.4s ease-in-out;
     font-family: "Russo One", sans-serif;
-    background: #a3ff12;
+    background: #0DB2FF;
     color: #090a1a;
     padding: 19px 50px;
 }
@@ -963,8 +965,8 @@ body .modal-backdrop {
     04. Gamfi Breadcrumbs Section CSS
 --------------------------*/
 .gamfi-breadcrumbs-section {
-    background: url(../images/bg/breadcrumbs-bg.jpg);
     background-position: center;
+    background-color:#1d203b52;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 70px;
@@ -978,6 +980,7 @@ body .modal-backdrop {
     font-family: "Russo One", sans-serif;
 }
 
+
 .gamfi-breadcrumbs-section .breadcrumbs-link:before {
     content: "";
     width: 6px;
@@ -988,9 +991,6 @@ body .modal-backdrop {
     right: -15px;
 }
 
-.gamfi-breadcrumbs-section .breadcrumbs-link:hover {
-    color: #a3ff12;
-}
 
 .gamfi-breadcrumbs-section .breadcrumbs-form {
     display: flex;
@@ -1083,6 +1083,7 @@ body .modal-backdrop {
 .gamfi-navigation ul li {
     display: inline-block;
     position: relative;
+    border-radius: 4px;
 }
 
 .gamfi-navigation ul li+li {
@@ -1120,7 +1121,7 @@ body .modal-backdrop {
 .gamfi-navigation ul li a.active:not(.black-shape),
 .gamfi-navigation ul li a:hover:not(.black-shape) {
     background: #2E2F3C;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .breadcrumbs-form .gamfi-navigation {
@@ -1395,7 +1396,7 @@ body .modal-backdrop {
 .hover-shape-border .shadow-1 {
     top: 0px;
     left: 0;
-    background: linear-gradient(to bottom, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to bottom, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
     width: 5px;
     height: 200px;
 }
@@ -1404,7 +1405,7 @@ body .modal-backdrop {
 .hover-shape-border .shadow-2 {
     top: 0px;
     left: 5px;
-    background: linear-gradient(to right, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to right, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
     width: 200px;
     height: 5px;
 }
@@ -1415,7 +1416,7 @@ body .modal-backdrop {
     right: 0;
     width: 5px;
     height: 200px;
-    background: linear-gradient(to top, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to top, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .active-shape .shadow-4,
@@ -1424,7 +1425,7 @@ body .modal-backdrop {
     right: 5px;
     width: 200px;
     height: 5px;
-    background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to left, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .hover-shape-border .border-shadow {
@@ -1631,7 +1632,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .banner-bottom-content .social-icon-list li a:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .banner-bottom-content .social-icon-list li:first-child {
@@ -1676,7 +1677,7 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li:hover button,
 .project-details-conent .project-item .date-listing li.active button {
     background: #303244;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .banner-bottom-content .btn-area .readon {
@@ -1766,7 +1767,7 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li .active,
 .project-details-conent .project-item .date-listing li input:checked+label {
     background: #303244;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-item .date-listing li+li {
@@ -1781,12 +1782,12 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li a:hover {
     background: #313245;
     border-color: #313245;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-item .big-text {
     font-size: 30px;
-    color: #a3ff12;
+    color: #0DB2FF;
     font-family: "Russo One", sans-serif;
     position: absolute;
     right: 0;
@@ -1893,7 +1894,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-media .social-icon-list li a:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-video-area {
@@ -2003,7 +2004,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-content .project-price .springGreen:before {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .project-details-conent .project-content .project-price .darkturquoise:before {
@@ -2040,7 +2041,7 @@ body .modal-backdrop {
 }
 
 .project-summary-menu .nav button.active {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-summary-menu .nav button.active img {
@@ -2105,8 +2106,9 @@ body .modal-backdrop {
 }
 
 .project-menu-area {
-    background: #222231;
+    background: #1d203b52;
     margin-bottom: 42px;
+    border-radius: 4px;
 }
 
 .project-menu-area ul li {
@@ -2133,7 +2135,7 @@ body .modal-backdrop {
     left: 0;
     width: 0;
     height: 2px;
-    background: #6d4afe;
+    background: #0DB2FF;
     bottom: 0;
     transition: 0.3s;
 }
@@ -2261,7 +2263,7 @@ body .modal-backdrop {
     08. Gamfi previous Section CSS
 ---------------------------------------*/
 .gamfi-previous-section {
-    background: #090b1a;
+    background: #0F1123;
 }
 
 .gamfi-previous-section .project-right-menu .access i {
@@ -2441,10 +2443,11 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .previous-item {
-    background: #1a1b30;
+    background: #1d203b52;
     margin-bottom: 30px;
     padding: 30px 30px;
     display: flex;
+    border-radius: 4px;
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
@@ -2650,7 +2653,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .project-item .project-media .social-icon-list li a i:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .gamfi-previous-section .project-item .project-media .social-icon-list li {
@@ -2791,19 +2794,19 @@ body .modal-backdrop {
 
 .gamfi-farming-content .expeand-centent .expeand-menu ul li {
     display: inline-block;
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 14px;
     margin-right: 30px;
 }
 
 .gamfi-farming-content .expeand-centent .expeand-menu ul li i {
     font-size: 15px;
-    color: #a3ff12;
+    color: #0DB2FF;
     padding-left: 10px;
 }
 
 .gamfi-farming-content .expeand-centent .unit {
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 22px;
     font-family: "Russo One", sans-serif;
 }
@@ -3410,7 +3413,7 @@ body .modal-backdrop {
 }
 
 .gamfi-form-content .address-form .input-list input[type="radio"]:checked~.check::before {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .gamfi-form-content .address-form .input-list input[type="radio"]:checked+h5,
@@ -3587,7 +3590,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-cta-area {
-    background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+    background: radial-gradient(circle, #1d203b52 -24%, #1e1f35 40%);
     padding: 70px 0 80px 0;
     position: relative;
     z-index: 9;
@@ -3604,7 +3607,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-cta-area .footer-link .subscribe {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .gamfi-footer-section .footer-cta-area .footer-link .subscribe span {
@@ -3686,7 +3689,8 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-listing .footer-icon-list i:hover {
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: #0DB2FF;
 }
 
 .gamfi-footer-section .footer-mainmenu ul {
@@ -3706,7 +3710,8 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-mainmenu ul li a:hover {
-    color: #fff;
+    /* color: #fff; */
+    color: #0DB2FF;
 }
 
 .gamfi-footer-section .copyright-area .gafi {
@@ -3799,7 +3804,7 @@ body .gamfi-explore-content .project-item {
 
 /*
 .modal-content .connect-section .heading-list li a:hover {
-  color: #a3ff12;
+  color: #0DB2FF;
 }
 */
 .modal-content .modal-title {
@@ -3875,7 +3880,7 @@ section.loader_first {
     width: 60px;
     height: 60px;
     border: 10px solid rgba(255, 255, 255, 0.1);
-    border-top: 10px solid #a3ff12;
+    border-top: 10px solid #0DB2FF;
     border-radius: 50%;
     animation: pre_rotate 1.5s linear infinite;
     position: absolute;
@@ -3952,7 +3957,7 @@ section.loader_first {
 }
 
 .Gamfi_Header_ProgressBar .progress-bar {
-    background-color: #A3FF12;
+    background-color: #0DB2FF;
 }
 
 .kycFormSect {
@@ -5237,7 +5242,7 @@ Kyc Upload Docs
     font-weight: normal;
     font-size: 22px;
     line-height: 158%;
-    color: #A3FF12;
+    color: #0DB2FF;
     margin-bottom: 10px;
 }
 
@@ -5266,14 +5271,14 @@ Kyc Upload Docs
 
 .connectWalletBtnforMobile {
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     height: 40px;
     margin-top: 20px;
     display: none;
 }
 
 .connectWalletBtnforMobile .btn-text {
-    color: #ffffff;
+    color: #000000;
     padding-left: 10px;
 }
 
@@ -5417,7 +5422,7 @@ Kyc Upload Docs
 .gamfi_V2_hero_Btns .VIEW_Projects_Btn {
     width: 200px;
     height: 60px;
-    background: #A3FF12;
+    background: #0DB2FF;
     outline: none;
     margin-right: 15px;
     display: flex;
@@ -6298,7 +6303,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsListSect ul li span.Farming_Pool {
-    background: #A3FF12;
+    background: #0DB2FF;
 }
 
 .TokenomicsListSect ul li span.Staking {
@@ -6707,7 +6712,7 @@ Kyc Upload Docs
     line-height: 19px;
     text-align: center;
 
-    color: #A3FF12;
+    color: #0DB2FF;
 }
 
 .no-border {
@@ -6768,7 +6773,7 @@ Kyc Upload Docs
 .RoadmapListSect .CheckIconBg {
     height: 21px;
     width: 21px;
-    background: #A3FF12;
+    background: #0DB2FF;
     border-radius: 50%;
     position: absolute;
     top: -30px;
@@ -8022,7 +8027,7 @@ Kyc Upload Docs
     font-size: 30px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #A3FF12;
+    color: #0DB2FF;
     margin-right: 10px;
 }
 
@@ -8261,7 +8266,7 @@ Kyc Upload Docs
 }
 
 .Menu_column ul li span.soon {
-    color: color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -8468,7 +8473,7 @@ Kyc Upload Docs
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.springGreen:before {
-    background: #A3FF12;
+    background: #0DB2FF;
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkturquoise:before {
@@ -8899,7 +8904,7 @@ div.latest-item .hover-shape-bg {
     padding: 17px 0;
     width: 100%;
     text-transform: uppercase;
-    background: #A3FF12;
+    background: #0DB2FF;
     border: transparent;
     font-family: "Russo One", sans-serif;
 }
@@ -9034,7 +9039,7 @@ div.latest-item .hover-shape-bg {
 .gamfi-navigation ul li a.active:not(.black-shape),
 .gamfi-navigation ul li a:hover:not(.black-shape) {
     background: #2e2f3c;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .breadcrumbs-form .gamfi-navigation {

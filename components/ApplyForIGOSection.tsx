@@ -20,7 +20,7 @@ const ApplyForIGOSection: NextPage = () => {
               data-wow-delay="300ms"
               data-wow-duration="2500ms"
             >
-              <span className="btn-text">Apply For IGO</span>
+              <span className="btn-text" style={{color: "#fff"}}>Apply For IGO</span>
               <span className="hover-shape1"></span>
               <span className="hover-shape2"></span>
               <span className="hover-shape3"></span>

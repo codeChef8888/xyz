@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import type { NextPage } from "next";
 import Link from "next/link";
 import ApplyForIGOSection from "../components/ApplyForIGOSection";
@@ -32,6 +34,7 @@ const Projects: NextPage = () => {
                   id="Search"
                   name="search"
                   placeholder="Search by name, token, address"
+                  style={{borderRadius: "4px"}}
                 />
                 <span className="submit">
                   <i className="icon-search"></i>
@@ -106,7 +109,7 @@ const Projects: NextPage = () => {
                 <li className="access">
                   <a href="#">All Access</a>
                   <ul className="sub-menu">
-                    <li>
+                    <li style={{borderRadius: "4px 4px 0 0"}}>
                       <a href="#">All Access</a>
                     </li>
                     <li>
@@ -115,7 +118,7 @@ const Projects: NextPage = () => {
                     <li>
                       <a href="#">Private</a>
                     </li>
-                    <li>
+                    <li style={{borderRadius: "0 0 4px 4px"}}>
                       <a href="#">Community</a>
                     </li>
                   </ul>
@@ -123,7 +126,7 @@ const Projects: NextPage = () => {
                 <li className="block">
                   <a href="#">All Block Chain</a>
                   <ul className="sub-menu">
-                    <li>
+                    <li style={{borderRadius: "4px 4px 0 0"}}>
                       <a href="#">
                         <img
                           src="assets/images/project/previous-image.png"
@@ -150,7 +153,7 @@ const Projects: NextPage = () => {
                         Polygon
                       </a>
                     </li>
-                    <li>
+                    <li style={{borderRadius: "0 0 4px 4px"}}>
                       <a href="#">
                         <img src="assets/images/project/chain.png" alt="icon" />{" "}
                         All Block Chain

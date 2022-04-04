@@ -234,7 +234,7 @@
         font-size: 14px;
     }
     .blog-detail-conent .blog-area .about-blog .blog-contact .next-item {
-        margin-left: ;
+        margin-left: 0;
     }
     .latest-blog-area .latest-text h4{
        font-size: 19px;
@@ -250,7 +250,7 @@
         font-size: 12px;
     }
     .HomeMenuList ul li a{
-        font-size: 12px !importnat;
+        font-size: 12px !important;
     }
     .megaMenuRightSect .Menu_column{
         max-width: 180px;
@@ -809,7 +809,7 @@
     .project-details-conent .banner-bottom-content .social-icon-list li {
         margin-left: 0;
     }
-    .project-details-conent .project-item {;
+    .project-details-conent .project-item {
         padding: 35px 20px;
     }
     .project-details-conent .project-service{
