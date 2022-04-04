@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -53,7 +54,7 @@ const Staking: NextPage = () => {
         <div className="container">
           <div className="row pt-70">
             <div className="col-lg-6 pr-25 md-pr-15">
-              <div className="project-item">
+              <div className="project-item" style={{borderRadius: "4px"}}>
                 <div className="project-info border-bottom-2">
                   <h4 className="mb-15">Participat IGO Stake</h4>
                   <h3 className="mb-15">
@@ -62,7 +63,7 @@ const Staking: NextPage = () => {
                   <span>Total Stake</span>
                 </div>
                 <ul className="date-listing mb-35">
-                  <li className="StakeTablinks" id="defaultOpen">
+                  <li className="StakeTablinks" id="defaultOpen" style={{borderRadius: "4px"}}>
                     <button
                       onClick={(e) => openTab(e, "sevenDays")}
                       className={currentValue == "sevenDays" ? "active" : ""}
@@ -70,7 +71,7 @@ const Staking: NextPage = () => {
                       7 Days
                     </button>
                   </li>
-                  <li className="StakeTablinks">
+                  <li className="StakeTablinks" style={{borderRadius: "4px"}}>
                     <button
                       onClick={(e) => openTab(e, "fourteenDays")}
                       className={currentValue == "fourteenDays" ? "active" : ""}
@@ -78,7 +79,7 @@ const Staking: NextPage = () => {
                       14 Days
                     </button>
                   </li>
-                  <li className="StakeTablinks">
+                  <li className="StakeTablinks" style={{borderRadius: "4px"}}>
                     <button
                       onClick={(e) => openTab(e, "thirtyDays")}
                       className={currentValue == "thirtyDays" ? "active" : ""}
@@ -86,7 +87,7 @@ const Staking: NextPage = () => {
                       30 Days
                     </button>
                   </li>
-                  <li className="StakeTablinks">
+                  <li className="StakeTablinks" style={{borderRadius: "4px"}}>
                     <button
                       onClick={(e) => openTab(e, "sixtyDays")}
                       className={currentValue == "sixtyDays" ? "active" : ""}
@@ -217,7 +218,7 @@ const Staking: NextPage = () => {
                 <div className="project-form-list">
                   <h5 className="mb-18">Balance: 2889.00 BUSD</h5>
                   <div className="balance-form-area mb-27">
-                    <input type="text" placeholder="00.00" />
+                    <input type="text" placeholder="00.00" style={{borderRadius: "4px"}}/>
                     <span className="max">MAX</span>
                     <div className="white-shape-small approve">
                       <input type="submit" value="Approve" />
@@ -228,7 +229,7 @@ const Staking: NextPage = () => {
                   </div>
                   <h5 className="mb-18">Staked: 256.50 BUSD</h5>
                   <div className="balance-form-area">
-                    <input type="text" placeholder="0.00" />
+                    <input type="text" placeholder="0.00" style={{borderRadius: "4px"}}/>
                     <span className="max">MAX</span>
                     <div className="white-shape-small">
                       <input type="submit" value="Withdraw" />
@@ -241,7 +242,7 @@ const Staking: NextPage = () => {
               </div>
             </div>
             <div className="col-lg-6 pl-25 md-pl-15">
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30 rounded">
                 <div className="project-value">
                   <h3 className="mb-15">$7,868,163.54</h3>
                   <span>Total Value Locked</span>
@@ -254,7 +255,7 @@ const Staking: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30 rounded">
                 <div className="project-value">
                   <h3 className="mb-15">158.50 %</h3>
                   <span>Apy</span>
@@ -267,7 +268,7 @@ const Staking: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center">
+              <div className="project-item project-value-inner d-flex justify-content-between align-items-center rounded">
                 <div className="project-value">
                   <h3 className="mb-15">5699</h3>
                   <span>Number of Stakers</span>
