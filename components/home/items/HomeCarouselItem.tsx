@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 
@@ -11,7 +12,7 @@ const HomeCarouselItem: NextPage = () => {
               <Link href="/project-details">
                 <a>
                   <img
-                    src="assets/images/project/ninga-4.png"
+                    src="assets/images/project/ninga-44.png"
                     alt="icon-image"
                   />
                 </a>

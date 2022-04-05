@@ -11,7 +11,7 @@ const ProjectListItem: NextPage = () => {
             <div className="previous-gaming">
               <div className="previous-image">
                 <img
-                  src="assets/images/project/privius-image2.png"
+                  src="assets/images/project/privius-imagee.png"
                   alt="Previous-Image"
                 />
               </div>

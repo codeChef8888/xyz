@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 
 const ProjectSummarySection: NextPage = () => {
@@ -136,7 +137,7 @@ const ProjectSummarySection: NextPage = () => {
           </div>
           <div className="project-video-area">
             <img
-              src="assets/images/project/project-video.jpg"
+              src="assets/images/project/project-video.png"
               alt="Project-image"
             />
             <a

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ const UpcomingIGOItem: NextPage = () => {
           <Link href="/project-details">
             <a>
               <img
-                src="assets/images/project/project-image.png"
+                src="assets/images/project/project-imagee.png"
                 alt="Project-Image"
               />
             </a>

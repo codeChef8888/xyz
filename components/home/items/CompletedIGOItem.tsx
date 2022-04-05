@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ const CompletedIGOItem: NextPage = () => {
             <div className="previous-gaming">
               <div className="previous-image">
                 <img
-                  src="assets/images/project/privius-image.png"
+                  src="assets/images/project/privius-imagee.png"
                   alt="Previous-Image"
                 />
               </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 
 const ProjectClaimSection: NextPage = () => {
@@ -12,7 +13,7 @@ const ProjectClaimSection: NextPage = () => {
           <div className="price-inner d-flex mb-45">
             <div className="image-icon">
               <img
-                src="assets/images/project/ninga-image.png"
+                src="assets/images/project/ninga-44.png"
                 alt="icon-image"
               />
             </div>
