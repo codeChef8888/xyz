@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 import ApplyForIGOSection from "../components/ApplyForIGOSection";
@@ -33,6 +34,7 @@ const Farming: NextPage = () => {
                   id="Search"
                   name="search"
                   placeholder="Search by name, token, address"
+                  style={{borderRadius: "4px"}}
                 />
                 <span className="submit">
                   <i className="icon-search"></i>

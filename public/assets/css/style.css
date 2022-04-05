@@ -112,7 +112,7 @@ body {
     line-height: 1.6;
     font-weight: 500;
     overflow-x: hidden;
-    background-color: #151625;
+    background-color: #0F1123;
 }
 
 img {
@@ -334,7 +334,7 @@ body .modal-backdrop {
 
 .white-bg-btn {
     background: #fff;
-    color: #090a1a;
+    color: #0F1123;
     border: 2px solid #fff;
     padding: 10px 20px;
 }
@@ -641,7 +641,7 @@ body .modal-backdrop {
     transform: translate(-50%, -50%) rotate(45deg);
     width: 3px !important;
     height: 28px !important;
-    background: #151625;
+    background: #0F1123;
     border: none !important;
     transition: all 0.3s ease;
 }
@@ -716,7 +716,7 @@ body .modal-backdrop {
     width: 20px;
     height: 1px;
     display: block;
-    background: #151625;
+    background: #0F1123;
     z-index: 2;
     content: '';
     right: 12px;
@@ -897,7 +897,7 @@ body .modal-backdrop {
     z-index: 9;
     overflow: hidden;
     padding: 170px 0 225px;
-    background: url(../images/bg/banner-bg.jpg);
+    background-color: #0F1123;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -948,12 +948,12 @@ body .modal-backdrop {
     transition: all 0.4s ease-in-out;
     font-family: "Russo One", sans-serif;
     background: #0DB2FF;
-    color: #090a1a;
+    color: #0F1123;
     padding: 19px 50px;
 }
 
 .banner-btn:hover {
-    color: #090a1a;
+    color: #0F1123;
 }
 
 .banner-btn .hover-shape1,
@@ -1167,7 +1167,7 @@ body .modal-backdrop {
     05. Gamfi About Section CSS
 ---------------------------------------*/
 .gamfi-about-secion {
-    background: #151625;
+    background: #0F1123;
 }
 
 .gamfi-about-secion .game-price-item {
@@ -1453,7 +1453,6 @@ body .modal-backdrop {
     06. Gamfi Project Section CSS
 ---------------------------------------*/
 .gamfi-project-section {
-    background: url(../images/bg/project-bg.jpg);
     padding-top: 115px;
     padding-bottom: 105px;
 }
@@ -1682,15 +1681,15 @@ body .modal-backdrop {
 }
 
 .project-details-conent .banner-bottom-content .btn-area .readon {
-    background: #6D4AFE;
+    background: #0DB2FF;
     border: none;
     transition: 0.4s;
     padding: 17px 45;
 }
 
 .project-details-conent .readon {
-    background: #6d4afe;
-    border-color: #6d4afe;
+    background: #0DB2FF;
+    border-color: #0DB2FF;
     border: 2px solid #3C3D4F;
     transition: 0.4s;
     color: #fff;
@@ -1991,7 +1990,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-content .project-price .darkslateblue:before {
-    background: #6d4afe;
+    background: #0DB2FF;
 }
 
 .project-details-conent .project-content .project-price .cyan:before {
@@ -2416,7 +2415,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider:before {
@@ -2428,7 +2427,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .form-switch input:focus+.slider {
-    box-shadow: 0 0 1px #6D4AFE;
+    box-shadow: 0 0 1px #0DB2FF;
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider:before {
@@ -2765,7 +2764,7 @@ body .modal-backdrop {
     position: absolute;
     z-index: 9999;
     right: 9px;
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list .black-shape span {
@@ -2781,7 +2780,7 @@ body .modal-backdrop {
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list input[type="submit"].submit-active {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list:last-child h5 {
@@ -2880,7 +2879,7 @@ body .modal-backdrop {
 }
 
 .gamfi-farming-table {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .gamfi-farming-table table {
@@ -2979,7 +2978,7 @@ body .modal-backdrop {
     11. Gamfi Leaderboard Section CSS
 ---------------------------------------*/
 .leaderboard-table-list {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .leaderboard-table {
@@ -3046,7 +3045,7 @@ body .modal-backdrop {
     12. Gamfi Igo-Rankging Section CSS
 ---------------------------------------*/
 .igo-rankging-table-list {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .igo-rankging-table-list table {
@@ -3142,7 +3141,7 @@ body .modal-backdrop {
 ---------------------------------------*/
 .gamfi-tokenomics-section .tokenomics-counter .counter-number {
     font-size: 36px;
-    color: #6d4afe;
+    color: #0DB2FF;
     font-family: "Russo One", sans-serif;
     display: block;
 }
@@ -3181,10 +3180,9 @@ body .modal-backdrop {
     14. Gamfi Team Section CSS
 ---------------------------------------*/
 .gamfi-team-section {
-    background: url(../images/bg/team-bg.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-color: #090a1a;
+    background-color: #0F1123;
 }
 
 .gamfi-team-section .team-item {
@@ -3250,7 +3248,7 @@ body .modal-backdrop {
     15. Gamfi Partner Section CSS
 ---------------------------------------*/
 .gamfi-partner-section {
-    background: #0a0b1a;
+    background: #0F1123;
 }
 
 .gamfi-partner-section .partner-item .partner-image {
@@ -3282,7 +3280,7 @@ body .modal-backdrop {
     height: 100%;
     position: absolute;
     top: 0px;
-    background: linear-gradient(to right, #0a0b1a, rgba(10, 10, 26, 0));
+    background: linear-gradient(to right, #0F1123, rgba(10, 10, 26, 0));
     z-index: 1;
 }
 
@@ -3318,7 +3316,7 @@ body .modal-backdrop {
 16. Gamfi Form Content Section CSS
 ---------------------------------------*/
 .gamfi-form-content {
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .gamfi-form-content .container {
@@ -3465,7 +3463,7 @@ body .modal-backdrop {
 }
 
 .gamfi-form-content .address-form .project-btn-area {
-    background: #6d4afe;
+    background: #0DB2FF;
 }
 
 .gamfi-form-content .address-form .project-btn-area input {
@@ -3490,7 +3488,7 @@ body .modal-backdrop {
 17. Gamfi Explore Content Section CSS
 ---------------------------------------*/
 .gamfi-explore-content {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .gamfi-explore-content .project-menu-area {
@@ -3871,7 +3869,7 @@ body .gamfi-explore-content .project-item {
     20. Preloader CSS
 ---------------------------------------*/
 section.loader_first {
-    background-color: #151625;
+    background-color: #0F1123;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3964,7 +3962,7 @@ section.loader_first {
 
 .kycFormSect {
     padding-top: 56px;
-    background: #090A1A;
+    background: #0F1123;
     padding-bottom: 140px;
     ;
 }
@@ -4111,7 +4109,7 @@ section.loader_first {
 }
 
 .KycRadioBtn .container input:checked~.checkmark {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
     ;
     border: none;
 }
@@ -4152,7 +4150,7 @@ section.loader_first {
     justify-content: center;
     max-width: 570px;
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     height: 60px;
     border: none;
     outline: none;
@@ -4596,7 +4594,7 @@ Kyc Upload Docs
     font-weight: 500;
     font-size: 16px;
     line-height: 158%;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .KYC_TramsAndCondetionSect .container input {
@@ -4623,7 +4621,7 @@ Kyc Upload Docs
 }
 
 .KYC_TramsAndCondetionSect .container input:checked~.checkmark {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
     ;
     border: none;
 }
@@ -4889,14 +4887,14 @@ Kyc Upload Docs
     font-weight: 500;
     font-size: 16px;
     line-height: 45px;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 /*------------------------
     SignUp-SignIn
 ------------------------*/
 .SignUp_SignIn_Form_Sect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     padding: 96px 0px 0px 0px;
 }
@@ -5034,7 +5032,7 @@ Kyc Upload Docs
 .SignUp_SignIn_Form form button {
     width: 100%;
     height: 60px;
-    background: #6D4AFE;
+    background: #0DB2FF;
     border: none;
     outline: none;
     font-family: Russo One;
@@ -5066,7 +5064,7 @@ Kyc Upload Docs
     font-size: 16px;
     line-height: 28px;
     text-align: center;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .forgetPassBtnSect {
@@ -5109,12 +5107,12 @@ Kyc Upload Docs
 .gamfiRoadMap {
     padding-bottom: 120px;
     padding-top: 40px;
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
 }
 
 .RoadMapSect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     display: flex;
     align-items: center;
@@ -5440,7 +5438,7 @@ Kyc Upload Docs
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #090A1A;
+    color: #0F1123;
 }
 
 .gamfi_V2_hero_Btns .Apply_Project_Btn {
@@ -5715,7 +5713,7 @@ Kyc Upload Docs
     font-size: 22px;
     line-height: 45px;
     text-transform: uppercase;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 0px;
 }
 
@@ -5853,7 +5851,7 @@ Kyc Upload Docs
     /*
     background: url(../images/bg/project-bg.jpg);
     */
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 115px;
     padding-bottom: 105px;
 }
@@ -5957,7 +5955,7 @@ Kyc Upload Docs
 }
 
 .Key_Points_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 115px;
     padding-bottom: 105px;
     position: relative;
@@ -6000,7 +5998,7 @@ Kyc Upload Docs
 
 
 .Tier_System_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6220,7 +6218,7 @@ Kyc Upload Docs
 }
 
 .Tokenomics_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6321,7 +6319,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsListSect ul li span.Private_Sale {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .TokenomicsListSect ul li span.Liquidity {
@@ -6352,7 +6350,7 @@ Kyc Upload Docs
 
 
 .Multi_Chain_Support_Sect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6422,7 +6420,7 @@ Kyc Upload Docs
 }
 
 .gamfi_Our_mentor_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6491,7 +6489,7 @@ Kyc Upload Docs
 }
 
 .Our_PARTNERSContnetSect .OurPartnatList .overlay {
-    background: linear-gradient(180deg, rgba(9, 10, 26, 0) 0%, #090A1A 100%);
+    background: linear-gradient(180deg, rgba(9, 10, 26, 0) 0%, #0F1123 100%);
     height: 158px;
     width: 100%;
     z-index: 2;
@@ -6759,7 +6757,7 @@ Kyc Upload Docs
     font-weight: normal;
     font-size: 22px;
     line-height: 27px;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 75px;
 }
 
@@ -6822,7 +6820,7 @@ Kyc Upload Docs
 
 .Gamfi_footerBtnSect {
     height: 200px;
-    background: #6D4AFE;
+    background: #0DB2FF;
     position: fixed;
     left: 0;
     top: auto;
@@ -6863,7 +6861,7 @@ Kyc Upload Docs
     position: relative;
     z-index: 2;
     margin-bottom: 200px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .Gamfi_footerBtnContent a {
@@ -6998,7 +6996,7 @@ Kyc Upload Docs
     font-size: 22px;
     line-height: 40px;
     text-transform: uppercase;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 0px;
 }
 
@@ -7166,7 +7164,7 @@ Kyc Upload Docs
 
 
 .How_to_Participate_Sect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     display: flex;
     align-items: center;
@@ -7289,7 +7287,7 @@ Kyc Upload Docs
     Tier
 ------------------*/
 .gamfi_TierSect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 70px;
     padding-bottom: 110px;
     position: relative;
@@ -7531,7 +7529,7 @@ Kyc Upload Docs
     Tier V3
 ------------------*/
 .gamfi_TierV3_Sect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 70px;
     padding-bottom: 140px;
 }
@@ -7727,7 +7725,7 @@ Kyc Upload Docs
 ------------------------*/
 
 .ConnectWallet_Section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 96px;
     padding-bottom: 140px;
     backdrop-filter: blur(10px);
@@ -7896,7 +7894,7 @@ Kyc Upload Docs
 
 .Latest_Articles_Sect {
     padding: 71px 0px 100px 0px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .Latest_Articles_Card {
@@ -8019,7 +8017,7 @@ Kyc Upload Docs
 }
 
 .Article_Details2 h4 a span {
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .Article_Details2 h4 a strong {
@@ -8263,7 +8261,7 @@ Kyc Upload Docs
 }
 
 .Menu_column ul li span.new {
-    background: #6D4AFE;
+    background: #0DB2FF;
     backdrop-filter: blur(5px);
 }
 
@@ -8398,7 +8396,7 @@ Kyc Upload Docs
 .blog-detail-conent {
     padding-top: 60px;
     padding-bottom: 140px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .blog-detail-conent .blog-area .blog-description .des {
@@ -8459,7 +8457,7 @@ Kyc Upload Docs
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkslateblue:before {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.cyan:before {
@@ -8704,7 +8702,7 @@ Kyc Upload Docs
 
 .blog-detail-conent .blog-area .form-item .input-submit input {
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     color: #fff;
     border: none;
     padding: 17px;
@@ -8924,7 +8922,7 @@ div.latest-item .hover-shape-bg {
 .latest-details-content {
     padding-top: 70px;
     padding-bottom: 140px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .latest-details-content .latest-item {
