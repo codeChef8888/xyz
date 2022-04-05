@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Custom Scroll */
+::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1123;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4ACAFC;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #85dcff;
+}
