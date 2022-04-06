@@ -56,11 +56,11 @@ const Staking: NextPage = () => {
             <div className="col-lg-6 pr-25 md-pr-15">
               <div className="project-item" style={{borderRadius: "4px"}}>
                 <div className="project-info border-bottom-2">
-                  <h4 className="mb-15">Participat IGO Stake</h4>
+                  <h4 className="mb-15">Stake and participate</h4>
                   <h3 className="mb-15">
-                    256.50 <span className="buse">BUSD</span>
+                    256.50 <span className="buse">LEMA</span>
                   </h3>
-                  <span>Total Stake</span>
+                  <span>Your Balance</span>
                 </div>
                 <ul className="date-listing mb-35">
                   <li className="StakeTablinks" id="defaultOpen" style={{borderRadius: "4px"}}>

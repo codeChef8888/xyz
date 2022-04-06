@@ -1,6 +1,6 @@
 $(document).ready(function() {
   function makeTimer() {
-    var endTime = new Date("april 01, 2022 00:00:00");
+    var endTime = new Date("may 01, 2022 00:00:00");
     var endTime = (Date.parse(endTime)) / 1000;
     var now = new Date();
     var now = (Date.parse(now) / 1000);

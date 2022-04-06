@@ -18,20 +18,20 @@ const ProjectClaimSection: NextPage = () => {
               />
             </div>
             <div className="price-details">
-              <h3 className="mb-15">The Wasted Lands</h3>
-              <div className="dsc">price (DDO) = 0.13 BUSD</div>
+              <h3 className="mb-15">Render RNDR</h3>
+              <div className="dsc">price (RNDR) = 0.13 BUSD</div>
             </div>
           </div>
           <div className="all-raise mb-10">
             {" "}
-            Total Raise 75,999.70 BUSD ( 86% )
+            Total Vote: 20,673.70 ( 36% )
           </div>
         </div>
         <div className="allocation-max text-center">
           <img src="assets/images/project/icon-2.png" alt="icon-image" />
-          <div className="allocation">Allocation: 500 BUSD Max</div>
+          {/* <div className="allocation">Allocation: 500 BUSD Max</div> */}
         </div>
-        <div className="targeted-raise">
+        {/* <div className="targeted-raise">
           <div className="all-raise mb-10">Sale End In</div>
           <div className="price-counter mb-48">
             <div className="timer">
@@ -46,30 +46,30 @@ const ProjectClaimSection: NextPage = () => {
           <div className="targeted-raise text-end">
             Targeted Raise 100,000 BUSD
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="progress-inner">
         <div className="progress">
           <div
             className="progress-bar progress-bar-striped"
             role="progressbar"
-            aria-valuenow={43}
+            aria-valuenow={36}
             aria-valuemin={0}
             aria-valuemax={100}
-            style={{ width: "43%" }}
+            style={{ width: "36%" }}
           ></div>
         </div>
       </div>
       <div className="banner-bottom-content mt-40">
         <div className="btn-area">
           <a className="readon white-shape-small" href="#">
-            <span className="btn-text">Claim Token </span>
+            <span className="btn-text">Vote This Project </span>
             <span className="hover-shape1"></span>
             <span className="hover-shape2"></span>
             <span className="hover-shape3"></span>
           </a>
         </div>
-        <div className="text-content">Participants 4017/5000</div>
+        <div className="text-content">Voters 3015/5000</div>
         <div className="social-area">
           <ul className="social-icon-list">
             <li>

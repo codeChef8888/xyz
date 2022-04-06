@@ -19,7 +19,7 @@ const Home: NextPage = () => {
               className="banner-icon wow fadeInUp"
               data-wow-delay="300ms"
               data-wow-duration="2500ms"
-              src="assets/images/icons/tier_icon4.png"
+              src="assets/images/icons/Earth.png"
               alt="icon-image"
             />
             <h1
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               data-wow-delay="300ms"
               data-wow-duration="2500ms"
             >
-              Bringing liquidity providers together to create healthy pool.
+              Bringing liquidity providers together.
             </div>
             <Link href="/projects">
               <a
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                 data-wow-delay="300ms"
                 data-wow-duration="2500ms"
               >
-                <span className="btn-text" style={{color: "#fff"}}>Explore IGO</span>
+                <span className="btn-text" style={{color: "#fff"}}>Explore Governance</span>
                 <span className="hover-shape1"></span>
                 <span className="hover-shape2"></span>
                 <span className="hover-shape3"></span>
@@ -55,8 +55,8 @@ const Home: NextPage = () => {
       <AboutSection />
       <NextProjectsSection />
       <CompleteProjectsSection />
-      <TokenomicsSection />
-      <TeamSection />
+      {/* <TokenomicsSection /> */}
+      {/* <TeamSection /> */}
       <PartnersSection />
 
       <ApplyForIGOSection />

@@ -9,14 +9,14 @@ const NextProjectsSection: NextPage = () => {
         <div className="sec-inner align-items-center d-flex justify-content-between mb-30">
           <div className="sec-heading">
             <div className="sub-inner mb-15">
-              <span className="sub-title">Next Projects</span>
+              <span className="sub-title">Ongoing Governance</span>
               <img
                 className="heading-left-image"
                 src="assets/images/icons/steps.png"
                 alt="Steps-Image"
               />
             </div>
-            <h2 className="title">Upcoming IGO</h2>
+            <h2 className="title">Listed Projects</h2>
           </div>
           {/* <div className="gamfi-btn-area">
             <ul>

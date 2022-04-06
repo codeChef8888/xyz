@@ -16,8 +16,8 @@ const ProjectListItem: NextPage = () => {
                 />
               </div>
               <div className="previous-price">
-                <h4 className="mb-10">KyberDyne</h4>
-                <div className="dsc">price (FSC) = 0.89 BUSD</div>
+                <h4 className="mb-10">Ariva</h4>
+                <div className="dsc">price (ARV) = 0.89 BUSD</div>
               </div>
             </div>
             <div className="previous-chaining">
@@ -28,9 +28,9 @@ const ProjectListItem: NextPage = () => {
               <div className="counter-info">
                 <ul>
                   <li>
-                    <span className="counter">0</span>D
+                    <span className="counter">0xe9e....87d56</span>D
                   </li>
-                  <li>
+                  {/* <li>
                     <span className="counter">12</span>H
                   </li>
                   <li>
@@ -38,12 +38,12 @@ const ProjectListItem: NextPage = () => {
                   </li>
                   <li>
                     <span className="counter">58</span>S
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
             <div className="previous-raise">
-              <span>100,000 BUSD (85%)</span>
+              <span>58,000 (85%)</span>
               <div className="progress-inner">
                 <div className="progress">
                   <div

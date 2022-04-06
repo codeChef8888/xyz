@@ -10,14 +10,14 @@ const CompleteProjectsSection: NextPage = () => {
         <div className="sec-inner align-items-center d-flex justify-content-between  mb-50">
           <div className="sec-heading">
             <div className="sub-inner mb-15">
-              <span className="sub-title">Complete Projects</span>
+              <span className="sub-title">Completed Governance</span>
               <img
                 className="heading-left-image"
                 src="assets/images/icons/steps.png"
                 alt="Steps-Image"
               />
             </div>
-            <h2 className="title mb-0 xs-pb-20">Previous IGO</h2>
+            <h2 className="title mb-0 xs-pb-20">Previous Winners</h2>
           </div>
           <div className="gamfi-btn-area">
             <ul>

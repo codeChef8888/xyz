@@ -6,7 +6,7 @@ const ProjectTokenInfoSection: NextPage = () => {
         <div className="project-item">
           <div className="project-info">
             <h4 className="mb-30">
-              Galaxy War{" "}
+              Render{" "}
               <img
                 src="assets/images/project/project-heading-image.png"
                 alt="project"
@@ -17,19 +17,19 @@ const ProjectTokenInfoSection: NextPage = () => {
             <div className="project-media">
               <ul className="project-listing">
                 <li>
-                  Token Distribution <span>Date UTC</span>
+                  Date Listed <span>April 2 2022</span>
                 </li>
                 <li>
-                  Min. Allocation <span>0.01 BUSD</span>
+                  Total Vote <span>20,673.70</span>
                 </li>
                 <li>
-                  Max. Allocation <span>1531.13 BUSD</span>
+                  Percentage <span>36%</span>
                 </li>
                 <li>
-                  Token Price <span>1 BUSD = 555.55 SIDUS</span>
+                  Preferred DEX <span>Uniswap</span>
                 </li>
                 <li>
-                  Access type <span>Public</span>
+                  Voters <span>3015/5000</span>
                 </li>
               </ul>
             </div>
@@ -54,7 +54,7 @@ const ProjectTokenInfoSection: NextPage = () => {
                   Token Name <span>The Wasted Lands</span>
                 </li>
                 <li>
-                  Token Symbol <span>DDO</span>
+                  Token Symbol <span>RNDR</span>
                 </li>
                 <li>
                   Decimals <span>18</span>
@@ -67,7 +67,7 @@ const ProjectTokenInfoSection: NextPage = () => {
                   </span>
                 </li>
                 <li>
-                  Total Supply <span>3,333,334.00 DDO</span>
+                  Total Supply <span>3,333,334.00 RNDR</span>
                 </li>
               </ul>
             </div>

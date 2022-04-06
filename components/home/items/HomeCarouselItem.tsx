@@ -21,22 +21,22 @@ const HomeCarouselItem: NextPage = () => {
             <div className="price-details">
               <h3 className="mb-15">
                 <Link href="/project-details">
-                  <a>Thetan Arena</a>
+                  <a>Render</a>
                 </Link>
               </h3>
-              <div className="dsc">PRICE (DDO) = 1.30 BUSD</div>
+              <div className="dsc">PRICE (RNDR) = 1.30 BUSD</div>
             </div>
           </div>
           <div className="all-raise mb-10">
-            Total Raise: 20,673.70 BUSD ( 36% )
+            Total Vote: 20,673.70 ( 36% )
           </div>
         </div>
         <div className="allocation-max text-center">
           <img src="assets/images/project/icon-3.png" alt="icon-image" />
-          <div className="allocation">Allocation: 500 BUSD Max</div>
+          {/* <div className="allocation">Allocation: 500 BUSD Max</div> */}
         </div>
         <div className="targeted-raise">
-          <div className="all-raise mb-10">Sale End In</div>
+          <div className="all-raise mb-10">Governance Ends In</div>
           <div className="timer">
             <ul>
               <li className="days"></li>
@@ -45,9 +45,9 @@ const HomeCarouselItem: NextPage = () => {
               <li className="seconds"></li>
             </ul>
           </div>
-          <div className="targeted-raise text-end">
+          {/* <div className="targeted-raise text-end">
             Targeted Raise 110,000 BUSD
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="progress-inner">

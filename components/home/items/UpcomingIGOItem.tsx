@@ -18,16 +18,16 @@ const UpcomingIGOItem: NextPage = () => {
           <div className="project-auother">
             <h4 className="mb-10">
               <Link href="/project-details">
-                <a>Galaxy War</a>
+                <a>Render</a>
               </Link>
             </h4>
-            <div className="dsc">PRICE (GAC) = 0.59 BUSD</div>
+            <div className="dsc">PRICE (RNDR) = 1.30 BUSD</div>
           </div>
         </div>
         <div className="project-content">
           <div className="project-header d-flex justify-content-between">
             <div className="heading-title">
-              <h4>08 Days Left</h4>
+              <h4>21 Days Left</h4>
             </div>
             <div className="project-icon">
               <img
@@ -38,17 +38,17 @@ const UpcomingIGOItem: NextPage = () => {
           </div>
           <div className="project-media">
             <ul className="project-listing">
-              <li>
+              {/* <li>
                 Min allocation <span>0.33 BUSD</span>
+              </li> */}
+              <li>
+                Total Vote <span>20,673.70</span>
               </li>
               <li>
-                Max allocation <span>900.00 BUSD</span>
+                Percentage <span>36%</span>
               </li>
               <li>
-                Targeted raise <span>200,000 BUSD</span>
-              </li>
-              <li>
-                Access type <span>Public</span>
+                Preferred DEX <span>Uniswap</span>
               </li>
               <li className="social-share">
                 Social

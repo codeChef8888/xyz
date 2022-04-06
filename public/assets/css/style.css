@@ -925,6 +925,7 @@ body .modal-backdrop {
 }
 
 .sc-banner .banner-content .banner-title {
+    font-family: "Helvetica";
     margin: 0 0 20px;
 }
 

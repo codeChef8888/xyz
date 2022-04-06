@@ -9,8 +9,8 @@ const CompletedIGOItem: NextPage = () => {
         <ul className="menu-list">
           <li className="list1">Project name</li>
           <li className="list2">Chain</li>
-          <li className="list3">Launched</li>
-          <li className="list4">Total Raise</li>
+          <li className="list3">Date Won</li>
+          <li className="list4">Total Vote</li>
           <li className="list5">Progress</li>
         </ul>
       </div>
@@ -25,8 +25,8 @@ const CompletedIGOItem: NextPage = () => {
                 />
               </div>
               <div className="previous-price">
-                <h4 className="mb-10">KyberDyne</h4>
-                <div className="dsc">PRICE (GAC) = 0.59 BUSD</div>
+                <h4 className="mb-10">Ariva</h4>
+                <div className="dsc">price (ARV) = 0.89 BUSD</div>
               </div>
             </div>
             <div className="previous-chaining">
@@ -34,10 +34,10 @@ const CompletedIGOItem: NextPage = () => {
                 src="assets/images/project/previous-image.png"
                 alt="Chain-Image"
               />
-              <span>5 Hours ago</span>
+              <span>March 25 2022</span>
             </div>
             <div className="previous-raise">
-              <span>100,000 BUSD (100%)</span>
+              <span>100,000 (40%)</span>
               <div className="progress-inner">
                 <div className="progress">
                   <div

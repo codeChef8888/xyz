@@ -24,7 +24,7 @@ const Projects: NextPage = () => {
                     alt="Steps-Image"
                   />
                 </div>
-                <h2 className="title mb-0">Explore Igos</h2>
+                <h2 className="title mb-0">Explore Projects</h2>
               </div>
             </div>
             <div className="col-lg-7 breadcrumbs-form md-pt-30">
@@ -71,10 +71,10 @@ const Projects: NextPage = () => {
                     aria-controls="open-igo"
                     aria-selected="true"
                   >
-                    OPEN IGO
+                    Ongoing
                   </button>
                 </li>
-                <li className="nav-item" role="presentation">
+                {/* <li className="nav-item" role="presentation">
                   <button
                     className="tab-link"
                     id="profile-tab"
@@ -87,7 +87,7 @@ const Projects: NextPage = () => {
                   >
                     Upcoming
                   </button>
-                </li>
+                </li> */}
                 <li className="nav-item" role="presentation">
                   <button
                     className="tab-link"
@@ -99,7 +99,7 @@ const Projects: NextPage = () => {
                     aria-controls="past-igo"
                     aria-selected="false"
                   >
-                    Past IGO
+                    Past Winners
                   </button>
                 </li>
               </ul>
@@ -107,19 +107,19 @@ const Projects: NextPage = () => {
             <div className="project-right-menu">
               <ul className="al-access-menu">
                 <li className="access">
-                  <a href="#">All Access</a>
+                  <a href="#">Sort by</a>
                   <ul className="sub-menu">
                     <li style={{borderRadius: "4px 4px 0 0"}}>
-                      <a href="#">All Access</a>
+                      <a href="#">Vote</a>
+                    </li>
+                    {/* <li>
+                      <a href="#">Name</a>
                     </li>
                     <li>
-                      <a href="#">Public</a>
-                    </li>
-                    <li>
-                      <a href="#">Private</a>
-                    </li>
+                      <a href="#">Network</a>
+                    </li> */}
                     <li style={{borderRadius: "0 0 4px 4px"}}>
-                      <a href="#">Community</a>
+                      <a href="#">Name</a>
                     </li>
                   </ul>
                 </li>
@@ -178,16 +178,20 @@ const Projects: NextPage = () => {
                     <ul className="menu-list">
                       <li className="list1">Project name</li>
                       <li className="list2">Chain</li>
-                      <li className="list3">Launched</li>
-                      <li className="list4">Total Raise</li>
+                      <li className="list3">Contract</li>
+                      <li className="list4">Total Vote</li>
                       <li className="list5">Progress</li>
                     </ul>
                   </div>
                 </div>
                 <ProjectListItem />
                 <ProjectListItem />
+                <ProjectListItem />
+                <ProjectListItem />
+                <ProjectListItem />
+                <ProjectListItem />
               </div>
-              <div className="gamfi-navigation text-center mt-10">
+              {/* <div className="gamfi-navigation text-center mt-10">
                 <ul>
                   <li>
                     <a href="#">
@@ -217,7 +221,7 @@ const Projects: NextPage = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             <div
@@ -293,6 +297,9 @@ const Projects: NextPage = () => {
                     </ul>
                   </div>
                 </div>
+                <ProjectListItem />
+                <ProjectListItem />
+                <ProjectListItem />
                 <ProjectListItem />
               </div>
               <div className="gamfi-navigation text-center mt-10">
