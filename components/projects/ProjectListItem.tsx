@@ -28,7 +28,7 @@ const ProjectListItem: NextPage = () => {
               <div className="counter-info">
                 <ul>
                   <li>
-                    <span className="counter">0xe9e....87d56</span>D
+                    <span className="">0xe9e....87d56</span>D
                   </li>
                   {/* <li>
                     <span className="counter">12</span>H
