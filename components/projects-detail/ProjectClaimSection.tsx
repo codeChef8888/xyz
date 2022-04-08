@@ -62,7 +62,7 @@ const ProjectClaimSection: NextPage = () => {
       </div>
       <div className="banner-bottom-content mt-40">
         <div className="btn-area">
-          <a className="readon white-shape-small" href="#">
+          <a className="readon white-shape-small" href="#vote">
             <span className="btn-text">Vote This Project </span>
             <span className="hover-shape1"></span>
             <span className="hover-shape2"></span>

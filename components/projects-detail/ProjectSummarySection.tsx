@@ -158,30 +158,31 @@ const Roadmap = () => (
   </>
 )
 
-const VoteNow = () => (
-  <>
-    <h4 className="title2 mb-15">Vote Now</h4>
-    <div className="voteContainer">
-      <label>Vote Amount</label>
-      <div className="voteAction">
-        <div className="inputContainer">
-          <input placeholder="0.00"/>
-          <span>MAX</span>
-        </div>
-        <button className="black-shape">
-          <span>VOTE</span>
-          <span className="hover-shape1"></span>
-          <span className="hover-shape2"></span>
-          <span className="hover-shape3"></span>
-        </button> 
-      </div>
-    </div>
-  </>
-)
-
 const ProjectSummarySection: NextPage = () => {
   const [activeTab, setActiveTab] = useState("summary");
-  
+  const [value, setValue] = useState("");
+
+  const VoteNow = () => (
+    <>
+      <h4 className="title2 mb-15" id="vote">Vote Now</h4>
+      <div className="voteContainer">
+        <label>Vote Amount</label>
+        <div className="voteAction">
+          <div className="inputContainer">
+            <input placeholder="0.00" value={value}/>
+            <span onClick={() => setValue("999.99")}>MAX</span>
+          </div>
+          <button className="black-shape">
+            <span>VOTE</span>
+            <span className="hover-shape1"></span>
+            <span className="hover-shape2"></span>
+            <span className="hover-shape3"></span>
+          </button> 
+        </div>
+      </div>
+    </>
+  )
+
   return (
     <div className="row mt-50">
       <div className="col-md-4">
