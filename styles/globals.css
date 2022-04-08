@@ -104,6 +104,26 @@ a {
   color: #fff;
 }
 
+/* Nominator */
+.selectNominator {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #0F1123;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  color: #eeeeee;
+  appearance: none;
+}
+.selectNominator:focus {
+  outline: none;
+}
+.selectNominator option {
+  background-color: #4ACAFC;
+}
+
+
 /* Custom Scroll */
 ::-webkit-scrollbar {
   width: 0.2em;
