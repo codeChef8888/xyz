@@ -158,10 +158,30 @@ const Roadmap = () => (
   </>
 )
 
+const VoteNow = () => (
+  <>
+    <h4 className="title2 mb-15">Vote Now</h4>
+    <div className="voteContainer">
+      <label>Vote Amount</label>
+      <div className="voteAction">
+        <div className="inputContainer">
+          <input placeholder="0.00"/>
+          <span>MAX</span>
+        </div>
+        <button className="black-shape">
+          <span>VOTE</span>
+          <span className="hover-shape1"></span>
+          <span className="hover-shape2"></span>
+          <span className="hover-shape3"></span>
+        </button> 
+      </div>
+    </div>
+  </>
+)
 
 const ProjectSummarySection: NextPage = () => {
   const [activeTab, setActiveTab] = useState("summary");
-
+  
   return (
     <div className="row mt-50">
       <div className="col-md-4">
@@ -240,6 +260,20 @@ const ProjectSummarySection: NextPage = () => {
               Roadmap{" "}
               <img src="assets/images/project/menu-image.png" alt="project" />
             </button>
+            
+            <button
+              className="nav-link"
+              id="nav-roadmap"
+              data-bs-toggle="tab"
+              data-bs-target="#roadmap"
+              onClick={() => setActiveTab("vote")}
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Vote{" "}
+              <img src="assets/images/project/menu-image.png" alt="project" />
+            </button>
 
             {/* <button
               className="nav-link"
@@ -280,6 +314,7 @@ const ProjectSummarySection: NextPage = () => {
             <Comparison />
             <Tokenomics />
             <Roadmap />
+            <VoteNow />
           </>
         )
         :
@@ -298,8 +333,13 @@ const ProjectSummarySection: NextPage = () => {
           <Tokenomics />
         )
         :
+        activeTab === 'roadmap' ?
         (
           <Roadmap />
+        )
+        :
+        (
+          <VoteNow />
         )
       }
         {/* <div

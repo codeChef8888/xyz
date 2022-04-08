@@ -15,12 +15,12 @@ const Popup = ({ handleClick}: { handleClick? : React.MouseEventHandler}): JSX.E
                 <div>
                     {/* Metamask */}    
                     <div className='walletContainer'>
-                        <img src="assets/images/icons/meta-mask.png" alt="MetaMask" />
+                        <img src="assets/images/icons/MetaMask_Fox.png" alt="MetaMask" />
                         <p>Metamask</p>
                     </div>  
                     {/* Coinbase */}
                     <div className='walletContainer'>
-                        <img src="assets/images/icons/coinbase.png" alt="Coinbase" />
+                        <img src="assets/images/icons/coinbase_2.png" alt="Coinbase" />
                         <p>Coinbase</p>
                     </div>  
                     {/* Binance */}
