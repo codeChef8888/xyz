@@ -48,7 +48,7 @@ const Footer: NextPage = () => {
                   <i className="icon-linkedin"></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">
                   <i className="icon-instagram"></i>
                 </a>
@@ -57,7 +57,7 @@ const Footer: NextPage = () => {
                 <a href="#">
                   <i className="icon-facebook"></i>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-logo text-center mb-45">

@@ -7,14 +7,14 @@ const SubscribeSection: NextPage = () => {
         <div className="footer-cta-area footer-cta-form text-center active-shape hover-shape-inner">
           <h2 className="title mb-15">
             Get alerts{" "}
-            <span>
+            {/* <span>
               <img src="assets/images/icons/sms.png" alt="" />
-            </span>{" "}
-            for new IGOs & IDOs
+            </span>{" "} */}
+            for new project listing
             <br />
           </h2>
           <div className="dsc mb-44">
-            Sign up for newsletter to get more IGO/IDO News and Updates
+            Sign up for newsletter to get more news and updates.
           </div>
           <div className="footer-link">
             <form>
