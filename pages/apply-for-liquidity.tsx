@@ -180,7 +180,7 @@ const ApplyForIGO: NextPage = () => {
                     name="fav_language"
                     value="Mixed"
                   />
-                  <label htmlFor="mixed">mixed</label>
+                  <label htmlFor="mixed">Mixed</label>
                   <div className="check"></div>
                 </div>
               </div>

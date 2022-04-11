@@ -14,7 +14,7 @@ const ApplyForIGOSection: NextPage = () => {
           <div className="dsc mb-40 md-mb-30">
             Please go to the link below and submit the form.
           </div>
-          <Link href="/apply-for-igo">
+          <Link href="/apply-for-liquidity">
             <a
               className="banner-btn wow fadeInUp black-shape"
               data-wow-delay="300ms"
