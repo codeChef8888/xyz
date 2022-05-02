@@ -66,25 +66,19 @@ const Footer: NextPage = () => {
           <div className="footer-mainmenu text-center mb-20">
             <ul>
               <li>
-                <a href="#">Features</a>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Projecs</a>
+              </li>
+              <li>
+                <a href="#">Staking</a>
+              </li>
+              <li>
+                <a href="#">Farming</a>
               </li>
               <li>
                 <a href="#">How it works</a>
-              </li>
-              <li>
-                <a href="#">Token info</a>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Social media</a>
-              </li>
-              <li>
-                <a href="#">Terms of Service</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>
