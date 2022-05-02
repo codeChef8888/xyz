@@ -144,6 +144,44 @@ a {
 }
 
 
+/* winnerContainer */
+.winner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  background-color: #1d203b52;
+  margin: 0.5rem;
+}
+
+.winner-container h1{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.winner-container h2{
+  color: #aeaeae;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.winner-container h3{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.winner-container .winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.winner-container .winner img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
 /* Custom Scroll */
 ::-webkit-scrollbar {
   width: 0.2em;

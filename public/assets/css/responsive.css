@@ -1181,6 +1181,18 @@
         margin-top: 40px;
     }
     
+    /* past-winners */
+    .winner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        row-gap: 1rem;
+    }
+
     /*New CSS*/
     .blog-detail-conent .blog-area .Tokenomics-item .project-service {
         display: block !important;
