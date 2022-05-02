@@ -49,8 +49,10 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
 
   const logoutWithClose = (e: any): void => {
     e.preventDefault();
+  
     // logout after 1 secs
     setTimeout((): void => logout(), 500);
+    closeAccountModal();
   };
 
   const notifyCopied = (): React.ReactText =>
@@ -74,7 +76,7 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
         className="readon white-btn hover-shape"
       // data-bs-toggle="modal"
       // data-bs-target="#exampleModal"
-      onClick={popOn}
+      onClick={ account ? openAccountModal : popOn}
       >
         <img src="assets/images/icons/connect_white.png" alt="Icon" />
         <span className="btn-text">  {active ? <span>{formatAddress(account as string)}</span> : CONNECT_MSG} </span>
@@ -82,7 +84,7 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
         <span className="hover-shape2"></span>
         <span className="hover-shape3"></span>
       </button>
-      <Modal
+      {/* <Modal
         open={connectModalIsOpen}
         onClose={closeConnectModal}
         showCloseIcon={false}
@@ -110,10 +112,10 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
             />
           ))}
         </div>
-      </Modal>
+      </Modal> */}
       {/* After Account is Connected Modal*/}
 
-      {/* <Modal
+      <Modal
         open={accountModalIsOpen}
         onClose={closeAccountModal}
         showCloseIcon={false}
@@ -157,7 +159,7 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
             </button>
           </div>
         </div>
-      </Modal> */}
+      </Modal>
     </li>
   </>
   )

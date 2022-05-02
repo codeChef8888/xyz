@@ -1,8 +1,9 @@
 // Set of helper functions to facilitate wallet setup
 import { nodes } from './getRpcUrl'
 
-const BASE_BSC_SCAN_URL = "https://bscscan.com";
-const BASE_URL = "http://localhost:3000";
+const BASE_BSC_SCAN_URL = process.env.NEXT_PUBLIC_BSC_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
 
 /**
  * Prompt the user to add BSC as a network on Metamask, or switch to BSC if the wallet is on a different network
@@ -14,16 +15,22 @@ declare var window: any
 export const setupNetwork = async () => {
   const provider = window.ethereum
   if (provider) {
-    const chainId = parseInt("56", 10)
+    const chainId = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string, 10)
     try {
       console.log("chainId", chainId);
       await provider.request({
         method: 'wallet_addEthereumChain',
         params: [
           {
-            chainId: `0x38`,
+            chainId: `0x${chainId.toString(16)}`,
             chainName: 'Binance Smart Chain Mainnet',
-       rpcUrls: ["https://bsc-dataseed.binance.org"],
+            nativeCurrency: {
+              name: 'BNB',
+              symbol: 'bnb',
+              decimals: 18,
+            },
+            rpcUrls: [nodes],
+            blockExplorerUrls: [`${BASE_BSC_SCAN_URL}/`]
           }
         ]
       })

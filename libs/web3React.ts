@@ -7,7 +7,7 @@ import getRpcUrl from "./getRpcUrl";
 
 const POLLING_INTERVAL = 12000;
 const rpcUrl = getRpcUrl();
-const chainId = parseInt("56", 10);
+const chainId = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string, 10);
 declare var window : any;
 const injected = new InjectedConnector({ supportedChainIds: [chainId] });
 

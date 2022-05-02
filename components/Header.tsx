@@ -7,10 +7,12 @@ import ConnectWalletButton from "./ConnectWalletButton"
 import { useWeb3React } from "@web3-react/core";
 import useAuth from "../hooks/useAuth";
 import config from "../widgets/WalletModal/config";
+import useEagerConnect from "../hooks/useEagerConnect";
 
 const Header: NextPage = () => {
+
   const [open, setOpen] = useState(false);
-  const {account} = useWeb3React();
+  const { account } = useWeb3React();
 
   ////////////////////////////////
   const { login, logout } = useAuth();
@@ -18,26 +20,27 @@ const Header: NextPage = () => {
   ///////////////////////////
 
   //For the Pop.jsx
-  function popOn(){
+  function popOn() {
     setOpen(true);
   }
-    function popOff() {
-      console.log(account,"Yo Account ho!!!")
+  function popOff() {
+    console.log(account, "Yo Account ho!!!")
     setOpen(false);
-    }
+  }
 
+  useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
-    useEffect(() => {
-      const connecteWalletOnPageLoad = async () => {
-          if (localStorage?.getItem('isWalletConnected') === 'true') {
-              try {
-                  login(walletConfig.connectorId);
-                  localStorage.setItem('isWalletConnected', 'true');
-              } catch (err) { console.log(err) }
-          }
-      }
-      connecteWalletOnPageLoad();
-  }, [])
+  //   useEffect(() => {
+  //     const connecteWalletOnPageLoad = async () => {
+  //         if (localStorage?.getItem('isWalletConnected') === 'true') {
+  //             try {
+  //                 login(walletConfig.connectorId);
+  //                 localStorage.setItem('isWalletConnected', 'true');
+  //             } catch (err) { console.log(err) }
+  //         }
+  //     }
+  //     connecteWalletOnPageLoad();
+  // }, [])
 
 
   return (
@@ -89,7 +92,7 @@ const Header: NextPage = () => {
                     </a>
                   </li>
                   <li className="buy-token">
-                    <a className="readon black-shape" href="#" style={{borderRadius: "4px"}}>
+                    <a className="readon black-shape" href="#" style={{ borderRadius: "4px" }}>
                       <span className="btn-text">Buy Token </span>
                       <i className="icon-arrow_down"></i>
                       <span className="hover-shape1"></span>
@@ -98,7 +101,7 @@ const Header: NextPage = () => {
                     </a>
                     <ul>
                       <li>
-                        <a href="#" style={{borderRadius: "4px 4px 0 0"}}>
+                        <a href="#" style={{ borderRadius: "4px 4px 0 0" }}>
                           <img
                             src="assets/images/icons/pancake.png"
                             alt="pancake"
@@ -125,7 +128,7 @@ const Header: NextPage = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#" style={{borderRadius: "0 0 4px 4px"}}>
+                        <a href="#" style={{ borderRadius: "0 0 4px 4px" }}>
                           <img src="assets/images/icons/gate.png" alt="gate" />{" "}
                           Gate.io
                         </a>
@@ -133,7 +136,7 @@ const Header: NextPage = () => {
                     </ul>
                   </li>
                   {/* <li> */}
-                    {/* <button
+                  {/* <button
                       type="button"
                       className="readon white-btn hover-shape"
                       // data-bs-toggle="modal"
@@ -146,7 +149,7 @@ const Header: NextPage = () => {
                       <span className="hover-shape2"></span>
                       <span className="hover-shape3"></span>
                     </button> */}
-                    <ConnectWalletButton popOn={popOn}/>
+                  <ConnectWalletButton popOn={popOn} />
                   {/* </li> */}
                 </ul>
               </div>
@@ -227,7 +230,10 @@ const Header: NextPage = () => {
       </header>
 
       <div className="popup">
-        {open ? <Popup popOff={popOff} /> : null}
+        {config.map((entry, index) => (
+          open ? <Popup key={entry.title} walletConfig={entry} popOff={popOff} /> : null
+        )
+        )}
       </div>
     </>
   );

@@ -145,7 +145,7 @@ a {
 
 /*Connect Wallet Modal */
 
-/* .connectModal, .accountModal {
+.connectModal, .accountModal {
   overflow: hidden;
   background: rgb(255, 255, 255);
   box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px, rgb(0 0 0 / 5%) 0px 1px 1px;
@@ -313,4 +313,4 @@ a {
 
 .accountWalletCardDiv .logoutwallet .logout-button:hover {
   opacity: 0.7;
-} */
+}

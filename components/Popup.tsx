@@ -6,19 +6,23 @@ import { connectorLocalStorageKey } from "../widgets/WalletModal/config";
 import useAuth from '../hooks/useAuth'
 import { injected } from './wallet/connector'
 
-interface PopupProps {
+interface PopUpProps {
+    key: string
     popOff: Function
-    accountUpdate: Function
-    connectMeta: Function
+    walletConfig: {
+        title: string;
+        icon: (props: any) => JSX.Element;
+        connectorId: string;
+    }
 }
 
-const Popup = ({ popOff }: { popOff: Function }): JSX.Element => {
+const Popup = ({key, walletConfig , popOff }: PopUpProps): JSX.Element => {
 
     let isAccountActive: boolean;
     let activeAccount: string | null | undefined;
-
-    const walletConfig = config[0]; // MetaMask Wallet Configuration
-    console.log(walletConfig)
+    // const { title, icon: Icon} = walletConfig
+    // const walletConfig = config[0]; // MetaMask Wallet Configuration
+    // console.log(walletConfig)
 
 
     const { login, logout } = useAuth();
@@ -48,10 +52,14 @@ const Popup = ({ popOff }: { popOff: Function }): JSX.Element => {
 
     return (
         <div className='backdrop'>
+
             {/* Checking if the User Logged in Account is Retrived =>  */}
-            {isAccountActive ? <button onClick={disconnect}><span>Connected with <b> {activeAccount} </b></span> </button> : <span>Not connected</span>}
+            {/* {isAccountActive ? <button onClick={disconnect}><span>Connected with <b> {activeAccount} </b></span> </button> : <span>Not connected</span>} */}
+            
             <div className='pop' onClick={() => {
+
                 console.log("ma ya connected ma xu hai");
+
                 login(walletConfig.connectorId);
                 window.localStorage.setItem(
                     connectorLocalStorageKey,
@@ -67,7 +75,7 @@ const Popup = ({ popOff }: { popOff: Function }): JSX.Element => {
                     {/* Metamask */}
                     <div className='walletContainer'>
                         <img src="assets/images/icons/MetaMask_Fox.png" alt="MetaMask" />
-                        <p>Metamask</p>
+                        <p>MetaMask</p>
                     </div>
                     {/* Coinbase */}
                     <div className='walletContainer'>
