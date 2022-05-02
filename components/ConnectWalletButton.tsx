@@ -10,9 +10,7 @@ import useAuth from "../hooks/useAuth"
 import { toast } from "react-toastify";
 import { useWeb3React } from "@web3-react/core";
 import { Modal } from "react-responsive-modal";
-import config from "../widgets/WalletModal/config";
 import formatAddress from "../libs/formatAddress";
-import WalletCard from "../widgets/WalletModal/WalletCard";
 import 'react-responsive-modal/styles.css';
 
 
