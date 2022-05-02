@@ -1,11 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Popup from "./Popup";
+import ConnectWalletButton from "./ConnectWalletButton"
+import { useWeb3React } from "@web3-react/core";
+import useAuth from "../hooks/useAuth";
+import config from "../widgets/WalletModal/config";
 
 const Header: NextPage = () => {
   const [open, setOpen] = useState(false);
+  const {account} = useWeb3React();
+
+  ////////////////////////////////
+  const { login, logout } = useAuth();
+  const walletConfig = config[0]; // MetaMask Wallet Configuration
+  ///////////////////////////
+
+  //For the Pop.jsx
+  function popOn(){
+    setOpen(true);
+  }
+    function popOff() {
+      console.log(account,"Yo Account ho!!!")
+    setOpen(false);
+    }
+
+
+    useEffect(() => {
+      const connecteWalletOnPageLoad = async () => {
+          if (localStorage?.getItem('isWalletConnected') === 'true') {
+              try {
+                  login(walletConfig.connectorId);
+                  localStorage.setItem('isWalletConnected', 'true');
+              } catch (err) { console.log(err) }
+          }
+      }
+      connecteWalletOnPageLoad();
+  }, [])
+
+
   return (
     <>
       <header id="gamfi-header" className="gamfi-header-section default-header">
@@ -98,8 +132,8 @@ const Header: NextPage = () => {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <button
+                  {/* <li> */}
+                    {/* <button
                       type="button"
                       className="readon white-btn hover-shape"
                       // data-bs-toggle="modal"
@@ -107,12 +141,13 @@ const Header: NextPage = () => {
                       onClick={() => {setOpen(true)}}
                     >
                       <img src="assets/images/icons/connect_white.png" alt="Icon" />
-                      <span className="btn-text">Connect </span>
+                      <span className="btn-text"> <ConnectWalletButton /> </span>
                       <span className="hover-shape1"></span>
                       <span className="hover-shape2"></span>
                       <span className="hover-shape3"></span>
-                    </button>
-                  </li>
+                    </button> */}
+                    <ConnectWalletButton popOn={popOn}/>
+                  {/* </li> */}
                 </ul>
               </div>
             </div>
@@ -192,7 +227,7 @@ const Header: NextPage = () => {
       </header>
 
       <div className="popup">
-        {open ? <Popup handleClick={() => {setOpen(false)}} /> : null}
+        {open ? <Popup popOff={popOff} /> : null}
       </div>
     </>
   );
