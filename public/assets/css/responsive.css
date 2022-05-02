@@ -159,6 +159,14 @@
         margin-right: 0px !important;
     }
     
+    /* btn-vote */
+    .responsive-btn-vote{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
     /*New CSS*/
     .blog-detail-conent .blog-area .blog-description .des {
         font-size: 16px;

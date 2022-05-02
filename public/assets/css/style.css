@@ -1182,7 +1182,6 @@ body .modal-backdrop {
 
 .gamfi-about-secion .game-price-item .game-price-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -1249,7 +1248,7 @@ body .modal-backdrop {
 
 .gamfi-about-secion .total-price,
 .gamfi-about-secion .targeted-raise {
-    width: 38%;
+    width: max-content;
 }
 
 .gamfi-about-secion .total-price .targeted-raise,
