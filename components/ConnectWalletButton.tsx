@@ -18,26 +18,16 @@ import 'react-responsive-modal/styles.css';
 
 const CONNECT_MSG = "Connect";
 interface PopupProps {
-    popOn: React.MouseEventHandler<HTMLButtonElement>
+  popOn: React.MouseEventHandler<HTMLButtonElement>
 }
 
-const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButtonElement>}) => {
+const ConnectWalletButton = ({ popOn }: PopupProps) => {
 
   const { login, logout } = useAuth();
   const { active, account } = useWeb3React();
 
-
-
-  const [connectModalIsOpen, setConnectModalIsOpen] = useState(false);
   const [accountModalIsOpen, setAccountModalIsOpen] = useState(false);
 
-  function openConnectModal() {
-    setConnectModalIsOpen(true);
-  }
-
-  function closeConnectModal() {
-    setConnectModalIsOpen(false);
-  }
 
   function openAccountModal() {
     setAccountModalIsOpen(true);
@@ -49,9 +39,10 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
 
   const logoutWithClose = (e: any): void => {
     e.preventDefault();
-  
+
     // logout after 1 secs
     setTimeout((): void => logout(), 500);
+    localStorage.setItem('isWalletConnected', 'false');
     closeAccountModal();
   };
 
@@ -74,9 +65,9 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
       <button
         type="button"
         className="readon white-btn hover-shape"
-      // data-bs-toggle="modal"
-      // data-bs-target="#exampleModal"
-      onClick={ account ? openAccountModal : popOn}
+        // data-bs-toggle="modal"
+        // data-bs-target="#exampleModal"
+        onClick={account ? openAccountModal : popOn}
       >
         <img src="assets/images/icons/connect_white.png" alt="Icon" />
         <span className="btn-text">  {active ? <span>{formatAddress(account as string)}</span> : CONNECT_MSG} </span>
@@ -84,35 +75,7 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
         <span className="hover-shape2"></span>
         <span className="hover-shape3"></span>
       </button>
-      {/* <Modal
-        open={connectModalIsOpen}
-        onClose={closeConnectModal}
-        showCloseIcon={false}
-        blockScroll={true}
-        classNames={{
-          overlay: "connectModalOverlay",
-          modal: "connectModal",
-        }}
-        center
-      >
-        <div className="wallet-header">
-          <span className="text">Connect Wallet</span>
-          <button className="close-button" onClick={closeConnectModal}>
-            <img src="/assets/images/cross.png" alt="cross symbol" />
-          </button>
-        </div>
-
-        <div className="walletCardDiv">
-          {config.map((entry, index) => (
-            <WalletCard
-              key={entry.title}
-              login={login}
-              walletConfig={entry}
-              onDismiss={closeConnectModal}
-            />
-          ))}
-        </div>
-      </Modal> */}
+      
       {/* After Account is Connected Modal*/}
 
       <Modal
@@ -129,7 +92,7 @@ const ConnectWalletButton = ({popOn} : {popOn: React.MouseEventHandler<HTMLButto
         <div className="wallet-header">
           <span className="text">Your Wallet</span>
           <button className="close-button" onClick={closeAccountModal}>
-            <img src="/assets/cross.png" alt="cross image"/>
+            <img src="/assets/cross.png" alt="cross image" />
           </button>
         </div>
 

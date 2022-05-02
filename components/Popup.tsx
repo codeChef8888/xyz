@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { useWeb3React } from '@web3-react/core'
-import React, { FC, useEffect } from 'react'
+import { useWeb3React } from '@web3-react/core';
+import React, { FC, useEffect } from 'react';
 import config from "../widgets/WalletModal/config";
 import { connectorLocalStorageKey } from "../widgets/WalletModal/config";
-import useAuth from '../hooks/useAuth'
-import { injected } from './wallet/connector'
+import useAuth from '../hooks/useAuth';
 
 interface PopUpProps {
     key: string
@@ -33,22 +32,22 @@ const Popup = ({key, walletConfig , popOff }: PopUpProps): JSX.Element => {
     activeAccount = account;
 
 
-    async function connect(): Promise<void> {
-        try {
-            await activate(injected);
-        } catch (ex) {
-            console.log(ex);
-        }
-        popOff(false);
-    }
+    // async function connect(): Promise<void> {
+    //     try {
+    //         await activate(injected);
+    //     } catch (ex) {
+    //         console.log(ex);
+    //     }
+    //     popOff(false);
+    // }
 
-    async function disconnect(): Promise<void> {
-        try {
-            deactivate();
-        } catch (ex) {
-            console.log(ex);
-        }
-    }
+    // async function disconnect(): Promise<void> {
+    //     try {
+    //         deactivate();
+    //     } catch (ex) {
+    //         console.log(ex);
+    //     }
+    // }
 
     return (
         <div className='backdrop'>

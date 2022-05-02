@@ -8,7 +8,7 @@ import getRpcUrl from "./getRpcUrl";
 const POLLING_INTERVAL = 12000;
 const rpcUrl = getRpcUrl();
 const chainId = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string, 10);
-declare var window : any;
+
 const injected = new InjectedConnector({ supportedChainIds: [chainId] });
 
  interface IRPCMap {
@@ -43,7 +43,8 @@ export const connectorsByName = {
  */
 export const signMessage = async (provider: any, account: string, message: any) => {
   if (window.BinanceChain) {
-    const { signature } = await window.BinanceChain.bnbSign(account, message);
+    const binanceChain: any = window.BinanceChain
+    const { signature } = await binanceChain.bnbSign(account, message);
     return signature;
   }
 
