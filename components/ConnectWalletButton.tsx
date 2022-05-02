@@ -92,7 +92,7 @@ const ConnectWalletButton = ({ popOn }: PopupProps) => {
         <div className="wallet-header">
           <span className="text">Your Wallet</span>
           <button className="close-button" onClick={closeAccountModal}>
-            <img src="/assets/cross.png" alt="cross image" />
+            <img src="/assets/images/cross.png" alt="cross image" />
           </button>
         </div>
 

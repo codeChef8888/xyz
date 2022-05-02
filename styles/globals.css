@@ -183,6 +183,7 @@ a {
   -webkit-box-align: center;
   align-items: center;
   flex: 1 1 0%;
+  color: black;
   font-weight: bold;
 }
 
