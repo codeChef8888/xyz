@@ -17,14 +17,14 @@ const Projects: NextPage = () => {
                   <Link href="/">
                     <a className="breadcrumbs-link">Home</a>
                   </Link>
-                  <span className="sub-title">Projects</span>
+                  <span className="sub-title">Governance</span>
                   <img
                     className="heading-left-image"
                     src="assets/images/icons/steps.png"
                     alt="Steps-Image"
                   />
                 </div>
-                <h2 className="title mb-0">Explore Projects</h2>
+                <h2 className="title mb-0">EPOCH - 5</h2>
               </div>
             </div>
             <div className="col-lg-7 breadcrumbs-form md-pt-30">
@@ -173,7 +173,7 @@ const Projects: NextPage = () => {
               aria-labelledby="home-tab"
             >
               <div className="row align-items-center">
-                <div className="col-md-12">
+                {/* <div className="col-md-12">
                   <div className="previous-mainmenu mb-15">
                     <ul className="menu-list">
                       <li className="list1">Project name</li>
@@ -183,7 +183,7 @@ const Projects: NextPage = () => {
                       <li className="list5">Progress</li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
                 <ProjectListItem />
                 <ProjectListItem />
                 <ProjectListItem />

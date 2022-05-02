@@ -27,7 +27,7 @@ const Header: NextPage = () => {
                     </li>
                     <li>
                       <Link href="/projects">
-                        <a>Projects</a>
+                        <a>Governance</a>
                       </Link>
                     </li>
                     <li>
@@ -143,7 +143,7 @@ const Header: NextPage = () => {
             </li>
             <li>
               <Link href="/projects">
-                <a id="nav-close2">Projects</a>
+                <a id="nav-close2">Governance</a>
               </Link>
             </li>
             <li>
