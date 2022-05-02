@@ -77,6 +77,25 @@ a {
   justify-content: center;
   column-gap: 1rem;
 }
+.projectCard-vote {
+  width: 100%;
+  display: flex;
+}
+.projectCard-vote button{
+  background-color: #4ACAFC;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+.projectCard-vote input{
+  width: 80%;
+  padding: 0.25rem 1rem;
+  border: 0.25px solid #4ACAFC;
+  border-radius: 4px 0 0 4px;
+  background-color: transparent;
+  color: #fff;
+}
 .inputContainer {
   background-color: #1d203b52;
   border-radius: 4px;
@@ -96,6 +115,7 @@ a {
 .inputContainer input:focus {
   outline: none;
 }
+
 .voteAction button {
   border: none;
   border-radius: 4px;
