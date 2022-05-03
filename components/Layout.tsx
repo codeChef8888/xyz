@@ -8,7 +8,7 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <div>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -50,7 +50,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
       <div className="children">{children}</div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 
