@@ -87,7 +87,7 @@ const Staking: NextPage = () => {
           <div className="rewards">
             
               {
-                balance < 10000 ?
+                balance < 250000 ?
                 (
                   <h4>
                     You don't have enough balance to become a validator
@@ -113,7 +113,7 @@ const Staking: NextPage = () => {
         </div>
         <div style={{borderBottom: "1px solid rgb(42, 44, 63)"}}>
           <h2>
-            YOUR VALIDATORS
+            Your Validators
           </h2>
           <ul>
             <li>
@@ -133,7 +133,7 @@ const Staking: NextPage = () => {
         
         <div>
           <h2>
-            All VALIDATORS
+            All Validators
           </h2>
           <ul>
             <li>
@@ -158,8 +158,100 @@ const Staking: NextPage = () => {
   )
 
   const Validator = () => (
-    <div className="col-lg-6 pr-25 md-pr-15">
-      
+    <div className="col-12 wrapper">
+      <div className="col-lg-6 balance-detail">
+        <div>
+          <h2>
+            54,000 LEMA
+            <p>Available Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <h2>
+            255,000 LEMA
+            <p>Staked Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              15,000 LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>
+            </h2>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              <input value={value} /> LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>  
+            </h2>
+            <button className="max">MAX</button>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            
+              {
+                balance < 10000 ?
+                (
+                  <h4>
+                    You don't have enough balance to become a validator
+                  </h4>
+                )
+                :
+                (
+                  <>
+                    <h4>
+                      You have enough balance to become a validator
+                    </h4>
+                    <button style={{marginTop: "0"}}>Apply</button>
+                  </>
+                )
+              }
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-6 balance-detail">
+        <div>
+          <h4>Important: To become a validator, you have to stake at least 250,000 LEMA.</h4>
+        </div>
+        <div>
+          <h2>
+            Your Delegators
+          </h2>
+          <ul>
+            <li>
+              1. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              2. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              3. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              4. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              5. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              6. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              7. 0xxxxxxxxxxxxx
+            </li>
+          </ul>
+        </div> 
+      </div>
     </div>
   )
   
