@@ -233,13 +233,13 @@ const Projects: NextPage = () => {
               <div className="row align-items-center">
                 <div className="col-md-12">
                   <div className="previous-mainmenu mb-15">
-                    <ul className="menu-list">
+                    {/* <ul className="menu-list">
                       <li className="list1">Project name</li>
                       <li className="list2">Chain</li>
                       <li className="list3">Contract</li>
                       <li className="list4">Total Vote</li>
                       <li className="list5">Progress</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <ProjectListItem />
@@ -288,13 +288,13 @@ const Projects: NextPage = () => {
               <div className="row align-items-center">
                 <div className="col-md-12">
                   <div className="previous-mainmenu mb-15">
-                    <ul className="menu-list">
+                    {/* <ul className="menu-list">
                       <li className="list1">Project name</li>
                       <li className="list2">Chain</li>
                       <li className="list3">Launched</li>
                       <li className="list4">Total Raise</li>
                       <li className="list5">Progress</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <ProjectListItem />

@@ -182,6 +182,66 @@ a {
   object-fit: cover;
 }
 
+/* staking */
+.staking-heading{
+  display: flex;
+  justify-content: space-between;
+}
+.nominator-indicator {
+  padding: 0.5rem 1rem;
+  background-color: #0DB2FF;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  height: max-content;
+}
+.staking-stats{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.stats{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1d203b52;
+  padding: 1rem;  
+}
+.stats h4{
+  text-align: center;
+  color: #aeaeae;
+  text-transform: uppercase;
+}
+.toggle-stakers{
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+.toggle-stakers .active {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  background-color: #0DB2FF;
+  color: #fff;
+  cursor: pointer;
+}
+.toggle-stakers .staker {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  background-color: #1d203b52;
+  color: #fff;
+  border: 1px solid #0DB2FF;
+  cursor: pointer;
+}
+
 /* Custom Scroll */
 ::-webkit-scrollbar {
   width: 0.2em;
