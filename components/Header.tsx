@@ -4,22 +4,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Popup from "./Popup";
 import ConnectWalletButton from "./ConnectWalletButton"
-import { useWeb3React } from "@web3-react/core";
-import useAuth from "../hooks/useAuth";
-import config from "../widgets/WalletModal/config";
 import useEagerConnect from "../hooks/useEagerConnect";
 
 const Header: NextPage = () => {
 
   const [open, setOpen] = useState(false); //For Connect To Account PopUp
-  const { account } = useWeb3React();
 
   //For the Pop.jsx
   function popOn() {
     setOpen(true);
   }
   function popOff() {
-    console.log(account, "Yo Account ho!!!")
     setOpen(false);
   }
 

@@ -4,7 +4,6 @@ import React, { FC, useEffect } from 'react';
 import config from "../widgets/WalletModal/config";
 import { connectorLocalStorageKey } from "../widgets/WalletModal/config";
 import useAuth from '../hooks/useAuth';
-import Icon from '../widgets/WalletModal/icons/MathWallet';
 
 interface PopUpProps {
     popOff: Function
