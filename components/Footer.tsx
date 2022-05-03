@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 
-const Footer: NextPage = () => {
+const Footer: NextPage = (): JSX.Element => {
   return (
     <div className="gamfi-footer-section">
       <div className="footer-area">

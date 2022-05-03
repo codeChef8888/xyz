@@ -6,7 +6,7 @@ import Popup from "./Popup";
 import ConnectWalletButton from "./ConnectWalletButton";
 import useEagerConnect from "../hooks/useEagerConnect";
 
-const Header: NextPage = () => {
+const Header: NextPage = (): JSX.Element => {
   const [open, setOpen] = useState(false); //For Connect To Account PopUp
 
   //For the Pop.jsx

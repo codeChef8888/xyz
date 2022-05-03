@@ -45,11 +45,11 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="twitter:description" content="" />
       </Head>
 
-      {/* <Header /> */}
+      <Header />
 
       <div className="children">{children}</div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
