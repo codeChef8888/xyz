@@ -13,11 +13,12 @@ const Header: NextPage = () => {
   function popOn() {
     setOpen(true);
   }
+  
   function popOff() {
     setOpen(false);
   }
 
-  useEagerConnect(); //For Reconnecting the Wallet After Page Reload
+  // useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
   return (
     <>
