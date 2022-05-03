@@ -3,12 +3,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 type LayoutProps = {
-  children: JSX.Element;
+  children: React.ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps): JSX.Element => {
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -50,7 +50,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
       <div className="children">{children}</div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

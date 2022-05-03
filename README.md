@@ -10,11 +10,11 @@ Project is developed in React.js + Next.js + Typescript.
 
 1. Install dependencies
 ```
-npm i
+yarn install
 ```
 2. Run in dev environment
 ```
-npm run dev
+yarn run dev
 ```
 Application will run in 3000 port.
 
@@ -22,11 +22,11 @@ Application will run in 3000 port.
 
 1. Install dependencies
 ```
-npm i
+yarn install
 ```
 2. Run build command
 ```
-npm run build
+yarn run build
 ```
 Built files will be available in .next folder.
 

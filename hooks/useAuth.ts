@@ -15,29 +15,28 @@ import { connectorsByName } from "../libs/web3React";
 import { setupNetwork } from "../libs/wallet";
 
 const useAuth = () => {
-
   const { chainId, account, activate, deactivate, setError } = useWeb3React();
 
-
-  const notifyError = useCallback((message: any) =>
-    toast.error(message, {
-      position: "top-left",
-      autoClose: 3000,
-      hideProgressBar: true,
-      closeOnClick: true,
-    }), [])
+  const notifyError = useCallback(
+    (message: any) =>
+      toast.error(message, {
+        position: "top-left",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+      }),
+    []
+  );
 
   const login = useCallback(
-    (connectorID): void => {
-      console.log("ma login ma pasey hai");
+    (connectorID: any): void => {
       const connector = connectorsByName[connectorID];
       if (connector) {
         activate(connector, async (error) => {
           if (error instanceof UnsupportedChainIdError) {
             const hasSetup = await setupNetwork();
             if (hasSetup) {
-              console.log("ma activated bhaisakeyhai!!!")
-              activate(connector,(err) => console.log(err));
+              activate(connector, (err) => console.log(err));
             }
           } else {
             window.localStorage.removeItem(connectorLocalStorageKey);
@@ -72,14 +71,18 @@ const useAuth = () => {
     // This localStorage key is set by @web3-react/walletconnect-connector
     if (window.localStorage.getItem("walletconnect")) {
       connectorsByName.walletconnect.deactivate();
-      var walletConnectionProvider = connectorsByName.walletconnect.getProvider();
-      walletConnectionProvider.then((walletConnectionProvider) => walletConnectionProvider = null).catch((err) => { console.log(err) })
+      var walletConnectionProvider =
+        connectorsByName.walletconnect.getProvider();
+      walletConnectionProvider
+        .then((walletConnectionProvider) => (walletConnectionProvider = null))
+        .catch((err) => {
+          console.log(err);
+        });
     }
     window.localStorage.removeItem(connectorLocalStorageKey);
   }, [deactivate]);
 
   return { login, logout };
 };
-
 
 export default useAuth;
