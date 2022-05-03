@@ -109,8 +109,50 @@ const Staking: NextPage = () => {
       
       <div className="col-lg-6 balance-detail">
         <div>
-
+          <h4>Important: To become a nominator, you have to choose 3 validators.</h4>
         </div>
+        <div style={{borderBottom: "1px solid rgb(42, 44, 63)"}}>
+          <h2>
+            YOUR VALIDATORS
+          </h2>
+          <ul>
+            <li>
+              <p>1. 0xxxxxxxxx</p>
+              <button>Change</button>
+            </li>
+            <li>
+              <p>2. 0xxxxxxxxx</p>
+              <button>Change</button>
+            </li>
+            <li>
+              <p>3. </p>
+              <button>Appoint</button>
+            </li>
+          </ul>
+        </div> 
+        
+        <div>
+          <h2>
+            All VALIDATORS
+          </h2>
+          <ul>
+            <li>
+              1. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              2. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              3. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              4. 0xxxxxxxxxxxxx
+            </li>
+            <li>
+              5. 0xxxxxxxxxxxxx
+            </li>
+          </ul>
+        </div> 
       </div>
     </div>
   )
@@ -551,48 +593,6 @@ const Staking: NextPage = () => {
 
       <div className="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50">
         <div className="container">
-          {/* <div className="row pt-10"> */}
-            {/* <div className="col-lg-12 pl-15" style={{display: "flex", justifyContent: "space-between"}}>
-              <div className="project-item project-value-inner d-flex flex-1 flex-column justify-content-between align-items-center mb-30 rounded">
-                <div className="project-value">
-                  <h3 className="mb-15">$7,868,163.54</h3>
-                  <span>Total Value Locked</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-              <div className="project-item project-value-inner d-flex flex-1 flex-column justify-content-between align-items-center mb-30 rounded">
-                <div className="project-value">
-                  <h3 className="mb-15">158.50 %</h3>
-                  <span>Apy</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank2.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-              <div className="project-item project-value-inner d-flex flex-1 flex-column justify-content-between align-items-center rounded">
-                <div className="project-value">
-                  <h3 className="mb-15">5699</h3>
-                  <span>Number of Stakers</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank3.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-            </div> */}
 
             <div className="staking-stats">
               <div className="stats">

@@ -268,13 +268,13 @@ a {
 .balance-detail .line {
   width: 100%;
   height: 0.5px;
-  background-color: #aeaeae;
+  background-color: rgb(42, 44, 63);
 }
 .balance-detail .rewards{
   display: flex;
   justify-content: space-between;
 }
-.balance-detail .rewards button{
+.balance-detail button{
   padding: 0.5rem 1rem;
   background-color: #0DB2FF;
   border-radius: 4px;
@@ -289,7 +289,7 @@ a {
   border: none;
   color: #fff;
 }
-.balance-detail .rewards h4{
+.balance-detail h4{
   font-size: 1rem;
   font-weight: 300;
   color: #0DB2FF;
@@ -300,9 +300,23 @@ a {
   color: #0DB2FF;
   background-color: transparent;
 }
-
-.other-detail{
-
+.balance-detail ul {
+  list-style: decimal;
+  padding: 0 1rem;
+}
+.balance-detail ul li{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #aeaeae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.balance-detail ul li button{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
 }
 
 /* Custom Scroll */
