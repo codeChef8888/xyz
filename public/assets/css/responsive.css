@@ -24,6 +24,20 @@
 }
 
 @media only screen and (max-width: 1199px) {
+    /* stake */
+    .staking-stats{
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+    .staking-stats .stats{
+        width: 100%;
+    }
+    .wrapper {
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+
+    /* all */
     .gamfi-header-section .header-menu ul li + li {
         margin-left: 25px;
     }
@@ -1191,6 +1205,17 @@
         padding: 0;
         margin: 0;
         row-gap: 1rem;
+    }
+
+    /* stakers */
+    .balance-detail .rewards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        margin-bottom: 1rem;
+    }
+    .balance-detail .rewards button{
+        margin-top: 0 !important;
     }
 
     /*New CSS*/
