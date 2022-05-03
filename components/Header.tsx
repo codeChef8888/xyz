@@ -20,7 +20,7 @@ const Header: NextPage = () => {
   useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
   return (
-    <>
+    <div>
       <header id="gamfi-header" className="gamfi-header-section default-header">
         <div className="menu-area menu-sticky">
           <div className="container">
@@ -197,7 +197,7 @@ const Header: NextPage = () => {
       </header>
 
       <div className="popup">{open ? <Popup popOff={popOff} /> : null}</div>
-    </>
+    </div>
   );
 };
 
