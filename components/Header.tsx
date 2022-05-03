@@ -11,13 +11,8 @@ import useEagerConnect from "../hooks/useEagerConnect";
 
 const Header: NextPage = () => {
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); //For Connect To Account PopUp
   const { account } = useWeb3React();
-
-  ////////////////////////////////
-  const { login, logout } = useAuth();
-  const walletConfig = config[0]; // MetaMask Wallet Configuration
-  ///////////////////////////
 
   //For the Pop.jsx
   function popOn() {
@@ -29,19 +24,6 @@ const Header: NextPage = () => {
   }
 
   useEagerConnect(); //For Reconnecting the Wallet After Page Reload
-
-  //   useEffect(() => {
-  //     const connecteWalletOnPageLoad = async () => {
-  //         if (localStorage?.getItem('isWalletConnected') === 'true') {
-  //             try {
-  //                 login(walletConfig.connectorId);
-  //                 localStorage.setItem('isWalletConnected', 'true');
-  //             } catch (err) { console.log(err) }
-  //         }
-  //     }
-  //     connecteWalletOnPageLoad();
-  // }, [])
-
 
   return (
     <>
@@ -136,19 +118,6 @@ const Header: NextPage = () => {
                     </ul>
                   </li>
                   {/* <li> */}
-                  {/* <button
-                      type="button"
-                      className="readon white-btn hover-shape"
-                      // data-bs-toggle="modal"
-                      // data-bs-target="#exampleModal"
-                      onClick={() => {setOpen(true)}}
-                    >
-                      <img src="assets/images/icons/connect_white.png" alt="Icon" />
-                      <span className="btn-text"> <ConnectWalletButton /> </span>
-                      <span className="hover-shape1"></span>
-                      <span className="hover-shape2"></span>
-                      <span className="hover-shape3"></span>
-                    </button> */}
                   <ConnectWalletButton popOn={popOn} />
                   {/* </li> */}
                 </ul>
