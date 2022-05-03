@@ -7,7 +7,6 @@ import useAuth from '../hooks/useAuth';
 
 interface PopUpProps {
     popOff: Function
-
 }
 
 const Popup = ({ popOff }: PopUpProps): JSX.Element => {
