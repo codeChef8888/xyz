@@ -117,7 +117,7 @@ const Header: NextPage = () => {
                     </ul>
                   </li>
                   <li className="connectwalletbutton">
-                    <ConnectWalletButton popOn={popOn} />
+                    {/* <ConnectWalletButton popOn={popOn} /> */}
                   </li>
                 </ul>
               </div>
