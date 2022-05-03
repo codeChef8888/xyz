@@ -21,7 +21,6 @@ const Header: NextPage = () => {
 
   return (
     <>
-      {
         <header
           id="gamfi-header"
           className="gamfi-header-section default-header"
@@ -207,7 +206,6 @@ const Header: NextPage = () => {
           </nav>
           <div className="popup">{open ? <Popup popOff={popOff} /> : null}</div>
         </header>
-      }
     </>
   );
 };
