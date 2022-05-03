@@ -7,18 +7,18 @@ import ConnectWalletButton from "./ConnectWalletButton";
 import useEagerConnect from "../hooks/useEagerConnect";
 
 const Header: NextPage = () => {
-  const [open, setOpen] = useState(false); //For Connect To Account PopUp
+  // const [open, setOpen] = useState(false); //For Connect To Account PopUp
 
-  //For the Pop.jsx
-  function popOn() {
-    setOpen(true);
-  }
+  // //For the Pop.jsx
+  // function popOn() {
+  //   setOpen(true);
+  // }
 
-  function popOff() {
-    setOpen(false);
-  }
+  // function popOff() {
+  //   setOpen(false);
+  // }
 
-  useEagerConnect(); //For Reconnecting the Wallet After Page Reload
+  // useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
   return (
     <div>
