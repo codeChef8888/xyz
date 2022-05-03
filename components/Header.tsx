@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Popup from "./Popup";
-import ConnectWalletButton from "./ConnectWalletButton"
+import ConnectWalletButton from "./ConnectWalletButton";
 import useEagerConnect from "../hooks/useEagerConnect";
 
 const Header: NextPage = () => {
-
   const [open, setOpen] = useState(false); //For Connect To Account PopUp
 
   //For the Pop.jsx
@@ -69,7 +68,11 @@ const Header: NextPage = () => {
                     </a>
                   </li>
                   <li className="buy-token">
-                    <a className="readon black-shape" href="#" style={{ borderRadius: "4px" }}>
+                    <a
+                      className="readon black-shape"
+                      href="#"
+                      style={{ borderRadius: "4px" }}
+                    >
                       <span className="btn-text">Buy Token </span>
                       <i className="icon-arrow_down"></i>
                       <span className="hover-shape1"></span>
@@ -112,9 +115,9 @@ const Header: NextPage = () => {
                       </li>
                     </ul>
                   </li>
-                  {/* <li> */}
-                  <ConnectWalletButton popOn={popOn} />
-                  {/* </li> */}
+                  <li className="connectwalletbutton">
+                    <ConnectWalletButton popOn={popOn} />
+                  </li>
                 </ul>
               </div>
             </div>
@@ -193,9 +196,7 @@ const Header: NextPage = () => {
         </nav>
       </header>
 
-      <div className="popup">
-        {open ? <Popup popOff={popOff} /> : null}
-      </div>
+      <div className="popup">{open ? <Popup popOff={popOff} /> : null}</div>
     </>
   );
 };

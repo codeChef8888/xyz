@@ -1,31 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faExternalLinkAlt,
-  faCopy,
-} from "@fortawesome/free-solid-svg-icons";
-import useAuth from "../hooks/useAuth"
+import { faExternalLinkAlt, faCopy } from "@fortawesome/free-solid-svg-icons";
+import useAuth from "../hooks/useAuth";
 import { toast } from "react-toastify";
 import { useWeb3React } from "@web3-react/core";
 import { Modal } from "react-responsive-modal";
 import formatAddress from "../libs/formatAddress";
-import 'react-responsive-modal/styles.css';
-
+import "react-responsive-modal/styles.css";
 
 const CONNECT_MSG = "Connect";
 interface PopupProps {
-  popOn: React.MouseEventHandler<HTMLButtonElement>
+  popOn: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const ConnectWalletButton = ({ popOn }: PopupProps) => {
-
   const { login, logout } = useAuth();
   const { active, account } = useWeb3React();
 
   const [accountModalIsOpen, setAccountModalIsOpen] = useState(false);
-
 
   function openAccountModal() {
     setAccountModalIsOpen(true);
@@ -40,7 +33,7 @@ const ConnectWalletButton = ({ popOn }: PopupProps) => {
 
     // logout after 1 secs
     setTimeout((): void => logout(), 500);
-    localStorage.setItem('isWalletConnected', 'false');
+    localStorage.setItem("isWalletConnected", "false");
     closeAccountModal();
   };
 
@@ -58,8 +51,8 @@ const ConnectWalletButton = ({ popOn }: PopupProps) => {
     notifyCopied();
   };
 
-  return (<>
-    <li className="connectwalletbutton">
+  return (
+    <div>
       <button
         type="button"
         className="readon white-btn hover-shape"
@@ -68,12 +61,19 @@ const ConnectWalletButton = ({ popOn }: PopupProps) => {
         onClick={account ? openAccountModal : popOn}
       >
         <img src="assets/images/icons/connect_white.png" alt="Icon" />
-        <span className="btn-text">  {active ? <span>{formatAddress(account as string)}</span> : CONNECT_MSG} </span>
+        <span className="btn-text">
+          {" "}
+          {active ? (
+            <span>{formatAddress(account as string)}</span>
+          ) : (
+            CONNECT_MSG
+          )}{" "}
+        </span>
         <span className="hover-shape1"></span>
         <span className="hover-shape2"></span>
         <span className="hover-shape3"></span>
       </button>
-      
+
       {/* After Account is Connected Modal*/}
 
       <Modal
@@ -121,13 +121,8 @@ const ConnectWalletButton = ({ popOn }: PopupProps) => {
           </div>
         </div>
       </Modal>
-    </li>
-  </>
-  )
-
-}
-
-
+    </div>
+  );
+};
 
 export default ConnectWalletButton;
-
