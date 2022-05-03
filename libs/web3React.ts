@@ -5,7 +5,6 @@ import { ConnectorNames } from "../widgets/WalletModal/types";
 import { ethers } from "ethers";
 import getRpcUrl from "./getRpcUrl";
 
-const POLLING_INTERVAL = 12000;
 const rpcUrl: string = getRpcUrl();
 const chainId = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string, 10);
 
