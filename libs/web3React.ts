@@ -6,20 +6,15 @@ import { ethers } from "ethers";
 import getRpcUrl from "./getRpcUrl";
 
 const POLLING_INTERVAL = 12000;
-const rpcUrl = getRpcUrl();
+const rpcUrl: string = getRpcUrl();
 const chainId = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID as string, 10);
 
 const injected = new InjectedConnector({ supportedChainIds: [chainId] });
 
- interface IRPCMap {
-    [chainId: number]: string;
-  }
-  const irpcMap: IRPCMap = { [chainId]: rpcUrl } as IRPCMap;
-  
   const walletconnect = new WalletConnectConnector({
-    rpc: irpcMap,
+    rpc: { [chainId]: rpcUrl },
     qrcode: true,
-    pollingInterval: POLLING_INTERVAL,
+    pollingInterval: POLLING_INTERVAL
   })
   
 
@@ -31,11 +26,6 @@ export const connectorsByName = {
   [ConnectorNames.BSC]: bscConnector,
 };
 
-// export const getLibrary = (provider: any) => {
-//   const library = new ethers.providers.Web3Provider(provider);
-//   library.pollingInterval = POLLING_INTERVAL;
-//   return library;
-// };
 
 /**
  * BSC Wallet requires a different sign method
