@@ -8,7 +8,7 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -45,12 +45,12 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="twitter:description" content="" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
       <div className="children">{children}</div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

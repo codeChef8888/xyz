@@ -9,7 +9,7 @@ import useEagerConnect from "../hooks/useEagerConnect";
 const Header: NextPage = () => {
   const [open, setOpen] = useState(false); //For Connect To Account PopUp
 
-  // //For the Pop.jsx
+  //For the Pop.jsx
   function popOn() {
     setOpen(true);
   }
@@ -18,7 +18,7 @@ const Header: NextPage = () => {
     setOpen(false);
   }
 
-  // useEagerConnect(); //For Reconnecting the Wallet After Page Reload
+  useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
   return (
     <div>
@@ -117,7 +117,7 @@ const Header: NextPage = () => {
                     </ul>
                   </li>
                   <li className="connectwalletbutton">
-                    {/* <ConnectWalletButton popOn={popOn} /> */}
+                    <ConnectWalletButton popOn={popOn} />
                   </li>
                 </ul>
               </div>
@@ -195,7 +195,7 @@ const Header: NextPage = () => {
             </li>
           </ul>
         </nav>
-        {/* <div className="popup">{open ? <Popup popOff={popOff} /> : null}</div> */}
+        <div className="popup">{open ? <Popup popOff={popOff} /> : null}</div>
       </header>
     </div>
   );
