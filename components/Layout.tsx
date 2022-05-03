@@ -49,7 +49,7 @@ const Layout = ({ children }: LayoutProps) => {
 
       <div className="children">{children}</div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
