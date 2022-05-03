@@ -230,10 +230,7 @@ const Header: NextPage = () => {
       </header>
 
       <div className="popup">
-        {config.map((entry, index) => (
-          open ? <Popup key={entry.title} walletConfig={entry} popOff={popOff} /> : null
-        )
-        )}
+        {open ? <Popup popOff={popOff} /> : null}
       </div>
     </>
   );

@@ -4,23 +4,19 @@ import React, { FC, useEffect } from 'react';
 import config from "../widgets/WalletModal/config";
 import { connectorLocalStorageKey } from "../widgets/WalletModal/config";
 import useAuth from '../hooks/useAuth';
+import Icon from '../widgets/WalletModal/icons/MathWallet';
 
 interface PopUpProps {
-    key: string
     popOff: Function
-    walletConfig: {
-        title: string;
-        icon: (props: any) => JSX.Element;
-        connectorId: string;
-    }
+
 }
 
-const Popup = ({key, walletConfig , popOff }: PopUpProps): JSX.Element => {
+const Popup = ({ popOff }: PopUpProps): JSX.Element => {
 
     let isAccountActive: boolean;
     let activeAccount: string | null | undefined;
-    // const { title, icon: Icon} = walletConfig
-    // const walletConfig = config[0]; // MetaMask Wallet Configuration
+    // const { title, icon: Icon } = walletConfig;
+    // const walletConfigf = config[0]; // MetaMask Wallet Configuration
     // console.log(walletConfig)
 
 
@@ -54,38 +50,42 @@ const Popup = ({key, walletConfig , popOff }: PopUpProps): JSX.Element => {
 
             {/* Checking if the User Logged in Account is Retrived =>  */}
             {/* {isAccountActive ? <button onClick={disconnect}><span>Connected with <b> {activeAccount} </b></span> </button> : <span>Not connected</span>} */}
-            
-            <div className='pop' onClick={() => {
 
-                console.log("ma ya connected ma xu hai");
-
-                login(walletConfig.connectorId);
-                window.localStorage.setItem(
-                    connectorLocalStorageKey,
-                    walletConfig.connectorId
-                );
-                localStorage.setItem('isWalletConnected', 'true');
-
-                popOff();
-            }}>
+            <div className='pop' >
                 <h1>CONNECT WALLET</h1>
                 <br />
+
                 <div>
-                    {/* Metamask */}
-                    <div className='walletContainer'>
-                        <img src="assets/images/icons/MetaMask_Fox.png" alt="MetaMask" />
-                        <p>MetaMask</p>
+                {config.map((entry, index) => (
+                    <div key={index} className='walletContainer' onClick={() => {
+
+                        console.log(entry, "ma ya connected ma xu hai");
+
+                        login(entry.connectorId);
+                        window.localStorage.setItem(
+                            connectorLocalStorageKey,
+                            entry.connectorId
+                        );
+                        localStorage.setItem('isWalletConnected', 'true');
+
+                        popOff();
+                    }}>
+                        <entry.icon width="40px"/>
+                        <p>{entry.title}</p>
                     </div>
+     )
+     )}
+
                     {/* Coinbase */}
-                    <div className='walletContainer'>
+                    {/* <div className='walletContainer'>
                         <img src="assets/images/icons/coinbase_2.png" alt="Coinbase" />
                         <p>Coinbase</p>
-                    </div>
+                    </div> */}
                     {/* Binance */}
-                    <div className='walletContainer'>
+                    {/* <div className='walletContainer'>
                         <img src="assets/images/icons/binance.png" alt="Binance" />
                         <p>Binance</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

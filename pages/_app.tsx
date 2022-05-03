@@ -6,10 +6,15 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 import { Web3ReactProvider } from "@web3-react/core";
 import Web3 from 'web3';
+import { ethers } from "ethers";
 
 //Getting The Library Provider To Connect To A Wallet...
+const POLLING_INTERVAL = 12000;
 function getLibrary(provider: any) {
-  return new Web3(provider);
+  // const library = new Web3(provider);
+  const library = new ethers.providers.Web3Provider(provider);
+  library.pollingInterval = POLLING_INTERVAL;
+  return 
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
