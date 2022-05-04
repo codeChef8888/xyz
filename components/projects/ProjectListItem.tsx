@@ -5,61 +5,6 @@ import Link from "next/link";
 const ProjectListItem: NextPage = () => {
   return (
     <div className="col-lg-4 col-md-6">
-      {/* <Link href="/project-details">
-        <a>
-          <div className="previous-item hover-shape-border hover-shape-inner">
-            <div className="previous-gaming">
-              <div className="previous-image">
-                <img
-                  src="assets/images/project/privius-imagee.png"
-                  alt="Previous-Image"
-                />
-              </div>
-              <div className="previous-price">
-                <h4 className="mb-10">Ariva</h4>
-                <div className="dsc">price (ARV) = 0.89 BUSD</div>
-              </div>
-            </div>
-            <div className="previous-chaining">
-              <img
-                src="assets/images/project/previous-image2.png"
-                alt="Chain-Image"
-              />
-              <div className="counter-info">
-                <ul>
-                  <li>
-                    <span className="">0xe9e....87d56</span>D
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
-            <div className="previous-raise">
-              <span>58,000 (85%)</span>
-              <div className="progress-inner">
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped"
-                    role="progressbar"
-                    aria-valuenow={85}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <span className="border-shadow shadow-1"></span>
-            <span className="border-shadow shadow-2"></span>
-            <span className="border-shadow shadow-3"></span>
-            <span className="border-shadow shadow-4"></span>
-            <span className="hover-shape-bg hover_shape1"></span>
-            <span className="hover-shape-bg hover_shape2"></span>
-            <span className="hover-shape-bg hover_shape3"></span>
-          </div>
-        </a>
-      </Link> */}
-
       <div className="project-item hover-shape-border">
         <div className="project-info d-flex">
           <Link href="/project-details">
@@ -121,9 +66,6 @@ const ProjectListItem: NextPage = () => {
           </div>
           <div className="project-media">
             <ul className="project-listing">
-              {/* <li>
-                Min allocation <span>0.33 BUSD</span>
-              </li> */}
               <li>
                 Total Vote <span>20,673.70</span>
               </li>

@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import ApplyForIGOSection from "../components/ApplyForIGOSection";
 import ProjectListItem from "../components/projects/ProjectListItem";
+import ProjectListPast from "../components/projects/ProjectListPast";
 
 const Projects: NextPage = () => {
   return (
@@ -41,15 +42,6 @@ const Projects: NextPage = () => {
                   <input type="submit" />
                 </span>
               </form>
-              {/* <div className="btn-area">
-                <a className="readon black-shape" href="calendar.html">
-                  <i className="icon-calendar"></i>
-                  <span className="btn-text">Calendar</span>
-                  <span className="hover-shape1"></span>
-                  <span className="hover-shape2"></span>
-                  <span className="hover-shape3"></span>
-                </a>
-              </div> */}
             </div>
           </div>
         </div>
@@ -74,20 +66,6 @@ const Projects: NextPage = () => {
                     Ongoing
                   </button>
                 </li>
-                {/* <li className="nav-item" role="presentation">
-                  <button
-                    className="tab-link"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#upcoming"
-                    type="button"
-                    role="tab"
-                    aria-controls="upcoming"
-                    aria-selected="false"
-                  >
-                    Upcoming
-                  </button>
-                </li> */}
                 <li className="nav-item" role="presentation">
                   <button
                     className="tab-link"
@@ -112,12 +90,6 @@ const Projects: NextPage = () => {
                     <li style={{borderRadius: "4px 4px 0 0"}}>
                       <a href="#">Vote</a>
                     </li>
-                    {/* <li>
-                      <a href="#">Name</a>
-                    </li>
-                    <li>
-                      <a href="#">Network</a>
-                    </li> */}
                     <li style={{borderRadius: "0 0 4px 4px"}}>
                       <a href="#">Name</a>
                     </li>
@@ -173,17 +145,6 @@ const Projects: NextPage = () => {
               aria-labelledby="home-tab"
             >
               <div className="row align-items-center">
-                {/* <div className="col-md-12">
-                  <div className="previous-mainmenu mb-15">
-                    <ul className="menu-list">
-                      <li className="list1">Project name</li>
-                      <li className="list2">Chain</li>
-                      <li className="list3">Contract</li>
-                      <li className="list4">Total Vote</li>
-                      <li className="list5">Progress</li>
-                    </ul>
-                  </div>
-                </div> */}
                 <ProjectListItem />
                 <ProjectListItem />
                 <ProjectListItem />
@@ -191,37 +152,6 @@ const Projects: NextPage = () => {
                 <ProjectListItem />
                 <ProjectListItem />
               </div>
-              {/* <div className="gamfi-navigation text-center mt-10">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="icon-Vector"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="active" href="#">
-                      1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">4</a>
-                  </li>
-                  <li>
-                    <a href="#">5</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="icon-arrow_right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
 
             <div
@@ -233,13 +163,6 @@ const Projects: NextPage = () => {
               <div className="row align-items-center">
                 <div className="col-md-12">
                   <div className="previous-mainmenu mb-15">
-                    {/* <ul className="menu-list">
-                      <li className="list1">Project name</li>
-                      <li className="list2">Chain</li>
-                      <li className="list3">Contract</li>
-                      <li className="list4">Total Vote</li>
-                      <li className="list5">Progress</li>
-                    </ul> */}
                   </div>
                 </div>
                 <ProjectListItem />
@@ -288,19 +211,12 @@ const Projects: NextPage = () => {
               <div className="row align-items-center">
                 <div className="col-md-12">
                   <div className="previous-mainmenu mb-15">
-                    {/* <ul className="menu-list">
-                      <li className="list1">Project name</li>
-                      <li className="list2">Chain</li>
-                      <li className="list3">Launched</li>
-                      <li className="list4">Total Raise</li>
-                      <li className="list5">Progress</li>
-                    </ul> */}
                   </div>
                 </div>
-                <ProjectListItem />
-                <ProjectListItem />
-                <ProjectListItem />
-                <ProjectListItem />
+                <ProjectListPast />
+                <ProjectListPast />
+                <ProjectListPast />
+                <ProjectListPast />
               </div>
               <div className="gamfi-navigation text-center mt-10">
                 <ul>
