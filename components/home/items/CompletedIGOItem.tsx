@@ -63,48 +63,38 @@ const CompletedIGOItem: NextPage = () => {
       </Link> */}
 
       <div className="winner-container">
-        {/* Title */}
         <div>
           <h1>EPOCH 3</h1>
         </div>
-        {/* labels */}
-        <div>
-          {/* Winner */}
-          <div className="winner">
+        <div className="winner-items">
+          <div className="winner" style={{alignItems: "center"}}>
             <h2>Winner</h2>
             <img
                   src="assets/images/project/privius-imagee.png"
                   alt="Previous-Image"
             />
           </div>
-        </div>
-        <div>
-          {/* Total */}
+
           <div className="winner">
             <h2>Total Vote</h2>
             <h3>100,000</h3>
           </div>
-        </div>
-        <div>
-          {/* DEX */}
+
           <div className="winner">
             <h2>DEX</h2>
             <h3>Uniswap</h3>
           </div>
-        </div>
-        <div>
-          {/* PRIZE */}
+
           <div className="winner">
             <h2>Prize</h2>
             <h3>XXX</h3>
           </div>
-        </div>
-        <div>
-          {/* STATUS */}
+
           <div className="winner">
             <h2>Status</h2>
             <h3>100%</h3>
           </div>
+
         </div>
       </div>
     </div>

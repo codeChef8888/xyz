@@ -66,7 +66,7 @@ const HomeCarouselItem: NextPage = () => {
         <div className="targeted-raise">
           <div className="all-raise mb-10">Governance Ends In</div>
           <div className="timer">
-            <ul>
+            <ul style={{display: "flex", columnGap: "1rem"}}>
               <li className="days"></li>
               <li className="hours"></li>
               <li className="minutes"></li>

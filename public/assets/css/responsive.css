@@ -1187,7 +1187,6 @@
     .GetInTouch_Contuct_Sect {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
         max-width: 330px;
         width: 100%;
         padding-left: 0px;
@@ -1202,9 +1201,26 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        padding: 1rem 0 !important;
         row-gap: 1rem;
+    }
+    .winner-container .winner-items {
+        flex-direction: column !important;
+        row-gap: 1;
+    }
+    .winner-container .winner-items .winner {
+        flex-direction: row !important;
+        justify-content: space-between;
+        row-gap: 1rem;
+        padding: 0;
+    }
+    .winner-container .winner-items .winner h2{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .winner-container .winner-items .winner img {
+        margin-bottom: 1rem;
     }
 
     /* stakers */
@@ -2332,7 +2348,7 @@
     .roadmap2022Divider span {
         font-size: 14px;
     }
-    
+   
 }
     
 
