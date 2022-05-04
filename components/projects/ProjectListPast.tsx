@@ -9,7 +9,7 @@ const ProjectListPast: NextPage = () => {
         <div className="project-info d-flex flex-column">
           <h1 style={{fontSize: "1.5rem", fontWeight: "bold"}}>EPOCH - 1</h1>
           <div className="d-flex">
-            <Link href="/project-details">
+            <Link href="/epoch-view">
                 <a>
                 <img
                     src="assets/images/project/project-imagee.png"

@@ -1223,6 +1223,13 @@
         margin-bottom: 1rem;
     }
 
+    .epoch-heading {
+        flex-direction: column;
+    }
+    .epoch-heading > div{
+        text-align: center;
+    }
+
     /* stakers */
     .balance-detail .rewards{
         display: flex;

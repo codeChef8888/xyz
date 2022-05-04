@@ -187,6 +187,28 @@ a {
   object-fit: cover;
 }
 
+/* governance-pastwinners */
+.epoch-details{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.epoch-details p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.25rem;
+}
+.epoch-details span{
+  font-weight: 300;
+  margin-left: 0.5rem;
+}
+.epoch-heading {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
 /* staking */
 .staking-heading{
   display: flex;
