@@ -10,18 +10,38 @@ const FarmListItem: NextPage = () => {
       className={`gamfi-table-inner active-shape ` + (expandMenu ? 'expeand-bottom-content' : '')}
     >
       <div
-        className="default-centent expeander-iteam-area d-flex align-items-center justify-content-between"
+        className="farming-wrapper d-flex align-items-center justify-content-between"
         onClick={() => {setExpandMenu(!expandMenu)}}
       >
-        <div className="list-content list-1 image-row">
-          <img src="assets/images/icons/LEMABNB.png" alt="Previous-Image" />
-          LEMA/BNB
+        <div className="farming-table">
+          <p>POOLS</p>
+          <div className="list-content list-1 image-row">
+            <img src="assets/images/icons/LEMABNB.png" alt="Previous-Image" />
+            LEMA/BNB
+          </div>
         </div>
-        <div className="list-content list-2">89.58 %</div>
-        <div className="list-content list-3">50,800 LEMA</div>
-        <div className="list-content list-4">8,899.50 LEMA</div>
-        <div className="list-content list-5">$4,305,626.99</div>
-        <div className="list-content list-6">
+
+        <div className="farming-table">
+          <p>APY</p>
+          <div className="list-2">89.58 %</div>
+        </div>
+
+        <div className="farming-table">
+          <p>STAKES</p>
+          <div className="list-3">50,800 LEMA</div>
+        </div>
+
+        <div className="farming-table">
+          <p>TEARNED</p>
+          <div className="list-4">8,899.50 LEMA</div>
+        </div>
+
+        <div className="farming-table">
+          <p>TVL</p>
+          <div className="list-5">$4,305,626.99</div>
+        </div>
+        
+        <div className="list-6" style={{alignSelf: "flex-end", padding: "0 1rem 0 0"}}>
           <i className="icon-arrow_down expeand-arrow"></i>
         </div>
       </div>

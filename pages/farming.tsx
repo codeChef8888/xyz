@@ -116,7 +116,7 @@ const Farming: NextPage = () => {
               </ul>
             </div>
           </div>
-          <div className="gamfi-farming-table">
+          {/* <div className="gamfi-farming-table">
             <table>
               <tbody>
                 <tr>
@@ -128,7 +128,7 @@ const Farming: NextPage = () => {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div> */}
           <div className="gamfi-farming-content">
             <FarmListItem />
             <FarmListItem />

@@ -562,7 +562,6 @@
     .kycForm .UploadDocSect ul li h4 {
         font-size: 11px;
     }
-    
     .kycPersonalinfoForm form .InputNameSect, .kycPersonalinfoForm form .InputAddressSect, .kycPersonalinfoForm form .InputCitySect{
         flex-direction: column;
         align-items: flex-start;
@@ -649,6 +648,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+    
     .gamfi-header-section .heaader-inner-area ul li.buy-token,
     .gamfi-header-section .header-menu{
         display: none;
@@ -1056,6 +1056,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .farming-wrapper{
+        flex-direction: column !important;
+        row-gap: 2rem;
+    }
+    .farming-wrapper .farming-table{
+        justify-content: center;
+        align-items: center;
+    }
     .sc-banner .banner-content .banner-title {
         font-size: 30px;
     }
