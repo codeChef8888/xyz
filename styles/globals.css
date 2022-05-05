@@ -214,6 +214,11 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.staking-heading h1{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
 .nominator-indicator {
   padding: 0.5rem 1rem;
   background-color: #0DB2FF;

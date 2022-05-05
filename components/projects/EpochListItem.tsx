@@ -2,7 +2,13 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 
-const EpochListItem: NextPage = () => {
+export interface Props {
+  name: string;
+  rank: number;
+  votes: number;
+}
+
+const EpochListItem: NextPage<Props> = (props: Props) => {
   return (
     <div className="col-md-12 my-3 d-flex flex-column game-price-item active-shape hover-shape-inner">
       <div className="winner-container" style={{justifyContent: "space-between", columnGap: "0", background:"none"}}>
@@ -15,7 +21,7 @@ const EpochListItem: NextPage = () => {
             />
             <div style={{marginTop: "1.5rem"}}>
                 <h4 style={{lineHeight: "1.5rem"}}>
-                    Ariva
+                    {props.name}
                     <div className="dsc">
                         <ul className="social-icon-list" style={{display: "flex", columnGap: "1.5rem"}}>
                             <li>
@@ -54,7 +60,7 @@ const EpochListItem: NextPage = () => {
           </div>
 
           <div className="winner">
-            <h1 style={{fontSize: "2rem", fontWeight: "bold", marginTop: "1.5rem"}}>RANK 1</h1>
+            <h1 style={{fontSize: "2rem", fontWeight: "bold", marginTop: "1.5rem"}}>RANK {props.rank}</h1>
           </div>
           
           <div className="winner">
@@ -85,7 +91,7 @@ const EpochListItem: NextPage = () => {
             aria-valuenow={36}
             aria-valuemin={0}
             aria-valuemax={100}
-            style={{ width: "36%" }}
+            style={{ width: `${props.votes}` + "%"}}
         ></div>
         </div>
       </div>

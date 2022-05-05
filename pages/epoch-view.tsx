@@ -3,7 +3,39 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import EpochListItem from "../components/projects/EpochListItem";
 
+const data = [
+    {
+        name: "Ariva",
+        rank: 1,
+        votes: "181000",
+    },
+    {
+        name: "Render",
+        rank: 2,
+        votes: "81158",
+    },
+    {
+        name: "Neo",
+        rank: 3,
+        votes: "55123",
+    },
+]
+
 const EpochView: NextPage = () => {
+    const getHighest = () => {
+        let highest = 0;
+        for (let i = 0; i < data.length; i++) {
+            if (parseInt(data[i].votes) > highest) {
+                highest = parseInt(data[i].votes);
+            }
+        }
+        return highest;
+    }
+    const getPercentage = (votes: number) => {
+        const highest = getHighest();
+        let votePercentage = (votes / highest) * 100;   
+        return votePercentage;  
+    }
     return (
         <div className="d-flex flex-column">
             <div className="gamfi-breadcrumbs-section" style={{marginBottom: "1rem"}}>
@@ -37,9 +69,16 @@ const EpochView: NextPage = () => {
             </div>
 
             <div className="container" style={{zIndex: "20"}}>
-                <EpochListItem />
-                <EpochListItem />
-                <EpochListItem />
+                {
+                    data.sort((a, b) => b.rank - a.rank).map((item, index) => (
+                        <EpochListItem 
+                            name={item.name}
+                            rank={item.rank}
+                            votes={getPercentage(parseInt(item.votes))}
+                            key={index}
+                        />
+                    ))
+                }
             </div>
         </div>
     )

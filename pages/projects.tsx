@@ -25,7 +25,7 @@ const Projects: NextPage = () => {
                     alt="Steps-Image"
                   />
                 </div>
-                <h2 className="title mb-0">EPOCH - 5</h2>
+                <h2 className="mb-0" style={{fontSize: "2rem", fontWeight: "600"}}>EPOCH - 5</h2>
               </div>
             </div>
           </div>
