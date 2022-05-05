@@ -1064,6 +1064,10 @@
         justify-content: center;
         align-items: center;
     }
+    .farming-icon {
+        align-self: flex-end; 
+        padding: 0 1rem 0 0;
+    }
     .sc-banner .banner-content .banner-title {
         font-size: 30px;
     }

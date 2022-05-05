@@ -41,7 +41,7 @@ const FarmListItem: NextPage = () => {
           <div className="list-5">$4,305,626.99</div>
         </div>
         
-        <div className="list-6" style={{alignSelf: "flex-end", padding: "0 1rem 0 0"}}>
+        <div className="list-6 farming-icon">
           <i className="icon-arrow_down expeand-arrow"></i>
         </div>
       </div>
