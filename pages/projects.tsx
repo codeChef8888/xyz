@@ -28,21 +28,6 @@ const Projects: NextPage = () => {
                 <h2 className="title mb-0">EPOCH - 5</h2>
               </div>
             </div>
-            <div className="col-lg-7 breadcrumbs-form md-pt-30">
-              <form>
-                <input
-                  type="text"
-                  id="Search"
-                  name="search"
-                  placeholder="Search by name, token, address"
-                  style={{borderRadius: "4px"}}
-                />
-                <span className="submit">
-                  <i className="icon-search"></i>
-                  <input type="submit" />
-                </span>
-              </form>
-            </div>
           </div>
         </div>
       </div>
