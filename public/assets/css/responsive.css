@@ -37,6 +37,18 @@
         row-gap: 1rem;
     }
 
+    .voteContainer {
+        flex-direction: column !important;
+        row-gap: 1rem;
+        align-items: flex-start !important;
+    }
+    .voteContainer label {
+        align-self: start;
+    }
+    .voteContainer .inputContainer {
+        align-self: flex-start;
+    }
+
     /* all */
     .gamfi-header-section .header-menu ul li + li {
         margin-left: 25px;
@@ -1203,6 +1215,13 @@
         width: 100%;
         padding: 1rem 0 !important;
         row-gap: 1rem;
+    }
+    .voteAction{
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+    .voteBtn {
+        padding: 0.5rem 2rem !important;
     }
     .winner-container .winner-items {
         flex-direction: column !important;
