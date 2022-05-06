@@ -296,7 +296,7 @@ const Staking: NextPage = () => {
               <div className="stats">
                 <h4>
                   TVL
-                  <h2>$7,890,123.56</h2>
+                  <h2 style={{fontSize: "2rem"}}>$7,890,123.56</h2>
                 </h4>
                 <img
                   className="heading-right-image"
@@ -307,7 +307,7 @@ const Staking: NextPage = () => {
               <div className="stats">
                 <h4>
                   APR
-                  <h2>90.5%</h2>
+                  <h2 style={{fontSize: "2rem"}}>90.5%</h2>
                 </h4>
                 <img
                   className="heading-right-image"
@@ -318,7 +318,7 @@ const Staking: NextPage = () => {
               <div className="stats">
                 <h4>
                   TOTAL VALIDATORS
-                  <h2>78</h2>
+                  <h2 style={{fontSize: "2rem"}}>78</h2>
                 </h4>
                 <img
                   className="heading-right-image"

@@ -7,7 +7,7 @@ const CompletedIGOItem: NextPage = () => {
     <div className="col-md-12">
       <div className="winner-container">
         <div>
-          <h1>EPOCH 3</h1>
+          <h1 style={{marginTop: "1.25rem"}}>EPOCH 3</h1>
         </div>
         <div className="winner-items">
           <div className="winner" style={{alignItems: "center"}}>
