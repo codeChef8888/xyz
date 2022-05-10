@@ -375,10 +375,17 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4ACAFC;
+  background: #0DB2FF;
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #85dcff;
+  background: #27b9fd;
+}
+
+@supports (scrollbar-color: red blue) {
+  *{
+      scrollbar-width: thin;
+      scrollbar-color: #0DB2FF #0F1123;
+  }
 }

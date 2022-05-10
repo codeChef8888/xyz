@@ -225,7 +225,7 @@ const Staking: NextPage = () => {
         </div>
       </div>
 
-      <div className="col-lg-6 balance-detail">
+      <div className="col-lg-6 balance-detail scrollable">
         <div>
           <h4>Important: To become a validator, you have to stake at least 250,000 LEMA.</h4>
         </div>
@@ -235,25 +235,25 @@ const Staking: NextPage = () => {
           </h2>
           <ul>
             <li>
-              1. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              2. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              3. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              4. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              5. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              6. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
             <li>
-              7. 0xxxxxxxxxxxxx
+              0xxxxxxxxxxxxx
             </li>
           </ul>
         </div> 

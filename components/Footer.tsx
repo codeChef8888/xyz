@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
+import Link from "next/link";
 
 const Footer: NextPage = () => {
   return (
@@ -69,13 +70,19 @@ const Footer: NextPage = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Projecs</a>
+                <Link href="/projects">
+                  <a>Governance</a>
+                </Link>
               </li>
               <li>
-                <a href="#">Staking</a>
+                <Link href="/staking">
+                  <a>Staking</a>
+                </Link>
               </li>
               <li>
-                <a href="#">Farming</a>
+                <Link href="/farming">
+                  <a>Farming</a>
+                </Link>
               </li>
               <li>
                 <a href="#">How it works</a>

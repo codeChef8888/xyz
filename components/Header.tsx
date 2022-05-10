@@ -14,9 +14,11 @@ const Header: NextPage = () => {
             <div className="heaader-inner-area d-flex justify-content-between align-items-center">
               <div className="gamfi-logo-area d-flex justify-content-between align-items-center">
                 <div className="logo">
-                  <a href="index.html">
-                    <img src="home_logo.png" width="50px" alt="logo" />
-                  </a>
+                  <Link href="/">
+                    <a>
+                      <img src="home_logo.png" width="50px" alt="logo" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="header-menu">
                   <ul className="nav-menu">
