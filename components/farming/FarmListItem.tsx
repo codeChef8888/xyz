@@ -22,7 +22,7 @@ const FarmListItem: NextPage = () => {
         </div>
 
         <div className="farming-table">
-          <p>APY</p>
+          <p>APR</p>
           <div className="list-2">89.58 %</div>
         </div>
 
