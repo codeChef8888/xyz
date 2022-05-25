@@ -24,6 +24,32 @@
 }
 
 @media only screen and (max-width: 1199px) {
+    /* stake */
+    .staking-stats{
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+    .staking-stats .stats{
+        width: 100%;
+    }
+    .wrapper {
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+
+    .voteContainer {
+        flex-direction: column !important;
+        row-gap: 1rem;
+        align-items: flex-start !important;
+    }
+    .voteContainer label {
+        align-self: start;
+    }
+    .voteContainer .inputContainer {
+        align-self: flex-start;
+    }
+
+    /* all */
     .gamfi-header-section .header-menu ul li + li {
         margin-left: 25px;
     }
@@ -159,6 +185,14 @@
         margin-right: 0px !important;
     }
     
+    /* btn-vote */
+    .responsive-btn-vote{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
     /*New CSS*/
     .blog-detail-conent .blog-area .blog-description .des {
         font-size: 16px;
@@ -419,6 +453,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .winner-container{
+        flex-direction: column !important;
+    }
     .RodmapLeftConetent{
         padding-right:30px;
     }
@@ -525,7 +562,6 @@
     .kycForm .UploadDocSect ul li h4 {
         font-size: 11px;
     }
-    
     .kycPersonalinfoForm form .InputNameSect, .kycPersonalinfoForm form .InputAddressSect, .kycPersonalinfoForm form .InputCitySect{
         flex-direction: column;
         align-items: flex-start;
@@ -612,6 +648,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+    
     .gamfi-header-section .heaader-inner-area ul li.buy-token,
     .gamfi-header-section .header-menu{
         display: none;
@@ -1019,6 +1056,18 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .farming-wrapper{
+        flex-direction: column !important;
+        row-gap: 2rem;
+    }
+    .farming-wrapper .farming-table{
+        justify-content: center;
+        align-items: center;
+    }
+    .farming-icon {
+        align-self: flex-end; 
+        padding: 0 1rem 0 0;
+    }
     .sc-banner .banner-content .banner-title {
         font-size: 30px;
     }
@@ -1165,7 +1214,6 @@
     .GetInTouch_Contuct_Sect {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
         max-width: 330px;
         width: 100%;
         padding-left: 0px;
@@ -1173,6 +1221,60 @@
         margin-top: 40px;
     }
     
+    /* past-winners */
+    .winner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 0 !important;
+        row-gap: 1rem;
+    }
+    .voteAction{
+        flex-direction: column !important;
+        row-gap: 1rem;
+    }
+    .voteBtn {
+        padding: 0.5rem 2rem !important;
+    }
+    .winner-container .winner-items {
+        flex-direction: column !important;
+        row-gap: 1;
+    }
+    .winner-container .winner-items .winner {
+        flex-direction: row !important;
+        justify-content: space-between;
+        row-gap: 1rem;
+        padding: 0;
+    }
+    .winner-container .winner-items .winner h2{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .winner-container .winner-items .winner img {
+        margin-bottom: 1rem;
+    }
+
+    .epoch-heading {
+        flex-direction: column;
+    }
+    .epoch-heading > div{
+        text-align: center;
+    }
+
+    /* stakers */
+    .balance-detail .rewards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        margin-bottom: 1rem;
+    }
+    .balance-detail .rewards button{
+        margin-top: 0 !important;
+    }
+
     /*New CSS*/
     .blog-detail-conent .blog-area .Tokenomics-item .project-service {
         display: block !important;
@@ -2287,7 +2389,7 @@
     .roadmap2022Divider span {
         font-size: 14px;
     }
-    
+   
 }
     
 

@@ -21,6 +21,7 @@ const Header: NextPage = (): JSX.Element => {
   useEagerConnect(); //For Reconnecting the Wallet After Page Reload
 
   return (
+<<<<<<< HEAD
     <header id="gamfi-header" className="gamfi-header-section default-header">
       <div className="menu-area menu-sticky">
         <div className="container">
@@ -30,6 +31,45 @@ const Header: NextPage = (): JSX.Element => {
                 <a href="index.html">
                   <img src="home_logo.png" width="50px" alt="logo" />
                 </a>
+=======
+    <>
+      <header id="gamfi-header" className="gamfi-header-section default-header">
+        <div className="menu-area menu-sticky">
+          <div className="container">
+            <div className="heaader-inner-area d-flex justify-content-between align-items-center">
+              <div className="gamfi-logo-area d-flex justify-content-between align-items-center">
+                <div className="logo">
+                  <Link href="/">
+                    <a>
+                      <img src="home_logo.png" width="50px" alt="logo" />
+                    </a>
+                  </Link>
+                </div>
+                <div className="header-menu">
+                  <ul className="nav-menu">
+                    <li>
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/projects">
+                        <a>Governance</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/staking">
+                        <a>Staking</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/farming">
+                        <a>Farming</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+>>>>>>> ca8ff478e9df4cc9da1867d6acc6e69022b699c3
               </div>
               <div className="header-menu">
                 <ul className="nav-menu">
@@ -56,8 +96,54 @@ const Header: NextPage = (): JSX.Element => {
                 </ul>
               </div>
             </div>
+<<<<<<< HEAD
             <div className="gamfi-btn-area">
               <ul>
+=======
+          </div>
+        </div>
+        <nav
+          className="right_menu_togle mobile-navbar-menu"
+          id="mobile-navbar-menu"
+        >
+          <div className="close-btn">
+            <a id="nav-close2" className="nav-close">
+              <div className="line">
+                <span className="line1"></span>
+                <span className="line2"></span>
+              </div>
+            </a>
+          </div>
+          <div className="sidebar-logo mb-30">
+            <a href="index.html">
+              <img src="home_logo.png" width="50px" alt="" />
+            </a>
+          </div>
+          <ul className="nav-menu">
+            <li className="current-menu-item">
+              <Link href="/">
+                <a id="nav-close2">Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects">
+                <a id="nav-close2">Governance</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/staking">
+                <a id="nav-close2">Staking</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/farming">
+                <a id="nav-close2">Farming</a>
+              </Link>
+            </li>
+            <li className="menu-item-has-children">
+              <a href="#">Buy Token</a>
+              <ul className="sub-menu">
+>>>>>>> ca8ff478e9df4cc9da1867d6acc6e69022b699c3
                 <li>
                   <a id="nav-expander" className="nav-expander bar" href="#">
                     <div className="bar">
