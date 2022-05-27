@@ -7,20 +7,20 @@ const ApplyForIGOSection: NextPage = () => {
       <div className="container">
         <div className="footer-cta-area text-center active-shape hover-shape-inner">
           <h2 className="title mb-15">
-            Apply for project
+            Apply for lemmatron
             <br />
-            incubation
+            liquidity governance
           </h2>
           <div className="dsc mb-40 md-mb-30">
-            If you want to lanuch an IGO/IDO, It will be your perfect choice
+            Please go to the link below and submit the form.
           </div>
-          <Link href="/apply-for-igo">
+          <Link href="/apply-for-liquidity">
             <a
               className="banner-btn wow fadeInUp black-shape"
               data-wow-delay="300ms"
               data-wow-duration="2500ms"
             >
-              <span className="btn-text">Apply For IGO</span>
+              <span className="btn-text" style={{color: "#fff"}}>Apply For governance</span>
               <span className="hover-shape1"></span>
               <span className="hover-shape2"></span>
               <span className="hover-shape3"></span>

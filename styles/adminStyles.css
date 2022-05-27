@@ -1,0 +1,21 @@
+/* SideNav */
+.sidenav {
+  height: 100%;
+  width: 28rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Overview */
+.overview-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}

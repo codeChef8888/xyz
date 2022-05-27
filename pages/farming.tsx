@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 import ApplyForIGOSection from "../components/ApplyForIGOSection";
@@ -23,7 +24,7 @@ const Farming: NextPage = () => {
                     alt="Steps-Image"
                   />
                 </div>
-                <h2 className="title mb-0">Farming</h2>
+                <h2 className="mb-0" style={{fontSize: "2rem", fontWeight: "600"}}>Farming</h2>
               </div>
             </div>
             <div className="col-lg-7 breadcrumbs-form md-mt-40">
@@ -33,6 +34,7 @@ const Farming: NextPage = () => {
                   id="Search"
                   name="search"
                   placeholder="Search by name, token, address"
+                  style={{borderRadius: "4px"}}
                 />
                 <span className="submit">
                   <i className="icon-search"></i>
@@ -114,7 +116,7 @@ const Farming: NextPage = () => {
               </ul>
             </div>
           </div>
-          <div className="gamfi-farming-table">
+          {/* <div className="gamfi-farming-table">
             <table>
               <tbody>
                 <tr>
@@ -126,7 +128,7 @@ const Farming: NextPage = () => {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div> */}
           <div className="gamfi-farming-content">
             <FarmListItem />
             <FarmListItem />

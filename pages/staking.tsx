@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -5,284 +7,333 @@ import ApplyForIGOSection from "../components/ApplyForIGOSection";
 
 const Staking: NextPage = () => {
   const [currentValue, setCurrentValue] = useState("sevenDays");
+  const [user, setUser] = useState('nominator');
+  const [value, setValue] = useState(0);
+  const [balance, setBalance] = useState(15000);
 
   function openTab(e: React.MouseEvent<HTMLButtonElement>, value: string) {
     e.preventDefault();
     setCurrentValue(value);
   }
 
-  return (
-    <div>
-      <div className="gamfi-breadcrumbs-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-5">
-              <div className="breadcrumbs-area sec-heading">
-                <div className="sub-inner mb-15">
-                  <Link href="/">
-                    <a className="breadcrumbs-link">Home</a>
-                  </Link>
+  const Toogle = () => (
+    <div className="toggle-stakers">
+      {
+        user === "nominator" ? 
+        (
+          <>
+            <div className="active" style={{borderRadius: "4px 0 0 4px"}} onClick={() => setUser('nominator')}>
+              NOMINATOR
+            </div>
+            <div className="staker" style={{borderRadius: "0 4px 4px 0"}} onClick={() => setUser('validator')}>
+              VALIDATOR
+            </div>
+          </>
+        )
+        :
+        (
+          <>
+            <div className="staker" style={{borderRadius: "4px 0 0 4px"}} onClick={() => setUser('nominator')}>
+                NOMINATOR
+            </div>
+            <div className="active" style={{borderRadius: "0 4px 4px 0"}} onClick={() => setUser('validator')}>
+              VALIDATOR
+            </div>
+          </>
+        )
+      }
+    </div>
+  )
 
-                  <span className="sub-title">Staking</span>
-                  <img
-                    className="heading-left-image"
-                    src="assets/images/icons/steps.png"
-                    alt="Steps-Image"
-                  />
-                </div>
-                <h2 className="title mb-0">Staking</h2>
-              </div>
-            </div>
-            <div className="col-lg-7 breadcrumbs-form md-mt-30">
-              <div className="btn-area">
-                <Link href="/leaderboard">
-                  <a className="readon black-shape">
-                    <span className="btn-text">Leaderboard</span>
-                    <span className="hover-shape1"></span>
-                    <span className="hover-shape2"></span>
-                    <span className="hover-shape3"></span>
-                  </a>
-                </Link>
-              </div>
-            </div>
+  const Nominator = () => (
+    <div className="col-12 wrapper">
+      <div className="col-lg-6 balance-detail">
+        <div>
+          <h2>
+            54,000 LEMA
+            <p>Available Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <h2>
+            245,000 LEMA
+            <p>Staked Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              15,000 LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>
+            </h2>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              <input value={value} /> LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>  
+            </h2>
+            <button className="max">MAX</button>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            
+              {
+                balance < 250000 ?
+                (
+                  <h4>
+                    You don't have enough balance to become a validator
+                  </h4>
+                )
+                :
+                (
+                  <>
+                    <h4>
+                      You have enough balance to become a validator
+                    </h4>
+                    <button style={{marginTop: "0"}}>Apply</button>
+                  </>
+                )
+              }
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-6 balance-detail scrollable">
+        <div>
+          <h4>Important: To become a nominator, you have to choose 3 validators.</h4>
+        </div>
+        <div style={{borderBottom: "1px solid rgb(42, 44, 63)"}}>
+          <h2>
+            Your Validators
+          </h2>
+          <ul>
+            <li>
+              <p>
+                0xxxxxxxxx  
+                <button>Change</button>
+              </p>
+            </li>
+            <li>
+              <p>
+                0xxxxxxxxx 
+                <button>Change</button>
+              </p>
+            </li>
+            <li>
+              <p>
+                -
+                <button>Appoint</button>
+              </p>
+            </li>
+          </ul>
+        </div> 
+        
+        <div>
+          <h2>
+            All Validators
+          </h2>
+          <ul>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+  )
+
+  const Validator = () => (
+    <div className="col-12 wrapper">
+      <div className="col-lg-6 balance-detail">
+        <div>
+          <h2>
+            54,000 LEMA
+            <p>Available Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <h2>
+            255,000 LEMA
+            <p>Staked Balance</p>
+            <div className="line"></div>
+          </h2>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              15,000 LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>
+            </h2>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            <h2>
+              <input value={value} /> LEMA
+              <p>Staking Reward</p>
+              <div className="line"></div>  
+            </h2>
+            <button className="max">MAX</button>
+            <button>Claim</button>
+          </div>
+        </div>
+        <div>
+          <div className="rewards">
+            
+              {
+                balance < 10000 ?
+                (
+                  <h4>
+                    You don't have enough balance to become a validator
+                  </h4>
+                )
+                :
+                (
+                  <>
+                    <h4>
+                      You have enough balance to become a validator
+                    </h4>
+                    <button style={{marginTop: "0"}}>Apply</button>
+                  </>
+                )
+              }
           </div>
         </div>
       </div>
 
+      <div className="col-lg-6 balance-detail scrollable">
+        <div>
+          <h4>Important: To become a validator, you have to stake at least 250,000 LEMA.</h4>
+        </div>
+        <div>
+          <h2>
+            Your Delegators
+          </h2>
+          <ul>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+            <li>
+              0xxxxxxxxxxxxx
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+  )
+
+  return (
+    <div>
+      <div className="container mt-5">
+        <div className="staking-heading">
+          <p>
+            Staking
+            <h1>Solo Staking</h1>
+          </p>
+          {
+            user === "nominator" && (
+                balance < 250000 ?
+                (
+                  <button disabled={true} className="nominator-indicator">
+                    Become a Validator
+                  </button>
+                )
+                :
+                (
+                  <button disabled={false} className="nominator-indicator">
+                    Become a Validator
+                  </button>
+                )
+            )
+          }
+        </div>
+
+      </div>
+
       <div className="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50">
         <div className="container">
-          <div className="row pt-70">
-            <div className="col-lg-6 pr-25 md-pr-15">
-              <div className="project-item">
-                <div className="project-info border-bottom-2">
-                  <h4 className="mb-15">Participat IGO Stake</h4>
-                  <h3 className="mb-15">
-                    256.50 <span className="buse">BUSD</span>
-                  </h3>
-                  <span>Total Stake</span>
-                </div>
-                <ul className="date-listing mb-35">
-                  <li className="StakeTablinks" id="defaultOpen">
-                    <button
-                      onClick={(e) => openTab(e, "sevenDays")}
-                      className={currentValue == "sevenDays" ? "active" : ""}
-                    >
-                      7 Days
-                    </button>
-                  </li>
-                  <li className="StakeTablinks">
-                    <button
-                      onClick={(e) => openTab(e, "fourteenDays")}
-                      className={currentValue == "fourteenDays" ? "active" : ""}
-                    >
-                      14 Days
-                    </button>
-                  </li>
-                  <li className="StakeTablinks">
-                    <button
-                      onClick={(e) => openTab(e, "thirtyDays")}
-                      className={currentValue == "thirtyDays" ? "active" : ""}
-                    >
-                      30 Days
-                    </button>
-                  </li>
-                  <li className="StakeTablinks">
-                    <button
-                      onClick={(e) => openTab(e, "sixtyDays")}
-                      className={currentValue == "sixtyDays" ? "active" : ""}
-                    >
-                      60 Days
-                    </button>
-                  </li>
-                </ul>
-                <div className="project-content">
-                  <div
-                    id="sevenDays"
-                    className="StakeTabcontent"
-                    style={{
-                      display: currentValue == "sevenDays" ? "block" : "none",
-                    }}
-                  >
-                    <div className="project-media mb-40">
-                      <ul className="project-listing">
-                        <li>
-                          Lock period: <strong>7 days</strong>{" "}
-                          <span>APY Rate</span>
-                        </li>
-                        <li>
-                          Re-locks on registration: <strong>Yes</strong>{" "}
-                          <a href="#">
-                            <span className="big-text">12 %</span>
-                          </a>
-                        </li>
-                        <li>
-                          Early unstake fee: <strong>25%</strong>
-                          <span>*APY is dynamic</span>
-                        </li>
-                        <li>
-                          Status: <strong>Unlocked</strong>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div
-                    id="fourteenDays"
-                    className="StakeTabcontent"
-                    style={{
-                      display:
-                        currentValue == "fourteenDays" ? "block" : "none",
-                    }}
-                  >
-                    <div className="project-media mb-40">
-                      <ul className="project-listing">
-                        <li>
-                          Lock period: <strong>14 days</strong>{" "}
-                          <span>APY Rate</span>
-                        </li>
-                        <li>
-                          Re-locks on registration: <strong>Yes</strong>{" "}
-                          <a href="#">
-                            <span className="big-text">20 %</span>
-                          </a>
-                        </li>
-                        <li>
-                          Early unstake fee: <strong>25%</strong>
-                          <span>*APY is dynamic</span>
-                        </li>
-                        <li>
-                          Status: <strong>Unlocked</strong>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div
-                    id="thirtyDays"
-                    className="StakeTabcontent"
-                    style={{
-                      display: currentValue == "thirtyDays" ? "block" : "none",
-                    }}
-                  >
-                    <div className="project-media mb-40">
-                      <ul className="project-listing">
-                        <li>
-                          Lock period: <strong>30 days</strong>{" "}
-                          <span>APY Rate</span>
-                        </li>
-                        <li>
-                          Re-locks on registration: <strong>Yes</strong>{" "}
-                          <a href="#">
-                            <span className="big-text">25 %</span>
-                          </a>
-                        </li>
-                        <li>
-                          Early unstake fee: <strong>25%</strong>
-                          <span>*APY is dynamic</span>
-                        </li>
-                        <li>
-                          Status: <strong>Unlocked</strong>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div
-                    id="sixtyDays"
-                    className="StakeTabcontent"
-                    style={{
-                      display: currentValue == "sixtyDays" ? "block" : "none",
-                    }}
-                  >
-                    <div className="project-media mb-40">
-                      <ul className="project-listing">
-                        <li>
-                          Lock period: <strong>60 days</strong>{" "}
-                          <span>APY Rate</span>
-                        </li>
-                        <li>
-                          Re-locks on registration: <strong>Yes</strong>{" "}
-                          <a href="#">
-                            <span className="big-text">35 %</span>
-                          </a>
-                        </li>
-                        <li>
-                          Early unstake fee: <strong>25%</strong>
-                          <span>*APY is dynamic</span>
-                        </li>
-                        <li>
-                          Status: <strong>Unlocked</strong>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="project-form-list">
-                  <h5 className="mb-18">Balance: 2889.00 BUSD</h5>
-                  <div className="balance-form-area mb-27">
-                    <input type="text" placeholder="00.00" />
-                    <span className="max">MAX</span>
-                    <div className="white-shape-small approve">
-                      <input type="submit" value="Approve" />
-                      <span className="hover-shape1"></span>
-                      <span className="hover-shape2"></span>
-                      <span className="hover-shape3"></span>
-                    </div>
-                  </div>
-                  <h5 className="mb-18">Staked: 256.50 BUSD</h5>
-                  <div className="balance-form-area">
-                    <input type="text" placeholder="0.00" />
-                    <span className="max">MAX</span>
-                    <div className="white-shape-small">
-                      <input type="submit" value="Withdraw" />
-                      <span className="hover-shape1"></span>
-                      <span className="hover-shape2"></span>
-                      <span className="hover-shape3"></span>
-                    </div>
-                  </div>
-                </div>
+
+            <div className="staking-stats">
+              <div className="stats">
+                <h4>
+                  TVL
+                  <h2 style={{fontSize: "2rem"}}>$7,890,123.56</h2>
+                </h4>
+                <img
+                  className="heading-right-image"
+                  src="assets/images/project/rank.png"
+                  alt="rank"
+                />
+              </div>
+              <div className="stats">
+                <h4>
+                  APR
+                  <h2 style={{fontSize: "2rem"}}>90.5%</h2>
+                </h4>
+                <img
+                  className="heading-right-image"
+                  src="assets/images/project/rank2.png"
+                  alt="rank"
+                />
+              </div>
+              <div className="stats">
+                <h4>
+                  TOTAL VALIDATORS
+                  <h2 style={{fontSize: "2rem"}}>78</h2>
+                </h4>
+                <img
+                  className="heading-right-image"
+                  src="assets/images/project/rank3.png"
+                  alt="rank"
+                />
               </div>
             </div>
-            <div className="col-lg-6 pl-25 md-pl-15">
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
-                <div className="project-value">
-                  <h3 className="mb-15">$7,868,163.54</h3>
-                  <span>Total Value Locked</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
-                <div className="project-value">
-                  <h3 className="mb-15">158.50 %</h3>
-                  <span>Apy</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank2.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-              <div className="project-item project-value-inner d-flex justify-content-between align-items-center">
-                <div className="project-value">
-                  <h3 className="mb-15">5699</h3>
-                  <span>Number of Stakers</span>
-                </div>
-                <div className="project-value-image">
-                  <img
-                    className="heading-right-image"
-                    src="assets/images/project/rank3.png"
-                    alt="rank"
-                  />
-                </div>
-              </div>
-            </div>
+            
+            <Toogle />
+            {
+              user === "validator" ? (<Validator />) : (<Nominator />)
+            }
           </div>
-        </div>
+        {/* </div> */}
       </div>
 
       <ApplyForIGOSection />

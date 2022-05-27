@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+/* @charset "utf-8"; */
 
 /** 
 * 
@@ -37,67 +37,67 @@
 20. Preloader CSS
 --------------------------------------------------------*/
 @font-face {
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(http://fonts.gstatic.com/s/russoone/v13/Z9XUDmZRWg6M1LvRYsH-yA.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap) format('truetype');
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap) format('truetype');
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap) format('truetype');
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-display: swap;
-    src: url(http://fonts.gstatic.com/s/inter/v7/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap) format('truetype');
 }
 
 /* -----------------------------------/
@@ -107,12 +107,12 @@ html,
 body {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     vertical-align: baseline;
     line-height: 1.6;
     font-weight: 500;
     overflow-x: hidden;
-    background-color: #151625;
+    background-color: #0F1123;
 }
 
 img {
@@ -131,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #ffffff;
     margin: 0 0 26px;
     line-height: 1.35;
@@ -166,11 +166,11 @@ h6 {
 }
 
 .sec-heading .sub-title {
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .sec-heading .heading-left-image {
@@ -196,7 +196,7 @@ a:active,
 a:hover {
     text-decoration: none;
     outline: 0 none;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 ul {
@@ -291,7 +291,7 @@ body .search-modal .close {
 }
 
 body .search-modal .close:hover {
-    color: #a3ff12 !important;
+    color: #0DB2FF !important;
     opacity: 1 !important;
 }
 
@@ -306,7 +306,7 @@ body .modal-backdrop {
     text-transform: uppercase;
     position: relative;
     transition: all 0.4s ease-in-out;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .menu-area .readon {
@@ -334,7 +334,7 @@ body .modal-backdrop {
 
 .white-bg-btn {
     background: #fff;
-    color: #090a1a;
+    color: #0F1123;
     border: 2px solid #fff;
     padding: 10px 20px;
 }
@@ -370,7 +370,7 @@ body .modal-backdrop {
     02. Gamfi Header Section CSS
 --------------------------*/
 .gamfi-header-section {
-    background-color: #090a1a;
+    background-color: #0F1123;
     padding: 25px 0;
 }
 
@@ -382,7 +382,7 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section.default-header {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
 }
 
@@ -391,19 +391,16 @@ body .modal-backdrop {
     width: 230px;
     height: 100%;
     content: "";
-    background-image: url(../images/bg/header-shape1.png);
     position: absolute;
     top: 0;
     background-repeat: no-repeat;
 }
 
 .gamfi-header-section.default-header:after {
-    background-image: url(../images/bg/header-shape1.png);
     left: 0;
 }
 
 .gamfi-header-section.default-header:before {
-    background-image: url(../images/bg/header-shape2.png);
     right: 0;
 }
 
@@ -447,7 +444,7 @@ body .modal-backdrop {
     display: block;
     background: #222231;
     font-size: 16px;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     padding: 15px 24px;
     transition: 0.4s;
@@ -501,7 +498,7 @@ body .modal-backdrop {
 .gamfi-header-section .header-menu ul li a {
     display: block;
     color: #fff;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -546,11 +543,12 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section .white-btn {
-    background: #fff;
-    color: #090A1A;
+    background: #0DB2FF;
+    color: #ffffff;
     margin-left: 25px;
     padding: 13px 32px 11px;
     border: none;
+    border-radius: 4px;
 }
 
 .gamfi-header-section .white-btn img {
@@ -560,7 +558,7 @@ body .modal-backdrop {
 }
 
 .gamfi-header-section .gamfi-btn-area ul li ul li a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.542);
 }
 
 .gamfi-header-section .gamfi-btn-area ul li ul li a:hover {
@@ -643,7 +641,7 @@ body .modal-backdrop {
     transform: translate(-50%, -50%) rotate(45deg);
     width: 3px !important;
     height: 28px !important;
-    background: #151625;
+    background: #0F1123;
     border: none !important;
     transition: all 0.3s ease;
 }
@@ -685,11 +683,14 @@ body .modal-backdrop {
     padding: 10px 0;
     line-height: 30px;
     width: 100%;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-header-section .mobile-navbar-menu .nav-menu li li a {
     padding-left: 25px;
+}
+.header-menu .nav-menu li a:hover {
+    color: #0DB2FF;
 }
 
 .gamfi-header-section .mobile-navbar-menu .nav-menu li li li a {
@@ -715,7 +716,7 @@ body .modal-backdrop {
     width: 20px;
     height: 1px;
     display: block;
-    background: #151625;
+    background: #0F1123;
     z-index: 2;
     content: '';
     right: 12px;
@@ -760,6 +761,7 @@ body .modal-backdrop {
 
 .progress-inner {
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
     padding: 8px;
 }
 
@@ -776,7 +778,7 @@ body .modal-backdrop {
 }
 
 .progress-inner .progress-bar {
-    background-image: linear-gradient(60deg, #a3ff12 26%, transparent 25%, transparent 50%, #a3ff12 54%, #a3ff12 82%, transparent 75%, transparent);
+    background-image: linear-gradient(60deg, #0DB2FF 26%, transparent 25%, transparent 50%, #0DB2FF 54%, #0DB2FF 82%, transparent 75%, transparent);
 }
 
 .white-shape-small,
@@ -786,6 +788,7 @@ body .modal-backdrop {
 .hover-shape {
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .white-shape-small img,
@@ -819,7 +822,7 @@ body .modal-backdrop {
 .hover-shape .hover-shape3 {
     position: absolute;
     width: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.205);
     height: 124%;
     left: -42%;
     top: -5px;
@@ -868,7 +871,7 @@ body .modal-backdrop {
 .white-shape-small .hover-shape3,
 .white-shape-big .hover-shape3,
 .black-shape .hover-shape3 {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.205);
 }
 
 .white-shape-big:hover .hover-shape1,
@@ -894,7 +897,7 @@ body .modal-backdrop {
     z-index: 9;
     overflow: hidden;
     padding: 170px 0 225px;
-    background: url(../images/bg/banner-bg.jpg);
+    background-color: #0F1123;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -922,6 +925,7 @@ body .modal-backdrop {
 }
 
 .sc-banner .banner-content .banner-title {
+    font-family: "Helvetica";
     margin: 0 0 20px;
 }
 
@@ -943,28 +947,28 @@ body .modal-backdrop {
     text-transform: uppercase;
     position: relative;
     transition: all 0.4s ease-in-out;
-    font-family: "Russo One", sans-serif;
-    background: #a3ff12;
-    color: #090a1a;
+    font-family: "Poppins", sans-serif;
+    background: #0DB2FF;
+    color: #0F1123;
     padding: 19px 50px;
 }
 
 .banner-btn:hover {
-    color: #090a1a;
+    color: #0F1123;
 }
 
 .banner-btn .hover-shape1,
 .banner-btn .hover-shape2,
 .banner-btn .hover-shape3 {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.205);
 }
 
 /* -----------------------
     04. Gamfi Breadcrumbs Section CSS
 --------------------------*/
 .gamfi-breadcrumbs-section {
-    background: url(../images/bg/breadcrumbs-bg.jpg);
     background-position: center;
+    background-color:#1d203b52;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 70px;
@@ -975,8 +979,9 @@ body .modal-backdrop {
     text-transform: uppercase;
     margin-right: 24px;
     position: relative;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 
 .gamfi-breadcrumbs-section .breadcrumbs-link:before {
     content: "";
@@ -988,9 +993,6 @@ body .modal-backdrop {
     right: -15px;
 }
 
-.gamfi-breadcrumbs-section .breadcrumbs-link:hover {
-    color: #a3ff12;
-}
 
 .gamfi-breadcrumbs-section .breadcrumbs-form {
     display: flex;
@@ -1001,7 +1003,7 @@ body .modal-backdrop {
 .gamfi-breadcrumbs-section .breadcrumbs-form .breadcrumbs-social a {
     color: #B8B8BD;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-breadcrumbs-section .breadcrumbs-form .breadcrumbs-social a i {
@@ -1083,6 +1085,7 @@ body .modal-backdrop {
 .gamfi-navigation ul li {
     display: inline-block;
     position: relative;
+    border-radius: 4px;
 }
 
 .gamfi-navigation ul li+li {
@@ -1104,7 +1107,7 @@ body .modal-backdrop {
     border: 1px solid #2E2F3C;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: 0.4s;
 }
@@ -1120,7 +1123,7 @@ body .modal-backdrop {
 .gamfi-navigation ul li a.active:not(.black-shape),
 .gamfi-navigation ul li a:hover:not(.black-shape) {
     background: #2E2F3C;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .breadcrumbs-form .gamfi-navigation {
@@ -1165,7 +1168,7 @@ body .modal-backdrop {
     05. Gamfi About Section CSS
 ---------------------------------------*/
 .gamfi-about-secion {
-    background: #151625;
+    background: #0F1123;
 }
 
 .gamfi-about-secion .game-price-item {
@@ -1179,7 +1182,6 @@ body .modal-backdrop {
 
 .gamfi-about-secion .game-price-item .game-price-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -1227,7 +1229,7 @@ body .modal-backdrop {
 .gamfi-about-secion .text-content,
 .gamfi-about-secion .allocation,
 .gamfi-about-secion .targeted-raise {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-about-secion .game-price-inner,
@@ -1237,16 +1239,16 @@ body .modal-backdrop {
 }
 
 .gamfi-about-secion .total-price .all-raise {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-about-secion .targeted-raise .all-raise {
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .gamfi-about-secion .total-price,
 .gamfi-about-secion .targeted-raise {
-    width: 38%;
+    width: max-content;
 }
 
 .gamfi-about-secion .total-price .targeted-raise,
@@ -1395,7 +1397,7 @@ body .modal-backdrop {
 .hover-shape-border .shadow-1 {
     top: 0px;
     left: 0;
-    background: linear-gradient(to bottom, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to bottom, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
     width: 5px;
     height: 200px;
 }
@@ -1404,7 +1406,7 @@ body .modal-backdrop {
 .hover-shape-border .shadow-2 {
     top: 0px;
     left: 5px;
-    background: linear-gradient(to right, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to right, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
     width: 200px;
     height: 5px;
 }
@@ -1415,7 +1417,7 @@ body .modal-backdrop {
     right: 0;
     width: 5px;
     height: 200px;
-    background: linear-gradient(to top, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to top, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .active-shape .shadow-4,
@@ -1424,7 +1426,7 @@ body .modal-backdrop {
     right: 5px;
     width: 200px;
     height: 5px;
-    background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+    background: linear-gradient(to left, #0DB2FF -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .hover-shape-border .border-shadow {
@@ -1451,7 +1453,6 @@ body .modal-backdrop {
     06. Gamfi Project Section CSS
 ---------------------------------------*/
 .gamfi-project-section {
-    background: url(../images/bg/project-bg.jpg);
     padding-top: 115px;
     padding-bottom: 105px;
 }
@@ -1476,7 +1477,7 @@ body .modal-backdrop {
 }
 
 .gamfi-project-section .project-item {
-    background: rgba(30, 31, 53, 0.8);
+    background: #1d203b52;
     margin-bottom: 30px;
     padding: 30px 30px 10px;
 }
@@ -1588,7 +1589,7 @@ body .modal-backdrop {
     padding: 12px 25px 8px;
     text-transform: uppercase;
     transition: 0.4s;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow: hidden;
     display: block;
 }
@@ -1606,7 +1607,7 @@ body .modal-backdrop {
     07. Gamfi Project Details Section CSS
 ---------------------------------------*/
 .project-details-conent {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .project-details-conent .game-price-item {
@@ -1631,7 +1632,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .banner-bottom-content .social-icon-list li a:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .banner-bottom-content .social-icon-list li:first-child {
@@ -1666,7 +1667,7 @@ body .modal-backdrop {
     color: #fff;
     padding: 12px 20px;
     border-color: #303244;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     border: 1px solid #303244;
     outline: none;
@@ -1676,19 +1677,19 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li:hover button,
 .project-details-conent .project-item .date-listing li.active button {
     background: #303244;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .banner-bottom-content .btn-area .readon {
-    background: #6D4AFE;
+    background: #0DB2FF;
     border: none;
     transition: 0.4s;
     padding: 17px 45;
 }
 
 .project-details-conent .readon {
-    background: #6d4afe;
-    border-color: #6d4afe;
+    background: #0DB2FF;
+    border-color: #0DB2FF;
     border: 2px solid #3C3D4F;
     transition: 0.4s;
     color: #fff;
@@ -1759,14 +1760,14 @@ body .modal-backdrop {
     color: #fff;
     padding: 12px 20px;
     border-color: #303244;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
 
 .project-details-conent .project-item .date-listing li .active,
 .project-details-conent .project-item .date-listing li input:checked+label {
     background: #303244;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-item .date-listing li+li {
@@ -1781,13 +1782,13 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li a:hover {
     background: #313245;
     border-color: #313245;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-item .big-text {
     font-size: 30px;
-    color: #a3ff12;
-    font-family: "Russo One", sans-serif;
+    color: #0DB2FF;
+    font-family: "Poppins", sans-serif;
     position: absolute;
     right: 0;
     top: -10px;
@@ -1822,6 +1823,7 @@ body .modal-backdrop {
     color: #fff;
     margin-top: 17px;
     margin-left: -60px;
+    cursor: pointer;
 }
 
 .project-details-conent .project-item .project-form-list .balance-form-area input[type="submit"] {
@@ -1830,14 +1832,15 @@ body .modal-backdrop {
     background: #313245;
     transition: 0.4S;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-left: 30px;
     padding-right: 30px;
     width: 170px;
 }
 
 .project-details-conent .project-item .project-form-list .balance-form-area .approve input[type="submit"] {
-    background: #6D4AFE;
+    background: #0DB2FF;
+    border-radius: 4px;
 }
 
 .project-details-conent .project-item .hover-shape-inner {
@@ -1893,7 +1896,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-media .social-icon-list li a:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-details-conent .project-video-area {
@@ -1927,7 +1930,7 @@ body .modal-backdrop {
 .project-details-conent table .table-header {
     background: #1e1f35;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .project-details-conent table .table-header th {
@@ -1987,7 +1990,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-content .project-price .darkslateblue:before {
-    background: #6d4afe;
+    background: #0DB2FF;
 }
 
 .project-details-conent .project-content .project-price .cyan:before {
@@ -2003,7 +2006,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-content .project-price .springGreen:before {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .project-details-conent .project-content .project-price .darkturquoise:before {
@@ -2028,7 +2031,7 @@ body .modal-backdrop {
     background: transparent;
     padding: 0;
     color: rgba(255, 255, 255, 0.7);
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -2040,7 +2043,7 @@ body .modal-backdrop {
 }
 
 .project-summary-menu .nav button.active {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .project-summary-menu .nav button.active img {
@@ -2105,8 +2108,9 @@ body .modal-backdrop {
 }
 
 .project-menu-area {
-    background: #222231;
+    background: #1d203b52;
     margin-bottom: 42px;
+    border-radius: 4px;
 }
 
 .project-menu-area ul li {
@@ -2121,7 +2125,7 @@ body .modal-backdrop {
 
 .project-menu-area .project-left-menu .tab-link {
     background: transparent;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     position: relative;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
@@ -2133,7 +2137,7 @@ body .modal-backdrop {
     left: 0;
     width: 0;
     height: 2px;
-    background: #6d4afe;
+    background: #0DB2FF;
     bottom: 0;
     transition: 0.3s;
 }
@@ -2261,7 +2265,7 @@ body .modal-backdrop {
     08. Gamfi previous Section CSS
 ---------------------------------------*/
 .gamfi-previous-section {
-    background: #090b1a;
+    background: #0F1123;
 }
 
 .gamfi-previous-section .project-right-menu .access i {
@@ -2277,7 +2281,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .previous-mainmenu .menu-list {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-previous-section .previous-mainmenu .menu-list .date-list {
@@ -2361,7 +2365,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .form-switch {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: 0.4s;
     cursor: pointer;
@@ -2411,7 +2415,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider:before {
@@ -2423,7 +2427,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .form-switch input:focus+.slider {
-    box-shadow: 0 0 1px #6D4AFE;
+    box-shadow: 0 0 1px #0DB2FF;
 }
 
 .gamfi-previous-section .form-switch input:checked+.slider:before {
@@ -2441,10 +2445,11 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .previous-item {
-    background: #1a1b30;
+    background: #1d203b52;
     margin-bottom: 30px;
     padding: 30px 30px;
     display: flex;
+    border-radius: 4px;
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
@@ -2650,7 +2655,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .project-item .project-media .social-icon-list li a i:hover {
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .gamfi-previous-section .project-item .project-media .social-icon-list li {
@@ -2750,7 +2755,7 @@ body .modal-backdrop {
     color: #fff;
     transition: 0.4S;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     position: relative;
     z-index: 3;
 }
@@ -2759,7 +2764,7 @@ body .modal-backdrop {
     position: absolute;
     z-index: 9999;
     right: 9px;
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list .black-shape span {
@@ -2775,7 +2780,7 @@ body .modal-backdrop {
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list input[type="submit"].submit-active {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .gamfi-farming-content .expeand-centent .farm-form-list:last-child h5 {
@@ -2791,21 +2796,21 @@ body .modal-backdrop {
 
 .gamfi-farming-content .expeand-centent .expeand-menu ul li {
     display: inline-block;
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 14px;
     margin-right: 30px;
 }
 
 .gamfi-farming-content .expeand-centent .expeand-menu ul li i {
     font-size: 15px;
-    color: #a3ff12;
+    color: #0DB2FF;
     padding-left: 10px;
 }
 
 .gamfi-farming-content .expeand-centent .unit {
-    color: #a3ff12;
+    color: #0DB2FF;
     font-size: 22px;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .gamfi-farming-content .icon-arrow_up {
@@ -2874,7 +2879,7 @@ body .modal-backdrop {
 }
 
 .gamfi-farming-table {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .gamfi-farming-table table {
@@ -2908,7 +2913,7 @@ body .modal-backdrop {
 }
 
 .gamfi-farming-table tr th {
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     text-transform: uppercase;
@@ -2973,7 +2978,7 @@ body .modal-backdrop {
     11. Gamfi Leaderboard Section CSS
 ---------------------------------------*/
 .leaderboard-table-list {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .leaderboard-table {
@@ -3017,7 +3022,7 @@ body .modal-backdrop {
 }
 
 .leaderboard-table-list .leaderboard-header span {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     text-transform: uppercase;
@@ -3040,7 +3045,7 @@ body .modal-backdrop {
     12. Gamfi Igo-Rankging Section CSS
 ---------------------------------------*/
 .igo-rankging-table-list {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .igo-rankging-table-list table {
@@ -3100,7 +3105,7 @@ body .modal-backdrop {
 }
 
 .igo-rankging-table-list tr th {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     text-transform: uppercase;
@@ -3136,8 +3141,8 @@ body .modal-backdrop {
 ---------------------------------------*/
 .gamfi-tokenomics-section .tokenomics-counter .counter-number {
     font-size: 36px;
-    color: #6d4afe;
-    font-family: "Russo One", sans-serif;
+    color: #0DB2FF;
+    font-family: "Poppins", sans-serif;
     display: block;
 }
 
@@ -3175,10 +3180,9 @@ body .modal-backdrop {
     14. Gamfi Team Section CSS
 ---------------------------------------*/
 .gamfi-team-section {
-    background: url(../images/bg/team-bg.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-color: #090a1a;
+    background-color: #0F1123;
 }
 
 .gamfi-team-section .team-item {
@@ -3244,7 +3248,7 @@ body .modal-backdrop {
     15. Gamfi Partner Section CSS
 ---------------------------------------*/
 .gamfi-partner-section {
-    background: #0a0b1a;
+    background: #0F1123;
 }
 
 .gamfi-partner-section .partner-item .partner-image {
@@ -3276,7 +3280,7 @@ body .modal-backdrop {
     height: 100%;
     position: absolute;
     top: 0px;
-    background: linear-gradient(to right, #0a0b1a, rgba(10, 10, 26, 0));
+    background: linear-gradient(to right, #0F1123, rgba(10, 10, 26, 0));
     z-index: 1;
 }
 
@@ -3312,7 +3316,7 @@ body .modal-backdrop {
 16. Gamfi Form Content Section CSS
 ---------------------------------------*/
 .gamfi-form-content {
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .gamfi-form-content .container {
@@ -3410,7 +3414,7 @@ body .modal-backdrop {
 }
 
 .gamfi-form-content .address-form .input-list input[type="radio"]:checked~.check::before {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .gamfi-form-content .address-form .input-list input[type="radio"]:checked+h5,
@@ -3435,7 +3439,7 @@ body .modal-backdrop {
     position: absolute;
     left: 0;
     top: 0;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
 }
@@ -3455,15 +3459,15 @@ body .modal-backdrop {
 
 .gamfi-form-content .address-form .icon-input-box input {
     padding-left: 80px;
-    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .gamfi-form-content .address-form .project-btn-area {
-    background: #6d4afe;
+    background: #0DB2FF;
 }
 
 .gamfi-form-content .address-form .project-btn-area input {
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     border: none;
     transition: 0.4s;
@@ -3484,7 +3488,7 @@ body .modal-backdrop {
 17. Gamfi Explore Content Section CSS
 ---------------------------------------*/
 .gamfi-explore-content {
-    background: #090a1a;
+    background: #0F1123;
 }
 
 .gamfi-explore-content .project-menu-area {
@@ -3582,12 +3586,12 @@ body .gamfi-explore-content .project-item {
     18. Gamfi footer Section CSS
 ---------------------------------------*/
 .gamfi-footer-section {
-    background-color: #090a1a;
+    background-color: #0F1123;
     position: relative;
 }
 
 .gamfi-footer-section .footer-cta-area {
-    background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+    background: radial-gradient(circle, #1d203b52 -24%, #1e1f35 40%);
     padding: 70px 0 80px 0;
     position: relative;
     z-index: 9;
@@ -3604,7 +3608,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-cta-area .footer-link .subscribe {
-    background: #a3ff12;
+    background: #0DB2FF;
 }
 
 .gamfi-footer-section .footer-cta-area .footer-link .subscribe span {
@@ -3614,7 +3618,7 @@ body .gamfi-explore-content .project-item {
 .gamfi-footer-section .footer-cta-area .footer-link input[type="submit"] {
     border: none;
     text-transform: uppercase;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 17px 50px;
     position: relative;
     z-index: 3;
@@ -3654,7 +3658,6 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-area {
-    background: url(../images/bg/footer-bg.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -3686,7 +3689,8 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-listing .footer-icon-list i:hover {
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: #0DB2FF;
 }
 
 .gamfi-footer-section .footer-mainmenu ul {
@@ -3706,7 +3710,8 @@ body .gamfi-explore-content .project-item {
 }
 
 .gamfi-footer-section .footer-mainmenu ul li a:hover {
-    color: #fff;
+    /* color: #fff; */
+    color: #0DB2FF;
 }
 
 .gamfi-footer-section .copyright-area .gafi {
@@ -3794,12 +3799,12 @@ body .gamfi-explore-content .project-item {
 
 .modal-content .connect-section .heading-list li a {
     color: #fff;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /*
 .modal-content .connect-section .heading-list li a:hover {
-  color: #a3ff12;
+  color: #0DB2FF;
 }
 */
 .modal-content .modal-title {
@@ -3864,7 +3869,7 @@ body .gamfi-explore-content .project-item {
     20. Preloader CSS
 ---------------------------------------*/
 section.loader_first {
-    background-color: #151625;
+    background-color: #0F1123;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3875,7 +3880,7 @@ section.loader_first {
     width: 60px;
     height: 60px;
     border: 10px solid rgba(255, 255, 255, 0.1);
-    border-top: 10px solid #a3ff12;
+    border-top: 10px solid #0DB2FF;
     border-radius: 50%;
     animation: pre_rotate 1.5s linear infinite;
     position: absolute;
@@ -3926,7 +3931,7 @@ section.loader_first {
 }
 
 .Gamfi_Header_contentright h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -3952,12 +3957,12 @@ section.loader_first {
 }
 
 .Gamfi_Header_ProgressBar .progress-bar {
-    background-color: #A3FF12;
+    background-color: #0DB2FF;
 }
 
 .kycFormSect {
     padding-top: 56px;
-    background: #090A1A;
+    background: #0F1123;
     padding-bottom: 140px;
     ;
 }
@@ -3965,7 +3970,7 @@ section.loader_first {
 .kycForm {}
 
 .kycForm h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -3976,7 +3981,7 @@ section.loader_first {
 }
 
 .kycForm p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4014,7 +4019,7 @@ section.loader_first {
 .kycCountryDropbox span {}
 
 .kycCountryDropbox h4 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4067,7 +4072,7 @@ section.loader_first {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4104,7 +4109,7 @@ section.loader_first {
 }
 
 .KycRadioBtn .container input:checked~.checkmark {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
     ;
     border: none;
 }
@@ -4132,7 +4137,7 @@ section.loader_first {
 }
 
 .kycForm button {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4145,7 +4150,7 @@ section.loader_first {
     justify-content: center;
     max-width: 570px;
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     height: 60px;
     border: none;
     outline: none;
@@ -4163,7 +4168,7 @@ section.loader_first {
 }
 
 .kycQrcode_content h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -4205,7 +4210,7 @@ section.loader_first {
 }
 
 .kycCountryDropList ul li {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4256,7 +4261,7 @@ section.loader_first {
 }
 
 .TeamMembersInfo h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -4272,7 +4277,7 @@ section.loader_first {
 }
 
 .TeamMembersInfo p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4292,7 +4297,7 @@ section.loader_first {
 }
 
 .TeamMembersContact ul li strong {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4302,7 +4307,7 @@ section.loader_first {
 }
 
 .TeamMembersContact ul li span {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4354,7 +4359,7 @@ Kyc Upload Docs
 }
 
 .kycForm .UploadDocSect ul li h4 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -4369,7 +4374,7 @@ Kyc Upload Docs
 }
 
 .kycForm .UploadDocSect h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -4425,7 +4430,7 @@ Kyc Upload Docs
 .UploadDocCheckList ul {}
 
 .UploadDocCheckList ul li {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4458,7 +4463,7 @@ Kyc Upload Docs
 }
 
 .NidNumberSect h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -4476,7 +4481,7 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
     height: 60px;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4511,7 +4516,7 @@ Kyc Upload Docs
 }
 
 .kycPersonalinfoForm form lable {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4527,7 +4532,7 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
     background: Transparent;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4574,7 +4579,7 @@ Kyc Upload Docs
 }
 
 .KYC_TramsAndCondetionSect label {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4584,12 +4589,12 @@ Kyc Upload Docs
 }
 
 .KYC_TramsAndCondetionSect label a {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 158%;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .KYC_TramsAndCondetionSect .container input {
@@ -4616,7 +4621,7 @@ Kyc Upload Docs
 }
 
 .KYC_TramsAndCondetionSect .container input:checked~.checkmark {
-    background-color: #6D4AFE;
+    background-color: #0DB2FF;
     ;
     border: none;
 }
@@ -4657,7 +4662,7 @@ Kyc Upload Docs
 }
 
 .KycYourDocumentsContent h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -4678,7 +4683,7 @@ Kyc Upload Docs
 }
 
 .KycYourDocumentsContent ul li p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4697,7 +4702,7 @@ Kyc Upload Docs
     width: 170px;
     height: 50px;
     background: rgba(255, 255, 255, 0.1);
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4734,7 +4739,7 @@ Kyc Upload Docs
 }
 
 .GetinTouchForm form lable {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4750,7 +4755,7 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
     background: Transparent;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4766,7 +4771,7 @@ Kyc Upload Docs
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
     background: Transparent;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4831,7 +4836,7 @@ Kyc Upload Docs
 }
 
 .GetInTouch_Contuct_Content h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -4856,7 +4861,7 @@ Kyc Upload Docs
 }
 
 .cotactInfoContent .cotactInfoText h5 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -4867,7 +4872,7 @@ Kyc Upload Docs
 }
 
 .cotactInfoContent .cotactInfoText h6 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4877,19 +4882,19 @@ Kyc Upload Docs
 }
 
 .cotactInfoContent .cotactInfoText a {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 45px;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 /*------------------------
     SignUp-SignIn
 ------------------------*/
 .SignUp_SignIn_Form_Sect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     padding: 96px 0px 0px 0px;
 }
@@ -4939,7 +4944,7 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -4951,7 +4956,7 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form h3 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4965,7 +4970,7 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form.signInForm h3 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4979,7 +4984,7 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form.ForgotPassForm h3 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -4997,7 +5002,7 @@ Kyc Upload Docs
 .SignUp_SignIn_Form form {}
 
 .SignUp_SignIn_Form form lable {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5015,7 +5020,7 @@ Kyc Upload Docs
     height: 60px;
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -5027,10 +5032,10 @@ Kyc Upload Docs
 .SignUp_SignIn_Form form button {
     width: 100%;
     height: 60px;
-    background: #6D4AFE;
+    background: #0DB2FF;
     border: none;
     outline: none;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5041,7 +5046,7 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form h4 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -5053,13 +5058,13 @@ Kyc Upload Docs
 }
 
 .SignUp_SignIn_Form h4 a {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .forgetPassBtnSect {
@@ -5071,7 +5076,7 @@ Kyc Upload Docs
 }
 
 .forgetPassBtnSect .ForgetPass a {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -5090,7 +5095,7 @@ Kyc Upload Docs
 .RoadMapDuration {}
 
 .RoadMapDuration h6 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -5102,12 +5107,12 @@ Kyc Upload Docs
 .gamfiRoadMap {
     padding-bottom: 120px;
     padding-top: 40px;
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
 }
 
 .RoadMapSect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     display: flex;
     align-items: center;
@@ -5232,12 +5237,12 @@ Kyc Upload Docs
 }
 
 .RodmapConetentbox h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 158%;
-    color: #A3FF12;
+    color: #0DB2FF;
     margin-bottom: 10px;
 }
 
@@ -5248,7 +5253,7 @@ Kyc Upload Docs
 .RodmapConetentbox ul {}
 
 .RodmapConetentbox ul li {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -5266,14 +5271,14 @@ Kyc Upload Docs
 
 .connectWalletBtnforMobile {
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     height: 40px;
     margin-top: 20px;
     display: none;
 }
 
 .connectWalletBtnforMobile .btn-text {
-    color: #ffffff;
+    color: #000000;
     padding-left: 10px;
 }
 
@@ -5302,7 +5307,7 @@ Kyc Upload Docs
 
 .roadmap2021Divider span {
     transform: rotate(270deg);
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -5327,7 +5332,7 @@ Kyc Upload Docs
 
 .roadmap2022Divider span {
     transform: rotate(270deg);
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -5382,7 +5387,7 @@ Kyc Upload Docs
 }
 
 .gamfi_V2_hero_Left h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -5397,7 +5402,7 @@ Kyc Upload Docs
 }
 
 .gamfi_V2_hero_Left p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -5417,7 +5422,7 @@ Kyc Upload Docs
 .gamfi_V2_hero_Btns .VIEW_Projects_Btn {
     width: 200px;
     height: 60px;
-    background: #A3FF12;
+    background: #0DB2FF;
     outline: none;
     margin-right: 15px;
     display: flex;
@@ -5426,14 +5431,14 @@ Kyc Upload Docs
 }
 
 .gamfi_V2_hero_Btns .VIEW_Projects_Btn .btn-text {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #090A1A;
+    color: #0F1123;
 }
 
 .gamfi_V2_hero_Btns .Apply_Project_Btn {
@@ -5449,7 +5454,7 @@ Kyc Upload Docs
 }
 
 .gamfi_V2_hero_Btns .Apply_Project_Btn .btn-text {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5462,7 +5467,7 @@ Kyc Upload Docs
 .buyTokenlogos {}
 
 .buyTokenlogos h6 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5692,7 +5697,7 @@ Kyc Upload Docs
 }
 
 .Market_CapContent h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5702,13 +5707,13 @@ Kyc Upload Docs
 }
 
 .Market_CapContent h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 45px;
     text-transform: uppercase;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 0px;
 }
 
@@ -5762,7 +5767,7 @@ Kyc Upload Docs
 }
 
 .gamfi-project-section .project-item .heading-title .price-counter .timer ul li {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5826,7 +5831,7 @@ Kyc Upload Docs
 }
 
 .ProjectV2_TabBtns ul li button .btn-text {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -5846,7 +5851,7 @@ Kyc Upload Docs
     /*
     background: url(../images/bg/project-bg.jpg);
     */
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 115px;
     padding-bottom: 105px;
 }
@@ -5950,7 +5955,7 @@ Kyc Upload Docs
 }
 
 .Key_Points_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 115px;
     padding-bottom: 105px;
     position: relative;
@@ -5970,7 +5975,7 @@ Kyc Upload Docs
 }
 
 .Key_Points_Item_Text h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -5983,7 +5988,7 @@ Kyc Upload Docs
 .Key_Points_Item_Text p {
     max-width: 249px;
     width: 100%;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -5993,7 +5998,7 @@ Kyc Upload Docs
 
 
 .Tier_System_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6010,7 +6015,7 @@ Kyc Upload Docs
 }
 
 .Tier_System_Headings ul li {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -6081,7 +6086,7 @@ Kyc Upload Docs
 }
 
 .Tier_System_Items ul li {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6091,7 +6096,7 @@ Kyc Upload Docs
 }
 
 .Tier_System_Items ul li strong {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6132,9 +6137,6 @@ Kyc Upload Docs
     min-width: 40px;
     margin-right: 11px;
 }
-
-.Tier_System_Items ul li h6 {}
-
 
 .Tier_System_Items span.bordarShadowRed1 {
     background: linear-gradient(180deg, rgba(248, 37, 82, 0.5) 0%, rgba(21, 22, 37, 0) 100%);
@@ -6213,7 +6215,7 @@ Kyc Upload Docs
 }
 
 .Tokenomics_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6226,7 +6228,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsContentsLeft h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -6261,7 +6263,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsList_text h4 {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6271,7 +6273,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsList_text h5 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6298,7 +6300,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsListSect ul li span.Farming_Pool {
-    background: #A3FF12;
+    background: #0DB2FF;
 }
 
 .TokenomicsListSect ul li span.Staking {
@@ -6314,7 +6316,7 @@ Kyc Upload Docs
 }
 
 .TokenomicsListSect ul li span.Private_Sale {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .TokenomicsListSect ul li span.Liquidity {
@@ -6328,8 +6330,6 @@ Kyc Upload Docs
 .TokenomicsListSect ul li span.Advisors {
     background: #F82552;
 }
-
-.TokenomicsContentsright {}
 
 .TokenomicsContentsright .TokenomicsContentsrightImg {
     background: rgba(30, 31, 53, 0.8);
@@ -6345,7 +6345,7 @@ Kyc Upload Docs
 
 
 .Multi_Chain_Support_Sect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
@@ -6355,7 +6355,7 @@ Kyc Upload Docs
 }
 
 .Multi_Chain_Support_right_Content p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6383,7 +6383,7 @@ Kyc Upload Docs
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6415,12 +6415,11 @@ Kyc Upload Docs
 }
 
 .gamfi_Our_mentor_section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 0px;
     padding-bottom: 105px;
 }
 
-.RoadmapTabBtns {}
 
 .RoadmapTabBtns ul {
     display: flex;
@@ -6445,8 +6444,6 @@ Kyc Upload Docs
     border: none;
 }
 
-.RoadmapTabBtns ul li.tablinks.active button {}
-
 .RoadmapTabBtns ul li.tablinks.active button.black-shape .hover-shape1, .RoadmapTabBtns ul li.tablinks.active button.hover-shape .hover-shape1 {
     left: 42%;
 }
@@ -6460,7 +6457,7 @@ Kyc Upload Docs
 }
 
 .RoadmapTabBtns ul li button .btn-text {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6484,7 +6481,7 @@ Kyc Upload Docs
 }
 
 .Our_PARTNERSContnetSect .OurPartnatList .overlay {
-    background: linear-gradient(180deg, rgba(9, 10, 26, 0) 0%, #090A1A 100%);
+    background: linear-gradient(180deg, rgba(9, 10, 26, 0) 0%, #0F1123 100%);
     height: 158px;
     width: 100%;
     z-index: 2;
@@ -6550,7 +6547,7 @@ Kyc Upload Docs
 
 
 .ShowMoreBtnSect button .btn-text {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6614,7 +6611,7 @@ Kyc Upload Docs
     cursor: pointer;
     background: rgba(30, 31, 53, 0.5);
     height: 76px;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -6625,7 +6622,7 @@ Kyc Upload Docs
     align-items: center;
     justify-content: space-between;
     padding: 24px 29px;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -6677,7 +6674,7 @@ Kyc Upload Docs
 
 .FAQquestions .accordion-panel p {
     padding: 0px 48px 24px 29px;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6687,7 +6684,7 @@ Kyc Upload Docs
 }
 
 .FAQContnetSect h6 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6700,14 +6697,14 @@ Kyc Upload Docs
 }
 
 .FAQContnetSect h6 a {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
 
-    color: #A3FF12;
+    color: #0DB2FF;
 }
 
 .no-border {
@@ -6735,7 +6732,7 @@ Kyc Upload Docs
     height: 60px;
     padding: 8px 19px;
     background: transparent;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6747,12 +6744,12 @@ Kyc Upload Docs
 }
 
 .RoadMapContents h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 27px;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 75px;
 }
 
@@ -6768,7 +6765,7 @@ Kyc Upload Docs
 .RoadmapListSect .CheckIconBg {
     height: 21px;
     width: 21px;
-    background: #A3FF12;
+    background: #0DB2FF;
     border-radius: 50%;
     position: absolute;
     top: -30px;
@@ -6788,7 +6785,7 @@ Kyc Upload Docs
 }
 
 .RoadmapListSect ul li {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -6815,7 +6812,7 @@ Kyc Upload Docs
 
 .Gamfi_footerBtnSect {
     height: 200px;
-    background: #6D4AFE;
+    background: #0DB2FF;
     position: fixed;
     left: 0;
     top: auto;
@@ -6856,12 +6853,12 @@ Kyc Upload Docs
     position: relative;
     z-index: 2;
     margin-bottom: 200px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .Gamfi_footerBtnContent a {
     position: absolute;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -6932,7 +6929,7 @@ Kyc Upload Docs
 .sc_banner_V3_left h2 {
     max-width: 499px;
     width: 100%;
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -6945,7 +6942,7 @@ Kyc Upload Docs
 .sc_banner_V3_left p {
     max-width: 564px;
     width: 100%;
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -6975,7 +6972,7 @@ Kyc Upload Docs
 }
 
 .sc_banner_V3_right ul li h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -6985,13 +6982,13 @@ Kyc Upload Docs
 }
 
 .sc_banner_V3_right ul li h4 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 40px;
     text-transform: uppercase;
-    color: #6D4AFE;
+    color: #0DB2FF;
     margin-bottom: 0px;
 }
 
@@ -7046,7 +7043,7 @@ Kyc Upload Docs
 }
 
 .Multi_Block_Chains_Left h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -7159,7 +7156,7 @@ Kyc Upload Docs
 
 
 .How_to_Participate_Sect {
-    background: #090A1A;
+    background: #0F1123;
     position: relative;
     display: flex;
     align-items: center;
@@ -7184,10 +7181,9 @@ Kyc Upload Docs
     z-index: 0;
 }
 
-.How_to_Participate_Left_Contnet {}
 
 .How_to_Participate_Left_Contnet p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -7236,7 +7232,7 @@ Kyc Upload Docs
 }
 
 .How_to_Participate_right_CardText h4 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -7246,7 +7242,7 @@ Kyc Upload Docs
 }
 
 .How_to_Participate_right_CardText p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -7282,7 +7278,7 @@ Kyc Upload Docs
     Tier
 ------------------*/
 .gamfi_TierSect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 70px;
     padding-bottom: 110px;
     position: relative;
@@ -7331,7 +7327,7 @@ Kyc Upload Docs
 }
 
 .gamfi_Tier_card h2 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -7342,7 +7338,7 @@ Kyc Upload Docs
 }
 
 .gamfi_Tier_card h3 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -7358,7 +7354,7 @@ Kyc Upload Docs
 }
 
 .gamfi_Tier_card p {
-    font-family: Inter;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -7370,7 +7366,7 @@ Kyc Upload Docs
 }
 
 .gamfi_Tier_card h4 {
-    font-family: Russo One;
+    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -7396,7 +7392,7 @@ Kyc Upload Docs
 
 .tierV2ColHeadings h2 {
     margin-top: 30px;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -7406,7 +7402,7 @@ Kyc Upload Docs
 }
 
 .tierV2ColHeadings h3 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -7493,7 +7489,7 @@ Kyc Upload Docs
 }
 
 .TiedV2CollBody ul li h4 {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -7503,7 +7499,7 @@ Kyc Upload Docs
 }
 
 .TiedV2CollBody ul li h5 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7524,7 +7520,7 @@ Kyc Upload Docs
     Tier V3
 ------------------*/
 .gamfi_TierV3_Sect {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 70px;
     padding-bottom: 140px;
 }
@@ -7541,7 +7537,7 @@ Kyc Upload Docs
 }
 
 .TvlHeadings h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -7551,7 +7547,7 @@ Kyc Upload Docs
 }
 
 .TvlHeadings h3 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -7566,7 +7562,7 @@ Kyc Upload Docs
 .TvlList ul {}
 
 .TvlList ul li {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7607,7 +7603,7 @@ Kyc Upload Docs
 }
 
 .TvlRightCardHeadings h3 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -7665,7 +7661,7 @@ Kyc Upload Docs
     width: 100%;
     background: rgba(30, 31, 53, 0.7);
     backdrop-filter: blur(10px);
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7720,7 +7716,7 @@ Kyc Upload Docs
 ------------------------*/
 
 .ConnectWallet_Section {
-    background: #090A1A;
+    background: #0F1123;
     padding-top: 96px;
     padding-bottom: 140px;
     backdrop-filter: blur(10px);
@@ -7741,7 +7737,7 @@ Kyc Upload Docs
 }
 
 .ConnectWallet_Card_Headings h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -7753,7 +7749,7 @@ Kyc Upload Docs
 }
 
 .ConnectWallet_Card_Headings p {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -7766,7 +7762,7 @@ Kyc Upload Docs
 .ChooseNetwork_Sect {}
 
 .ChooseNetwork_Sect h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7803,7 +7799,7 @@ Kyc Upload Docs
     padding: 15px 20px;
     border: 2px solid rgba(255, 255, 255, 0.15);
     box-sizing: border-box;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7827,7 +7823,7 @@ Kyc Upload Docs
 }
 
 .ConnectWallet_Content h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7838,7 +7834,7 @@ Kyc Upload Docs
 }
 
 .ConnectWallet_Content p {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -7858,7 +7854,7 @@ Kyc Upload Docs
     display: flex;
     align-items: center;
     padding: 16px 30px;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -7889,7 +7885,7 @@ Kyc Upload Docs
 
 .Latest_Articles_Sect {
     padding: 71px 0px 100px 0px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .Latest_Articles_Card {
@@ -7924,7 +7920,7 @@ Kyc Upload Docs
 }
 
 .Article_Details h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -7939,7 +7935,7 @@ Kyc Upload Docs
 }
 
 .Article_Details h2 span {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -7950,7 +7946,7 @@ Kyc Upload Docs
 }
 
 .Article_Details h3 a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -7962,7 +7958,7 @@ Kyc Upload Docs
 }
 
 .Article_Details p {
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -7972,7 +7968,7 @@ Kyc Upload Docs
 }
 
 .Article_Details a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -7999,7 +7995,7 @@ Kyc Upload Docs
 }
 
 .Article_Details2 h4 a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -8012,17 +8008,17 @@ Kyc Upload Docs
 }
 
 .Article_Details2 h4 a span {
-    color: #6D4AFE;
+    color: #0DB2FF;
 }
 
 .Article_Details2 h4 a strong {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #A3FF12;
+    color: #0DB2FF;
     margin-right: 10px;
 }
 
@@ -8031,7 +8027,7 @@ Kyc Upload Docs
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -8091,7 +8087,7 @@ Kyc Upload Docs
 .HomeMenuListHeadings span {}
 
 .HomeMenuListHeadings h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -8155,7 +8151,7 @@ Kyc Upload Docs
     display: flex !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
-    font-family: 'Russo One' !important;
+    font-family: 'Poppins' !important;
     font-style: normal;
     font-weight: 400 !important;
     font-size: 16px !important;
@@ -8208,7 +8204,7 @@ Kyc Upload Docs
 .menuHeadings span {}
 
 .menuHeadings h2 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -8225,7 +8221,7 @@ Kyc Upload Docs
 }
 
 .Menu_column ul li a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -8239,7 +8235,7 @@ Kyc Upload Docs
 
 
 .Menu_column ul li span {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -8256,12 +8252,12 @@ Kyc Upload Docs
 }
 
 .Menu_column ul li span.new {
-    background: #6D4AFE;
+    background: #0DB2FF;
     backdrop-filter: blur(5px);
 }
 
 .Menu_column ul li span.soon {
-    color: color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
 }
@@ -8293,7 +8289,7 @@ Kyc Upload Docs
 .gamfi-header-section .header-menu ul li .Menu_column ul li a {
 
     display: block;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -8391,13 +8387,13 @@ Kyc Upload Docs
 .blog-detail-conent {
     padding-top: 60px;
     padding-bottom: 140px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .blog-detail-conent .blog-area .blog-description .des {
     font-size: 18px;
     line-height: 36px;
-    font-family: Russo One;
+    font-family: Poppins;
 }
 
 .blog-detail-conent .blog-area .blog-description .blockquote {
@@ -8452,7 +8448,7 @@ Kyc Upload Docs
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkslateblue:before {
-    background: #6D4AFE;
+    background: #0DB2FF;
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.cyan:before {
@@ -8468,7 +8464,7 @@ Kyc Upload Docs
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.springGreen:before {
-    background: #A3FF12;
+    background: #0DB2FF;
 }
 
 .blog-detail-conent .blog-area .Tokenomics-item .project-content .project-sale.darkturquoise:before {
@@ -8579,7 +8575,7 @@ Kyc Upload Docs
     color: #7ABB1B;
     margin-bottom: 10px;
     display: block;
-    font-family: Russo One;
+    font-family: Poppins;
 }
 
 .blog-detail-conent .blog-area .about-blog .blog-contact .next-item {
@@ -8602,7 +8598,7 @@ Kyc Upload Docs
     color: #7ABB1B;
     margin-bottom: 10px;
     display: block;
-    font-family: Russo One;
+    font-family: Poppins;
 }
 
 .blog-detail-conent .blog-area .comment-item {}
@@ -8697,7 +8693,7 @@ Kyc Upload Docs
 
 .blog-detail-conent .blog-area .form-item .input-submit input {
     width: 100%;
-    background: #6D4AFE;
+    background: #0DB2FF;
     color: #fff;
     border: none;
     padding: 17px;
@@ -8759,7 +8755,7 @@ Kyc Upload Docs
     color: rgba(255, 255, 255, 0.7);
     transition: 0.4s;
     line-height: 36px;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -8798,7 +8794,7 @@ Kyc Upload Docs
 .post-item .recent-content .recent-text span {
     margin-bottom: 10px;
     display: block;
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -8876,7 +8872,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .newsletter-item h4 {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -8899,9 +8895,9 @@ div.latest-item .hover-shape-bg {
     padding: 17px 0;
     width: 100%;
     text-transform: uppercase;
-    background: #A3FF12;
+    background: #0DB2FF;
     border: transparent;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -8917,7 +8913,7 @@ div.latest-item .hover-shape-bg {
 .latest-details-content {
     padding-top: 70px;
     padding-bottom: 140px;
-    background: #090A1A;
+    background: #0F1123;
 }
 
 .latest-details-content .latest-item {
@@ -8950,7 +8946,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .latest-details-content .latest-item .sub-inner a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -8976,7 +8972,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .latest-details-content .latest-item .latest-btn a {
-    font-family: 'Russo One';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -9018,7 +9014,7 @@ div.latest-item .hover-shape-bg {
     border: 1px solid #2e2f3c;
     color: #fff;
     padding: 10px 20px;
-    font-family: "Russo One", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     transition: 0.4s;
 }
@@ -9034,7 +9030,7 @@ div.latest-item .hover-shape-bg {
 .gamfi-navigation ul li a.active:not(.black-shape),
 .gamfi-navigation ul li a:hover:not(.black-shape) {
     background: #2e2f3c;
-    color: #a3ff12;
+    color: #0DB2FF;
 }
 
 .breadcrumbs-form .gamfi-navigation {
@@ -9073,4 +9069,19 @@ div.latest-item .hover-shape-bg {
 
 .canvas-menu ul li a:hover {
     color: #636363;
+}
+
+/* farming */
+.farming-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.farming-wrapper{
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    background: #1d203b52 url("../public/assets/images/bg/banner-bg.jpg");    
+}
+.farming-table div{
+    color: #fff;
 }

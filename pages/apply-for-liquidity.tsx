@@ -7,7 +7,7 @@ const ApplyForIGO: NextPage = () => {
       <div className="gamfi-breadcrumbs-section">
         <div className="container">
           <div className="apply-heading text-center">
-            <h2 className="mb-0">Apply for IGO</h2>
+            <h2 className="mb-0">Apply for Liquidity</h2>
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ const ApplyForIGO: NextPage = () => {
                   <label htmlFor="launch">Ready to launch</label>
                   <div className="check"></div>
                 </div>
-                <h5 className="mt-30 mb-22">Have you already raised funds ?</h5>
+                {/* <h5 className="mt-30 mb-22">Have you already raised funds ?</h5>
                 <div className="input-list">
                   <input
                     type="radio"
@@ -146,7 +146,7 @@ const ApplyForIGO: NextPage = () => {
                   />
                   <label htmlFor="yes">Yes</label>
                   <div className="check"></div>
-                </div>
+                </div> */}
                 <div className="input-list">
                   <input type="radio" id="no" name="fav_language" value="No" />
                   <label htmlFor="no">No</label>
@@ -180,11 +180,11 @@ const ApplyForIGO: NextPage = () => {
                     name="fav_language"
                     value="Mixed"
                   />
-                  <label htmlFor="mixed">mixed</label>
+                  <label htmlFor="mixed">Mixed</label>
                   <div className="check"></div>
                 </div>
               </div>
-              <div className="input-button">
+              {/* <div className="input-button">
                 <input
                   type="text"
                   id="target"
@@ -192,7 +192,7 @@ const ApplyForIGO: NextPage = () => {
                   required
                 />
                 <label htmlFor="target">Target Raise</label>
-              </div>
+              </div> */}
               <div className="input-button">
                 <input
                   type="text"
@@ -211,7 +211,7 @@ const ApplyForIGO: NextPage = () => {
                   className="enter"
                   id="telegram"
                   name="telegram"
-                  placeholder="Enter telegram group link"
+                  placeholder="Enter Telegram group link"
                   required
                 />
                 <label htmlFor="telegram">Telegram group</label>
@@ -223,13 +223,25 @@ const ApplyForIGO: NextPage = () => {
                   className="enter"
                   id="twitter"
                   name="twitter"
-                  placeholder="Enter telegram group link"
+                  placeholder="Enter Twitter account link"
                   required
                 />
                 <label htmlFor="twitter">Project Twitter</label>
               </div>
+              <div className="input-button">
+                <i className="icon-discord"></i>
+                <input
+                  type="text"
+                  className="enter"
+                  id="twitter"
+                  name="twitter"
+                  placeholder="Enter Discord server link"
+                  required
+                />
+                <label htmlFor="twitter">Project Discord</label>
+              </div>
               <div className="project-btn-area text-center black-shape-big mt-40">
-                <input type="submit" name="submit" value="Submit IGO Project" />
+                <input type="submit" name="submit" value="Submit My Project" />
                 <span className="hover-shape1"></span>
                 <span className="hover-shape2"></span>
                 <span className="hover-shape3"></span>

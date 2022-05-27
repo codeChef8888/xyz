@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 
 const PartnersSection: NextPage = () => {
@@ -23,37 +24,37 @@ const PartnersSection: NextPage = () => {
           <div className="partner-image">
             <a href="#">
               <img
-                src="assets/images/partner/partner-image.png"
+                src="assets/images/partner/partner-imagee.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image2.png"
+                src="assets/images/partner/partner-imagee2.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image3.png"
+                src="assets/images/partner/partner-imagee3.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image4.png"
+                src="assets/images/partner/partner-imagee4.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image5.png"
+                src="assets/images/partner/partner-imagee5.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image6.png"
+                src="assets/images/partner/partner-imagee6.png"
                 alt="Partner-Image"
               />
             </a>
@@ -61,37 +62,37 @@ const PartnersSection: NextPage = () => {
           <div className="partner-image">
             <a href="#">
               <img
-                src="assets/images/partner/partner-image.png"
+                src="assets/images/partner/partner-imagee.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image2.png"
+                src="assets/images/partner/partner-imagee2.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image3.png"
+                src="assets/images/partner/partner-imagee3.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image4.png"
+                src="assets/images/partner/partner-imagee4.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image5.png"
+                src="assets/images/partner/partner-imagee5.png"
                 alt="Partner-Image"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/partner/partner-image6.png"
+                src="assets/images/partner/partner-imagee6.png"
                 alt="Partner-Image"
               />
             </a>

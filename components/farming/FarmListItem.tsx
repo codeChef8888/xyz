@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import { useState } from "react";
 
@@ -9,18 +10,38 @@ const FarmListItem: NextPage = () => {
       className={`gamfi-table-inner active-shape ` + (expandMenu ? 'expeand-bottom-content' : '')}
     >
       <div
-        className="default-centent expeander-iteam-area d-flex align-items-center justify-content-between"
+        className="farming-wrapper d-flex align-items-center justify-content-between"
         onClick={() => {setExpandMenu(!expandMenu)}}
       >
-        <div className="list-content list-1 image-row">
-          <img src="assets/images/icons/farm.png" alt="Previous-Image" />
-          BEST-DOT / BEST
+        <div className="farming-table">
+          <p>POOLS</p>
+          <div className="list-content list-1 image-row">
+            <img src="assets/images/icons/LEMABNB.png" alt="Previous-Image" />
+            LEMA/BNB
+          </div>
         </div>
-        <div className="list-content list-2">89.58 %</div>
-        <div className="list-content list-3">2586.50 BNB</div>
-        <div className="list-content list-4">899.50 BNB</div>
-        <div className="list-content list-5">$305,626.99</div>
-        <div className="list-content list-6">
+
+        <div className="farming-table">
+          <p>APR</p>
+          <div className="list-2">89.58 %</div>
+        </div>
+
+        <div className="farming-table">
+          <p>STAKES</p>
+          <div className="list-3">50,800 LEMA</div>
+        </div>
+
+        <div className="farming-table">
+          <p>TEARNED</p>
+          <div className="list-4">8,899.50 LEMA</div>
+        </div>
+
+        <div className="farming-table">
+          <p>TVL</p>
+          <div className="list-5">$4,305,626.99</div>
+        </div>
+        
+        <div className="list-6 farming-icon">
           <i className="icon-arrow_down expeand-arrow"></i>
         </div>
       </div>
@@ -52,12 +73,12 @@ const FarmListItem: NextPage = () => {
                 <span className="hover-shape3"></span>
               </div>
             </div>
-            <span>Your balance: 156 BNB</span>
+            <span>Your balance: 156 LEMA</span>
           </div>
           <div className="farm-form-list">
             <h5 className="mb-18">Pending Rewards</h5>
             <div className="farm-form mb-27">
-              <span className="unit">58.99 BNB</span>
+              <span className="unit">58.99 LEMA</span>
               <input className="submit-active" type="submit" value="Claim" />
             </div>
           </div>
@@ -65,7 +86,7 @@ const FarmListItem: NextPage = () => {
         <div className="expeand-menu">
           <ul>
             <li>
-              Get ACT -BNB<i className=" icon-link"></i>
+              Get LEMA-BNB<i className=" icon-link"></i>
             </li>
             <li>
               View Contract<i className=" icon-link"></i>
