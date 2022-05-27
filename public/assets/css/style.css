@@ -1182,6 +1182,7 @@ body .modal-backdrop {
 
 .gamfi-about-secion .game-price-item .game-price-inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -1248,7 +1249,7 @@ body .modal-backdrop {
 
 .gamfi-about-secion .total-price,
 .gamfi-about-secion .targeted-raise {
-    width: max-content;
+    width: 38%;
 }
 
 .gamfi-about-secion .total-price .targeted-raise,
@@ -6138,6 +6139,9 @@ Kyc Upload Docs
     margin-right: 11px;
 }
 
+.Tier_System_Items ul li h6 {}
+
+
 .Tier_System_Items span.bordarShadowRed1 {
     background: linear-gradient(180deg, rgba(248, 37, 82, 0.5) 0%, rgba(21, 22, 37, 0) 100%);
     height: 200px;
@@ -6331,6 +6335,8 @@ Kyc Upload Docs
     background: #F82552;
 }
 
+.TokenomicsContentsright {}
+
 .TokenomicsContentsright .TokenomicsContentsrightImg {
     background: rgba(30, 31, 53, 0.8);
     backdrop-filter: blur(5px);
@@ -6420,6 +6426,7 @@ Kyc Upload Docs
     padding-bottom: 105px;
 }
 
+.RoadmapTabBtns {}
 
 .RoadmapTabBtns ul {
     display: flex;
@@ -6443,6 +6450,8 @@ Kyc Upload Docs
     background: rgba(255, 255, 255, 0.15);
     border: none;
 }
+
+.RoadmapTabBtns ul li.tablinks.active button {}
 
 .RoadmapTabBtns ul li.tablinks.active button.black-shape .hover-shape1, .RoadmapTabBtns ul li.tablinks.active button.hover-shape .hover-shape1 {
     left: 42%;
@@ -7181,6 +7190,7 @@ Kyc Upload Docs
     z-index: 0;
 }
 
+.How_to_Participate_Left_Contnet {}
 
 .How_to_Participate_Left_Contnet p {
     font-family: Montserrat;
@@ -9069,19 +9079,4 @@ div.latest-item .hover-shape-bg {
 
 .canvas-menu ul li a:hover {
     color: #636363;
-}
-
-/* farming */
-.farming-table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.farming-wrapper{
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    background: #1d203b52 url("../public/assets/images/bg/banner-bg.jpg");    
-}
-.farming-table div{
-    color: #fff;
 }

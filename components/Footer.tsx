@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
-import Link from "next/link";
 
-const Footer: NextPage = () => {
+const Footer: NextPage = (): JSX.Element => {
   return (
     <div className="gamfi-footer-section">
       <div className="footer-area">
@@ -67,25 +66,25 @@ const Footer: NextPage = () => {
           <div className="footer-mainmenu text-center mb-20">
             <ul>
               <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <Link href="/projects">
-                  <a>Governance</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/staking">
-                  <a>Staking</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/farming">
-                  <a>Farming</a>
-                </Link>
+                <a href="#">Features</a>
               </li>
               <li>
                 <a href="#">How it works</a>
+              </li>
+              <li>
+                <a href="#">Token info</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Social media</a>
+              </li>
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>

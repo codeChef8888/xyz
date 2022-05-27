@@ -1,37 +1,54 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { FC } from 'react'
+import { useWeb3React } from "@web3-react/core";
+import React, { FC, useEffect } from "react";
+import config from "../widgets/WalletModal/config";
+import { connectorLocalStorageKey } from "../widgets/WalletModal/config";
+import useAuth from "../hooks/useAuth";
 
-interface PopupProps {
-    handleClick: Function
-    connectMeta: Function
+interface PopUpProps {
+  popOff: Function;
 }
 
-const Popup = ({ handleClick}: { handleClick? : React.MouseEventHandler}): JSX.Element => {
-    return (
-        <div className='backdrop' onClick={handleClick}>
-            <div className='pop'>
-                <h1>CONNECT WALLET</h1>
-                <br />
-                <div>
-                    {/* Metamask */}    
-                    <div className='walletContainer'>
-                        <img src="assets/images/icons/MetaMask_Fox.png" alt="MetaMask" />
-                        <p>Metamask</p>
-                    </div>  
-                    {/* Coinbase */}
-                    <div className='walletContainer'>
-                        <img src="assets/images/icons/coinbase_2.png" alt="Coinbase" />
-                        <p>Coinbase</p>
-                    </div>  
-                    {/* Binance */}
-                    <div className='walletContainer'>
-                        <img src="assets/images/icons/binance.png" alt="Binance" />
-                        <p>Binance</p>
-                    </div>  
-                </div>
+const Popup = ({ popOff }: PopUpProps): JSX.Element => {
+  // const { title, icon: Icon } = walletConfig;
+  // const walletConfigf = config[0]; // MetaMask Wallet Configuration
+  // console.log(walletConfig)
+
+  const { login, logout } = useAuth();
+  const { active, account, library, connector, activate, deactivate } =
+    useWeb3React();
+
+  return (
+    <div className="backdrop">
+      <div className="pop">
+        <h1>CONNECT WALLET</h1>
+        <br />
+        <div>
+          {config.map((walletConfig, index) => (
+            <div
+              key={index}
+              className="walletContainer"
+              onClick={() => {
+                console.log(walletConfig, "ma ya connected ma xu hai");
+
+                login(walletConfig.connectorId);
+                window.localStorage.setItem(
+                  connectorLocalStorageKey,
+                  walletConfig.connectorId
+                );
+                localStorage.setItem("isWalletConnected", "true");
+
+                popOff();
+              }}
+            >
+              <walletConfig.icon width="40px" />
+              <p>{walletConfig.title}</p>
             </div>
+          ))}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Popup
+export default Popup;

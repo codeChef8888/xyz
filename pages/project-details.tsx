@@ -13,8 +13,11 @@ const ProjectDetails: NextPage = () => {
             <div className="col-lg-5">
               <div className="breadcrumbs-area sec-heading">
                 <div className="sub-inner">
+                  <Link href="/">
+                    <a className="breadcrumbs-link">Home</a>
+                  </Link>
                   <Link href="/projects">
-                    <a className="breadcrumbs-link">Governance</a>
+                    <a className="breadcrumbs-link">Project</a>
                   </Link>
                   <span className="sub-title">Project Details</span>
                   <img
@@ -23,7 +26,6 @@ const ProjectDetails: NextPage = () => {
                     alt="Steps-Image"
                   />
                 </div>
-                <h2 style={{fontWeight: "bold"}}>Project Details</h2>
               </div>
             </div>
             <div className="col-lg-7 breadcrumbs-form md-mt-10">

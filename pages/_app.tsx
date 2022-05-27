@@ -4,6 +4,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import Head from "next/head";
+import { Web3ReactProvider } from "@web3-react/core";
+import { getLibrary } from "../libs/web3React";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -56,11 +58,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="assets/css/responsive.css"
         />
       </Head>
-
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Web3ReactProvider>
       {/* modernizr js */}
       <script src="assets/js/modernizr-2.8.3.min.js"></script>
       {/* jquery latest version */}

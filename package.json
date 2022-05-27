@@ -9,19 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@types/node": "17.0.23",
+    "@types/react-dom": "17.0.14",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.13",
+    "ethers": "^5.6.4",
     "jquery": "^3.6.0",
     "next": "^12.1.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-owl-carousel": "^2.3.3"
+    "react-owl-carousel": "^2.3.3",
+    "react-responsive-modal": "^6.2.0",
+    "react-toastify": "^8.2.0",
+    "typescript": "4.6.3",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
+    "@types/react": "^18.0.8",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.1"
+  },
+  "resolutions": {
     "@types/node": "17.0.23",
     "@types/react": "^17.0.43",
-    "@types/react-dom": "17.0.14",
-    "eslint": "8.12.0",
-    "eslint-config-next": "12.1.1",
-    "typescript": "4.6.3"
+    "@types/react-dom": "17.0.14"
   }
 }
