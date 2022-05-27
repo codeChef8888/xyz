@@ -15,22 +15,18 @@ const ProjectSummary = () => (
           <div className="project-summary-information" id="project-summary">
             <h4 className="title2 mb-15">Project Summary</h4>
             <p>
-              Ethereum is a decentralized open-source blockchain system that features its own cryptocurrency, Ether. 
-              ETH works as a platform for numerous other cryptocurrencies, as well as for the execution of decentralized smart contracts.
-            </p>
-            <p>
-              Ethereum was first described in a 2013 whitepaper by Vitalik Buterin. 
-              Buterin, along with other co-founders, secured funding for the project in an online public crowd sale in the summer of 2014. 
-              The project team managed to raise $18.3 million in Bitcoin, and 
-              Ethereum’s price in the Initial Coin Offering (ICO) was $0.311, with over 60 million Ether sold. 
-              Taking Ethereum’s price now, this puts the return on investment (ROI) 
-              at an annualized rate of over 270%, essentially almost quadrupling your investment 
-              every year since the summer of 2014.
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature
+              from 45 BC, making it over 2000 years old. Richard
+              McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words,
+              consectetur cites of the word in classical literature.
             </p>
             <p className="mb-30">
-              Ethereum’s own purported goal is to become a global platform for decentralized applications, 
-              allowing users from all over the world to write and run software that is resistant to censorship, 
-              downtime and fraud. Who Are the Founders of Ethereum?
+              The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from {"de Finibus Bonorum et Malorum"} by Cicero are
+              also reproduced in their exact original
             </p>
           </div>
         </div>
@@ -51,30 +47,9 @@ const ProjectSummary = () => (
   </>
 )
 
-const Team = () => (
-  <>
-    <h4 className="title-2 mb-15" id="team">Team</h4>
-    <p className="mb-30">
-      Russian-Canadian Vitalik Buterin is perhaps the best known of the bunch. 
-      He authored the original white paper that first described Ethereum in 2013 and still works on improving 
-      the platform to this day. Prior to ETH, Buterin co-founded and wrote for the Bitcoin Magazine news 
-      website.British programmer Gavin Wood is arguably the second most important co-founder of ETH, as 
-      he coded the first technical implementation of Ethereum in the C++ programming language, proposed 
-      Ethereum’s native programming language Solidity and was the first chief technology officer of the 
-      Ethereum Foundation. Before Ethereum, Wood was a research scientist at Microsoft. Afterward, he moved 
-      on to establish the Web3 Foundation.
-      Among the other co-founders of Ethereum are: - Anthony Di Iorio, who underwrote the project during 
-      its early stage of development. - Charles Hoskinson, who played the principal role in establishing 
-      the Swiss-based Ethereum Foundation and its legal framework. - Mihai Alisie, who provided assistance 
-      in establishing the Ethereum Foundation. - Joseph Lubin, a Canadian entrepreneur, who, like Di Iorio, 
-      has helped fund Ethereum during its early days.
-    </p>
-  </>
-)
-
 const Schedule = () => (
   <>
-    <h4 className="title-2 mb-20" id="schedule">Schedule</h4>
+    <h4 className="mb-20" id="schedule">Schedule</h4>
     <table className="mb-55">
       <tr className="table-header">
         <th>Round</th>
@@ -106,7 +81,7 @@ const Schedule = () => (
 )
 const Comparison = () => (
   <>
-    <h4 className="title-2 mb-20">Comparison</h4>
+    <h4 className="mb-20">Comparison</h4>
     <p className="mb-45">
       It has roots in a piece of classical Latin literature from 45 BC,
       making it over 2000 years old. Richard McClintock, a Latin professor
@@ -167,7 +142,7 @@ const Tokenomics = () => (
 )
 const Roadmap = () => (
   <>
-    <h4 className="title-2 mb-15">Roadmap</h4>
+    <h4 className="title2 mb-15">Roadmap</h4>
     <p>
       It has roots in a piece of classical Latin literature from 45 BC,
       making it over 2000 years old. Richard McClintock, a Latin professor
@@ -191,13 +166,13 @@ const ProjectSummarySection: NextPage = () => {
     <>
       <h4 className="title2 mb-15" id="vote">Vote Now</h4>
       <div className="voteContainer">
-        <label>Amount</label>
+        <label>Vote Amount</label>
         <div className="voteAction">
           <div className="inputContainer">
             <input placeholder="0.00" value={value}/>
             <span onClick={() => setValue("999.99")}>MAX</span>
           </div>
-          <button className="black-shape voteBtn" style={{height: "max-content", padding: "1rem 2rem"}}>
+          <button className="black-shape">
             <span>VOTE</span>
             <span className="hover-shape1"></span>
             <span className="hover-shape2"></span>
@@ -228,24 +203,8 @@ const ProjectSummarySection: NextPage = () => {
               </a>
               <img src="assets/images/project/menu-image.png" alt="project" />
             </button>
-            
-            <button
-              className="nav-link"
-              id="nav-team"
-              data-bs-toggle="tab"
-              data-bs-target="#team"
-              onClick={() => setActiveTab("team")}
-              type="button"
-              role="tab"
-              aria-selected="false"
-            >
-              <a href="#team">
-               Team {" "}
-              </a>
-              <img src="assets/images/project/menu-image.png" alt="project" />
-            </button>
 
-            {/* <button
+            <button
               className="nav-link"
               id="nav-schedule"
               data-bs-toggle="tab"
@@ -301,7 +260,7 @@ const ProjectSummarySection: NextPage = () => {
             >
               Roadmap{" "}
               <img src="assets/images/project/menu-image.png" alt="project" />
-            </button> */}
+            </button>
             
             <button
               className="nav-link"
@@ -316,6 +275,32 @@ const ProjectSummarySection: NextPage = () => {
               Vote{" "}
               <img src="assets/images/project/menu-image.png" alt="project" />
             </button>
+
+            {/* <button
+              className="nav-link"
+              id="nav-team-member"
+              data-bs-toggle="tab"
+              data-bs-target="#team-member"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Team Member{" "}
+              <img src="assets/images/project/menu-image.png" alt="project" />
+            </button>
+
+            <button
+              className="nav-link"
+              id="nav-tnvestors"
+              data-bs-toggle="tab"
+              data-bs-target="#tnvestors"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Investors{" "}
+              <img src="assets/images/project/menu-image.png" alt="project" />
+            </button> */}
           </div>
         </div>
       </div>
@@ -326,18 +311,12 @@ const ProjectSummarySection: NextPage = () => {
         (
           <>
             <ProjectSummary />
-            <Team />
-            {/* <Schedule />
+            <Schedule />
             <Comparison />
             <Tokenomics />
-            <Roadmap /> */}
+            <Roadmap />
             <VoteNow />
           </>
-        )
-        :
-        activeTab === "team" ?
-        (
-          <Team />
         )
         :
         activeTab === "schedule" ?
@@ -364,6 +343,14 @@ const ProjectSummarySection: NextPage = () => {
           <VoteNow />
         )
       }
+        {/* <div
+          className="tab-pane fade show active"
+          id="schedule"
+          role="tabpanel"
+          aria-labelledby="schedule"
+        >
+
+        </div> */}
       </div>
     </div>
   );
