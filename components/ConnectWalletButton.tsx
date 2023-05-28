@@ -8,6 +8,7 @@ import { useWeb3React } from "@web3-react/core";
 import { Modal } from "react-responsive-modal";
 import formatAddress from "../libs/formatAddress";
 import "react-responsive-modal/styles.css";
+import { getBalance } from "../libs/getAccountBalance";
 
 const CONNECT_MSG = "Connect";
 interface PopupProps {
@@ -17,6 +18,10 @@ interface PopupProps {
 const ConnectWalletButton = ({ popOn }: PopupProps) => {
   const { login, logout } = useAuth();
   const { active, account } = useWeb3React();
+  
+  if (active) {
+    getBalance(account);
+  }
 
   const [accountModalIsOpen, setAccountModalIsOpen] = useState(false);
 
