@@ -33,7 +33,6 @@ export const getLibrary = (provider: any) => {
   return library;
 };
 
-
 /**
  * BSC Wallet requires a different sign method
  * @see https://docs.binance.org/smart-chain/wallet/wallet_api.html#binancechainbnbsignaddress-string-message-string-promisepublickey-string-signature-string
